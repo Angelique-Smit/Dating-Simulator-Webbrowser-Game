@@ -10,13 +10,10 @@ export class Game extends Engine {
     }
 
     startGame() {
-        console.log("start de game!")
-        const fish = new Actor()
-        fish.graphics.use(Resources.Fish.toSprite())
-        fish.pos = new Vector(400, 300)
-        fish.vel = new Vector(-10,0)
-        this.add(fish)
+        this.addScene('startscreen', new Startscreen())
+            this.goToScene('startscreen')  
+        
     }
 }
 
-new Game()
+new Game() 
