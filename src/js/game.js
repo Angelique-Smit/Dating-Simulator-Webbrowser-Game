@@ -12,16 +12,6 @@ export class Game extends Engine {
 
 
 
-        // let jsontext = {
-        //     "character 1": ["THATS RIGHT,ACE ATTORNEY IN 7 LANGUAGES", "test2", "test3"],
-        //     "character 2": ["penis parker", "test2", "test3"]
-        // }
-
-        // let char1text = jsontext["character 1"]
-        // let char2text = jsontext["character 2"]
-        // // Log to console
-        // console.log(char1text[0])
-        // console.log(char2text[0])
     }
 }
 
