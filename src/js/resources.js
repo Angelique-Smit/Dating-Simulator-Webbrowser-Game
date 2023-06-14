@@ -5,9 +5,9 @@ import startscreenImage from '../images/placeholderStartscreen.png'
 
 const Resources = {
     //Fish: new ImageSource(fishImage)
-    Startscreen: new ImageSource(startscreenImage)
+    startimg: new ImageSource(startscreenImage)
 
 }
-const ResourceLoader = new Loader([Resources.Fish, Resources.Startscreen])
+const ResourceLoader = new Loader([Resources.Fish, Resources.startimg])
 
 export { Resources, ResourceLoader }
