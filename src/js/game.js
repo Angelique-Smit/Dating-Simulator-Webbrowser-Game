@@ -5,16 +5,11 @@ import { Resources, ResourceLoader } from './resources.js'
 export class Game extends Engine {
 
     constructor() {
-        super()
+        super({width: 800, height: 800})
     }
 
     startGame() {
-        console.log("start de game!")
-        const fish = new Actor()
-        fish.graphics.use(Resources.Fish.toSprite())
-        fish.pos = new Vector(400, 300)
-        fish.vel = new Vector(-10, 0)
-        this.add(fish)
+
 
 
         // let jsontext = {
