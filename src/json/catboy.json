@@ -1,5 +1,17 @@
 {
     "dialogue":[
-      "Today's video is sponsored by Raid Shadow Legends","one of the biggest mobile role-playing games of 2019"," and it's totally free!"
+      "Today's video is sponsored by Raid Shadow Legends",
+      "one of the biggest mobile role-playing games of 2019",
+      " and it's totally free!",
+      "do you agree with me?"
+    ],
+    "options":[
+      "Press W for angry option. Press S for happy option"
+    ],
+    "angryDialogue":[
+      "fuck you! you fucking dick!"
+    ],
+    "happyDialogue":[
+      "you're pog"
     ]
-    }
+      }
