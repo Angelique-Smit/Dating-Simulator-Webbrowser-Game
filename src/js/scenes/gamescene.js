@@ -28,7 +28,7 @@ export class GameScene extends Scene {
                 unit: FontUnit.Px,
                 family: 'Determination Mono Web Regular',
                 size: 20,
-                color: Color.White,
+                color: Color.Black,
             }),
             pos: new Vector(350, 412)
         })
@@ -39,7 +39,7 @@ export class GameScene extends Scene {
                 unit: FontUnit.Px,
                 family: 'Determination Mono Web Regular',
                 size: 20,
-                color: Color.White,
+                color: Color.Black,
             }),
             pos: new Vector(350, 440)
         })
