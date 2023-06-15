@@ -13,6 +13,4 @@ export class GenericBg extends Actor {
         //DO NOT, UNDER ANY CIRCUMSTANCES FUCKING CHANGE THIS VALUE OR I WILL BE REALLY SAD
         this.scale = new Vector(0.305 , 0.305);
     }
-
-
 }

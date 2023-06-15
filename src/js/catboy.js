@@ -1,4 +1,4 @@
-import { Actor, Random, Input } from "excalibur";
+import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "./resources.js";
 import catData from "../json/catboy.json"
 
@@ -14,6 +14,13 @@ export class Catboy extends Actor {
         super();
 
         this.random = new Random(1337)
+
+        let cat = Resources.catboynormal.toSprite();
+        this.graphics.use(cat);
+        this.scale = new Vector(0.125 , 0.125);
+
+        this.pos = new Vector(550, 210);
+        this.vel = new Vector(0, 0);
     }
     onInitialize(engine) {
         this.game = engine;

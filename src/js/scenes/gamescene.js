@@ -12,15 +12,18 @@ export class GameScene extends Scene {
     }
 
     onInitialize(engine){
+        //add any actors under here
         const bg = new GenericBg();
         this.add(bg);
+
+        this.catboy = new Catboy();
+        this.add(this.catboy)
 
         const box = new TextBox();
         this.add(box);
 
+        //anything else under here
         this.game = engine;
-        this.catboy = new Catboy();
-        this.add(this.catboy)
 
         this.dialogueText = new Label({
             text: 'You approach the catboy',
