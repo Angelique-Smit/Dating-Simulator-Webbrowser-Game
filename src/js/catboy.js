@@ -7,6 +7,7 @@ export class Catboy extends Actor {
     options = 0
     angry = 0
     happy = 0
+    selectedText;
 
     game;
     constructor() {
@@ -64,6 +65,7 @@ export class Catboy extends Actor {
             this.index++
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.W)) {
+            this.selectedText = this.jsontext["angry"]
             this.angryDia()
             this.angryDialogue++
         }
@@ -89,7 +91,7 @@ export class Catboy extends Actor {
         console.log("happy option")
         let char1text = this.jsontext["happy"]
         let selectedText = char1text[this.happyDialogue]
-        
+
         if (selectedText != undefined) {
             this.scene.happyDia(char1text[this.happyDialogue])
         }
