@@ -112,17 +112,23 @@ export class Catboy extends Actor {
     dialogueIdChecker() {
         switch(this.dialogeId >= 0) {
             case this.dialogId === 1:
-                let cathappy = Resources.catboyhappy.toSprite();
-                this.graphics.use(cathappy);
-                console.log('happy')
-                console.log(this.dialogeId)
+                this.catboyNeutral();
             break;
 
-            case this.dialogeId === 3:
-                let catangry = Resources.catboyangry.toSprite();
-                this.graphics.use(catangry);
-                console.log('madge')
-                console.log(this.dialogeId)
+            case this.dialogId === 5:
+                this.catboyHappy();
+            break;
+
+            case this.dialogeId === 6:
+                this.catboySad();
+            break;
+
+            case this.dialogeId === 7:
+                this.catboyAngry();
+            break;
+
+            case this.dialogeId === 8:
+                this.catboyBlush();
             break;
 
             default:
@@ -131,6 +137,32 @@ export class Catboy extends Actor {
                 console.log('normal')
                 console.log(this.dialogeId)
         }
+    }
+
+    catboyHappy() {
+        let cathappy = Resources.catboyhappy.toSprite();
+        this.graphics.use(cathappy);
+
+    }
+
+    catboySad() {
+        let catsad = Resources.catboysad.toSprite();
+        this.graphics.use(catsad);
+    }
+
+    catboyAngry() {
+        let catangry = Resources.catboyangry.toSprite();
+        this.graphics.use(catangry);
+    }
+
+    catboyBlush() {
+        let catblush = Resources.catboyblush.toSprite();
+        this.graphics.use(catblush);
+    }
+
+    catboyNeutral() {
+        let cat = Resources.catboynormal.toSprite();
+        this.graphics.use(cat);
     }
 
 }
