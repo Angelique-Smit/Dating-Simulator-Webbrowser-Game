@@ -7,9 +7,9 @@ export class GenericBg extends Actor {
         
         let bg = Resources.gamegenericbg.toSprite();
         this.graphics.use(bg);
-        this.pos = new Vector(760, 220);
+        this.pos = new Vector(570, 165);
         this.vel = new Vector(0, 0);
-        this.scale = new Vector(0.41 , 0.41);
+        this.scale = new Vector(0.305 , 0.305);
     }
 
 

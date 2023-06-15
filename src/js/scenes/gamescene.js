@@ -26,7 +26,7 @@ export class GameScene extends Scene {
                 size: 20,
                 color: Color.White,
             }),
-            pos: new Vector(500, 550)
+            pos: new Vector(375, 412)
         })
 
         this.optionsText = new Label({
@@ -37,7 +37,7 @@ export class GameScene extends Scene {
                 size: 20,
                 color: Color.White,
             }),
-            pos: new Vector(500, 500)
+            pos: new Vector(375, 375)
         })
         this.add(this.dialogueText)
         
