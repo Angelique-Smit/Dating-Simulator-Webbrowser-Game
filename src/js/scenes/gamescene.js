@@ -12,14 +12,14 @@ export class GameScene extends Scene {
         this.catboy = new Catboy();
         this.add(this.catboy)
         this.dialogueText = new Label({
-            text: 'Time start!',
+            text: '....',
             font: new Font({
                 unit: FontUnit.Px,
                 family: 'Determination Mono Web Regular',
-                size: 28,
+                size: 20,
                 color: Color.White,
             }),
-            pos: new Vector(250, 100)
+            pos: new Vector(100, 100)
         })
         this.add(this.dialogueText)
        
