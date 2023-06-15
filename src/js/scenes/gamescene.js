@@ -1,5 +1,6 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
-import {Catboy} from "../catboy";
+import {Catboy} from "../catboy.js";
+import { GenericBg } from "../genericgamebg.js";
 
 export class GameScene extends Scene {
     game;
@@ -8,7 +9,11 @@ export class GameScene extends Scene {
     constructor() {
         super()
     }
+
     onInitialize(engine){
+        const bg = new GenericBg();
+        this.add(bg);
+
         this.game = engine;
         this.catboy = new Catboy();
         this.add(this.catboy)
@@ -21,7 +26,7 @@ export class GameScene extends Scene {
                 size: 20,
                 color: Color.White,
             }),
-            pos: new Vector(100, 500)
+            pos: new Vector(250, 450)
         })
 
         this.optionsText = new Label({
@@ -32,7 +37,7 @@ export class GameScene extends Scene {
                 size: 20,
                 color: Color.White,
             }),
-            pos: new Vector(100, 300)
+            pos: new Vector(250, 400)
         })
         this.add(this.dialogueText)
         

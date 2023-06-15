@@ -7,7 +7,7 @@ import { GameScene } from './scenes/gamescene.js'
 export class Game extends Engine {
 
     constructor() {
-        super()
+        super({width: 758, height: 480})
         this.start(ResourceLoader).then(() => this.startGame())
     }
 
