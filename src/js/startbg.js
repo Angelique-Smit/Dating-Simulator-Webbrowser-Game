@@ -1,4 +1,4 @@
-import { Actor, Engine, Vector } from "excalibur"
+import { Actor, Vector } from "excalibur"
 import { Resources, ResourceLoader } from './resources.js'
 
 export class Bg extends Actor {
