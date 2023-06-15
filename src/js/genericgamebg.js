@@ -9,6 +9,8 @@ export class GenericBg extends Actor {
         this.graphics.use(bg);
         this.pos = new Vector(570, 165);
         this.vel = new Vector(0, 0);
+
+        //DO NOT, UNDER ANY CIRCUMSTANCES FUCKING CHANGE THIS VALUE OR I WILL BE REALLY SAD
         this.scale = new Vector(0.305 , 0.305);
     }
 
