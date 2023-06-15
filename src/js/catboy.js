@@ -7,6 +7,7 @@ export class Catboy extends Actor {
     options = 0
     angry = 0
     happy = 0
+    dialogeId = 0
     selectedText;
 
     game;
@@ -14,9 +15,6 @@ export class Catboy extends Actor {
         super();
 
         this.random = new Random(1337)
-
-        let cat = Resources.catboynormal.toSprite();
-        this.graphics.use(cat);
         this.scale = new Vector(0.125 , 0.125);
 
         this.pos = new Vector(550, 210);
@@ -39,6 +37,7 @@ export class Catboy extends Actor {
         console.log(catData.options)
         console.log(catData.angryDialogue)
         console.log(catData.happyDialogue)
+
     }
 
     startDialogue() {
@@ -70,6 +69,8 @@ export class Catboy extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
             this.startDialogue()
             this.index++
+            this.dialogeId = this.index
+
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.W)) {
             this.selectedText = this.jsontext["angry"]
@@ -80,6 +81,8 @@ export class Catboy extends Actor {
             this.happyDia()
             this.angryDialogue++
         }
+
+        this.dialogueIdChecker();
     }
 
     angryDia() {
@@ -103,6 +106,31 @@ export class Catboy extends Actor {
             this.scene.happyDia(char1text[this.happyDialogue])
         }
         
+    }
+
+    //Add cases to add in certain sprites
+    dialogueIdChecker() {
+        switch(this.dialogeId >= 0) {
+            case this.dialogId === 1:
+                let cathappy = Resources.catboyhappy.toSprite();
+                this.graphics.use(cathappy);
+                console.log('happy')
+                console.log(this.dialogeId)
+            break;
+
+            case this.dialogeId === 3:
+                let catangry = Resources.catboyangry.toSprite();
+                this.graphics.use(catangry);
+                console.log('madge')
+                console.log(this.dialogeId)
+            break;
+
+            default:
+                let cat = Resources.catboynormal.toSprite();
+                this.graphics.use(cat);
+                console.log('normal')
+                console.log(this.dialogeId)
+        }
     }
 
 }
