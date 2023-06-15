@@ -9,7 +9,7 @@ export class Bg extends Actor {
         this.graphics.use(startimg);
         this.pos = new Vector(0, 0);
         this.vel = new Vector(0, 0);
-        this.scale = new Vector(0.7 , 0.7);
+        this.scale = new Vector(1 , 1);
     }
 
 
