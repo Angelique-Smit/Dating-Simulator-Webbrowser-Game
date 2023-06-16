@@ -115,10 +115,6 @@ export class Catboy extends Actor {
                 this.catboyNeutral();
             break;
 
-            case this.dialogId === 5:
-                this.catboyHappy();
-            break;
-
             case this.dialogeId === 6:
                 this.catboySad();
             break;
@@ -131,11 +127,12 @@ export class Catboy extends Actor {
                 this.catboyBlush();
             break;
 
+            case this.dialogeId === 10:
+                this.catboyHappy();
+            break;
+
             default:
-                let cat = Resources.catboynormal.toSprite();
-                this.graphics.use(cat);
-                console.log('normal')
-                console.log(this.dialogeId)
+                this.catboyNeutral();
         }
     }
 
