@@ -51,6 +51,8 @@ export class GameScene extends Scene {
        
     }
     startDialogue(text) {
+         // let createText = document.getElementById("textspan")
+        // createText.innerHTML = text
         this.dialogueText.text = text
         this.add(this.optionsText)
     }
