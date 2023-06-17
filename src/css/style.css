@@ -3,3 +3,23 @@ body {
     padding:0;
     background-color:darkgray;
 }
+
+#game {
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+
+#textspan {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    color: black;
+    transform: translate(22vw, 53vh);
+    font-size: 1.25em;
+    height: 10vh;
+    width: 28.5vw;
+    white-space: pre-wrap;
+    margin: 0;
+    padding: 0;
+}

@@ -23,38 +23,12 @@ export class GameScene extends Scene {
         this.add(box);
 
         //anything else under here
-        this.game = engine;
-
-        this.dialogueText = new Label({
-            text: 'You approach the catboy',
-            font: new Font({
-                unit: FontUnit.Px,
-                family: 'Determination Mono Web Regular',
-                size: 20,
-                color: Color.Black,
-            }),
-            pos: new Vector(350, 412)
-        })
-
-        this.optionsText = new Label({
-            text: '',
-            font: new Font({
-                unit: FontUnit.Px,
-                family: 'Determination Mono Web Regular',
-                size: 20,
-                color: Color.Black,
-            }),
-            pos: new Vector(350, 440)
-        })
-        this.add(this.dialogueText)
-        
-       
+        this.game = engine;        
     }
+
     startDialogue(text) {
-         // let createText = document.getElementById("textspan")
-        // createText.innerHTML = text
-        this.dialogueText.text = text
-        this.add(this.optionsText)
+        let createText = document.getElementById("textspan")
+        createText.innerHTML = text
     }
 
     dialogueOptions(text) {
