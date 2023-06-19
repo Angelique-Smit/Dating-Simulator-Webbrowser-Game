@@ -37,10 +37,12 @@ export class GameScene extends Scene {
     }
     angryDia(text) {
         this.remove(this.optionsText)
-        this.dialogueText.text = text
+        let createText = document.getElementById("textspan")
+        createText.innerHTML = text
     }
     happyDia(text) {
         this.remove(this.optionsText)
-        this.dialogueText.text = text
+        let createText = document.getElementById("textspan")
+        createText.innerHTML = text
     }
 }

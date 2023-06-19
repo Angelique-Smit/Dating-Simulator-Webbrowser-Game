@@ -12,10 +12,13 @@ export class Catboy extends Actor {
 
     game;
     constructor() {
-        super();
-
+        super({
+            width: Resources.catboynormal.width,
+            height: Resources.catboynormal.height
+        });
+        this.graphics.use(Resources.catboynormal.toSprite());
         this.random = new Random(1337)
-        this.scale = new Vector(0.125 , 0.125);
+        this.scale = new Vector(0.125, 0.125);
 
         this.pos = new Vector(550, 210);
         this.vel = new Vector(0, 0);
@@ -43,11 +46,11 @@ export class Catboy extends Actor {
     startDialogue() {
         let char1text = this.jsontext["start"]
         let selectedText = char1text[this.index]
-        
+
         if (selectedText != undefined) {
             this.scene.startDialogue(char1text[this.index])
         }
-        else{
+        else {
             this.dialogueOptions()
         }
     }
@@ -56,7 +59,7 @@ export class Catboy extends Actor {
         let char1text = this.jsontext["options"]
         let selectedText = char1text[this.options]
         console.log(selectedText)
-        
+
         if (selectedText != undefined) {
             this.scene.dialogueOptions(char1text[this.options])
         }
@@ -94,7 +97,7 @@ export class Catboy extends Actor {
         if (selectedText != undefined) {
             this.scene.angryDia(char1text[this.angryDialogue])
         }
-        
+
     }
 
     happyDia() {
@@ -105,31 +108,43 @@ export class Catboy extends Actor {
         if (selectedText != undefined) {
             this.scene.happyDia(char1text[this.happyDialogue])
         }
-        
+
     }
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        switch(this.dialogeId >= 0) {
+        // if (this.dialogeId === 1){
+        //     this.catboyNeutral();
+        // }
+
+        // if (this.dialogeId === 3 || 4 || 5 || 9 || 13 || 14){
+        //     this.catboyAngry();
+        // }
+        switch (this.dialogeId >= 0) {
             case this.dialogId === 1:
                 this.catboyNeutral();
-            break;
+                break;
 
             case this.dialogeId === 6:
                 this.catboySad();
-            break;
+                break;
 
-            case this.dialogeId === 7:
+            case this.dialogeId === 3:
+            case this.dialogeId === 4:
+            case this.dialogeId === 5:
+            case this.dialogeId === 9:
+            case this.dialogeId === 13:
+            case this.dialogeId === 14:
                 this.catboyAngry();
-            break;
+                break;
 
             case this.dialogeId === 8:
                 this.catboyBlush();
-            break;
+                break;
 
             case this.dialogeId === 10:
                 this.catboyHappy();
-            break;
+                break;
 
             default:
                 this.catboyNeutral();
