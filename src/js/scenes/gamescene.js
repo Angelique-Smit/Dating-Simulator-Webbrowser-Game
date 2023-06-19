@@ -27,6 +27,7 @@ export class GameScene extends Scene {
     }
 
     startDialogue(text) {
+        console.log(text)
         let createText = document.getElementById("textspan")
         createText.innerHTML = text
     }

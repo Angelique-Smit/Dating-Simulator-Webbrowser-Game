@@ -26,30 +26,27 @@ export class Catboy extends Actor {
     onInitialize(engine) {
         this.game = engine;
 
-        // this.jsontext = {
+        this.jsontext = {
             // "character 1": ["THATS RIGHT,ACE ATTORNEY IN 7 LANGUAGES", "test2", "test3"],
-            // "start": catboy.dialogue
+            "start": catboy.catboy[0].dialogue
             // "options": catData.options,
             // "angry": catData.angryDialogue,
             // "happy": catData.happyDialogue,
-        // }
+        }
 
     }
     
     startDialogue() {
-        // let char1text = this.jsontext["start"]
-        // let selectedText = char1text[this.index]
+        let char1text = catboy.catboy[this.index].dialogue
+        let selectedText = catboy.catboy[this.index].dialogue
+        if (selectedText != undefined) {
+            this.scene.startDialogue(char1text)
+            
+        } 
 
-        // if (selectedText != undefined) {
-        //     this.scene.startDialogue(char1text[this.index])
-        // }
-        // else {
-        //     this.dialogueOptions()
-        // }
-
-        let dialogue = catboy.dialogue;
-        this.selectedText = dialogue;
-        console.log(this.selectedText)
+        // let dialogue = catboy.dialogue;
+        // this.selectedText = dialogue;
+        // console.log(this.selectedText)
     }
 
 
