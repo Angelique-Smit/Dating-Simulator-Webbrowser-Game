@@ -32,7 +32,8 @@ export class GameScene extends Scene {
     }
 
     dialogueOptions(text) {
-        this.optionsText.text = text
+        let createText = document.getElementById("optionspan")
+        createText.innerHTML = text
         
     }
     angryDia(text) {

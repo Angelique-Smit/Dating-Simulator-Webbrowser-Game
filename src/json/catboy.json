@@ -17,10 +17,12 @@
       "Are you expecting your robber to pay for your drinks? In what fantasy world do you live?",
       "Are you seriously asking your robber out on a date right meow?",
       "As long as you're paying for my food and drinks. I have nothing to lose I guess.",
-      "Hmmmm. Fine."
+      "Hmmmm. Fine.",
+      "give me a dollar bitch"
     ],
     "options":[
-      "Press W for angry option. Press S for happy option"
+      "Press W to say no.",
+      "Press S to say yeauh!"
     ],
     "angryDialogue":[
       "fuck you! you fucking dick!"
