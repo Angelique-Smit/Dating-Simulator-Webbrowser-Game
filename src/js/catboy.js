@@ -118,7 +118,7 @@ export class Catboy extends Actor {
                 this.catboyNeutral();
             }
 
-            if (this.dialogeId === 3) {
+            if (this.dialogeId === 3||4||5||9||13||14) {
                 this.catboyAngry();
             }
 
