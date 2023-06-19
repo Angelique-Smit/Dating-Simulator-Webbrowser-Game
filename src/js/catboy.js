@@ -113,41 +113,26 @@ export class Catboy extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        // if (this.dialogeId === 1){
-        //     this.catboyNeutral();
-        // }
-
-        // if (this.dialogeId === 3 || 4 || 5 || 9 || 13 || 14){
-        //     this.catboyAngry();
-        // }
-        switch (this.dialogeId >= 0) {
-            case this.dialogId === 1:
+        if (this.dialogeId >= 0) {
+            if (this.dialogeId === 1) {
                 this.catboyNeutral();
-                break;
+            }
 
-            case this.dialogeId === 6:
-                this.catboySad();
-                break;
-
-            case this.dialogeId === 3:
-            case this.dialogeId === 4:
-            case this.dialogeId === 5:
-            case this.dialogeId === 9:
-            case this.dialogeId === 13:
-            case this.dialogeId === 14:
+            if (this.dialogeId === 3) {
                 this.catboyAngry();
-                break;
+            }
 
-            case this.dialogeId === 8:
-                this.catboyBlush();
-                break;
+            if (this.dialogeId === 4) {
+                this.catboySad();
+            }
 
-            case this.dialogeId === 10:
+            if (this.dialogeId === 5) {
                 this.catboyHappy();
-                break;
+            }
 
-            default:
-                this.catboyNeutral();
+            if (this.dialogeId === 6) {
+                this.catboyBlush();
+            }
         }
     }
 
