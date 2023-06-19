@@ -1,5 +1,5 @@
 {
-  "catboy": [ 
+  "intro": [ 
       {
         "id": 1,
         "dialogue": "I can see some buildings up ahead. They don't seem to be the ones that are around here in the normal world though. Regardless, I might find a way back.",
@@ -152,6 +152,12 @@
         "id": 25,
         "dialogue": "Where do you think you're going! Don't you dare meowve!",
         "teller": "???"
+      },
+
+      {
+        "id": 25.5,
+        "dialogue": "I'll let you rob me if you tell me your name, middle-aged lady!",
+        "teller": "Me"
       },
 
       {

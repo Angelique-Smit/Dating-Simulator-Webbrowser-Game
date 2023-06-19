@@ -1,5 +1,5 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
-import {Catboy} from "../catboy.js";
+import { Catboy } from "../catboy.js";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
 
@@ -7,6 +7,7 @@ export class GameScene extends Scene {
     game;
     dialogueText
     optionsText
+    name;
     constructor() {
         super()
     }
@@ -26,10 +27,13 @@ export class GameScene extends Scene {
         this.game = engine;        
     }
 
-    startDialogue(text) {
+    startDialogue(text, name) {
         console.log(text)
         let createText = document.getElementById("textspan")
-        createText.innerHTML = text
+        createText.innerHTML = text;
+
+        let playername = document.getElementById('playername')
+        playername.innerHTML = name;
     }
 
     dialogueOptions(text) {

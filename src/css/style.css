@@ -10,6 +10,20 @@ body {
     padding: 0;
 }
 
+#playername {
+    display: flex;
+    z-index: 2;
+    position: absolute;
+    color: black;
+    transform: translate(345px, 366px);
+    font-size: 1.20em;
+    height: 10vh;
+    width: 28.5vw;
+    white-space: pre-wrap;
+    margin: 0;
+    padding: 0;
+}
+
 #textspan {
     display: flex;
     z-index: 2;
@@ -23,6 +37,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+
 
 #optionspan {
     display: flex;

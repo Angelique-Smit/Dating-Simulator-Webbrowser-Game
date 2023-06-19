@@ -9,6 +9,7 @@ export class Catboy extends Actor {
     happy = 0
     dialogueId = 0
     selectedText;
+    name;
 
     game;
     constructor() {
@@ -28,7 +29,7 @@ export class Catboy extends Actor {
 
         this.jsontext = {
             // "character 1": ["THATS RIGHT,ACE ATTORNEY IN 7 LANGUAGES", "test2", "test3"],
-            "start": catboy.catboy[0].dialogue
+            "start": catboy.intro[0].dialogue
             // "options": catData.options,
             // "angry": catData.angryDialogue,
             // "happy": catData.happyDialogue,
@@ -37,8 +38,10 @@ export class Catboy extends Actor {
     }
     
     startDialogue() {
-        let char1text = catboy.catboy[this.index].dialogue
-        let selectedText = catboy.catboy[this.index].dialogue
+        let char1text = catboy.intro[this.index].dialogue;
+        let selectedText = catboy.intro[this.index].dialogue;
+        // this.name = catboy.intro[this.index].dialogue;
+        this.name = catboy.intro[this.index].teller;
         if (selectedText != undefined) {
             this.scene.startDialogue(char1text)
             
@@ -68,7 +71,7 @@ export class Catboy extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
             this.startDialogue()
             this.index++
-            this.dialogueId = catboy.id
+            this.dialogueId = catboy.intro[this.index].id;
 
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.W)) {
@@ -112,27 +115,33 @@ export class Catboy extends Actor {
         switch (this.dialogueId >= 0) {
 
             //Mad
-            case this.dialogueId == 3:
-                case this.dialogueId == 4:
-                case this.dialogueId == 5:
-                case this.dialogueId == 9:
-                case this.dialogueId == 13:
-                case this.dialogueId == 14:
-                    this.catboyAngry();
-                break;
-
-            //Sad
-            case this.dialogueId == 20:
-                this.catboySad();
+            case this.dialogueId == 14:
+            case this.dialogueId == 15:
+            case this.dialogueId == 16:
+            case this.dialogueId == 17:
+            case this.dialogueId == 18:
+            case this.dialogueId == 19:
+            case this.dialogueId == 25:       
+            case this.dialogueId == 25.5:
+            case this.dialogueId == 26:  
+            case this.dialogueId == 35: 
+            case this.dialogueId == 36:   
+                this.catboyAngry();
             break;
 
             //Blush
-            case this.dialogueId == 19:
+            case this.dialogueId == 23:
+            case this.dialogueId == 29:  
                 this.catboyBlush();
             break;
 
+            //Sad
+            case this.dialogueId == -1:
+                this.catboySad();
+            break;
+
             //Happy
-            case this.dialogueId == 18:
+            case this.dialogueId == 41:
                 this.catboyHappy();
             break;
 
