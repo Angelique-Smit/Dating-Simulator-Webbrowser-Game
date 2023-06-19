@@ -49,7 +49,7 @@ export class Catboy extends Actor {
 
         let dialogue = catboy.dialogue;
         this.selectedText = dialogue;
-        console.log(this.selectedText)
+        console.log(catboy.catboy[0].dialogue)
     }
 
 
