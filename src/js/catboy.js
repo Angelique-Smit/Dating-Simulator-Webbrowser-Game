@@ -44,9 +44,9 @@ export class Catboy extends Actor {
             
         } 
 
-        // let dialogue = catboy.dialogue;
-        // this.selectedText = dialogue;
-        // console.log(this.selectedText)
+        let dialogue = catboy.dialogue;
+        this.selectedText = dialogue;
+        console.log(catboy.catboy[0].dialogue)
     }
 
 
