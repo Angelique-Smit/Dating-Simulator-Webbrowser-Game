@@ -1,19 +1,19 @@
 import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "./resources.js";
-import catData from "../json/catboy.json"
+import catboy from "../json/catboy.json"
 
 export class Catboy extends Actor {
     index = 0
     options = 0
     angry = 0
     happy = 0
-    dialogeId = 0
+    dialogueId = 0
     selectedText;
 
     game;
     constructor() {
         super();
-
+        console.log(catboy)
         let cat = Resources.catboynormal.toSprite();
         this.graphics.use(cat);
 
@@ -25,46 +25,45 @@ export class Catboy extends Actor {
     }
     onInitialize(engine) {
         this.game = engine;
-        // for(let json of catData) {            
-        //     console.log(p)        
-        // } 
-        this.jsontext = {
+
+        // this.jsontext = {
             // "character 1": ["THATS RIGHT,ACE ATTORNEY IN 7 LANGUAGES", "test2", "test3"],
-            "start": catData.dialogue,
-            "options": catData.options,
-            "angry": catData.angryDialogue,
-            "happy": catData.happyDialogue,
-
-        }
-        console.log(catData.dialogue)
-        console.log(catData.options)
-        console.log(catData.angryDialogue)
-        console.log(catData.happyDialogue)
+            // "start": catboy.dialogue
+            // "options": catData.options,
+            // "angry": catData.angryDialogue,
+            // "happy": catData.happyDialogue,
+        // }
 
     }
-
+    
     startDialogue() {
-        let char1text = this.jsontext["start"]
-        let selectedText = char1text[this.index]
+        // let char1text = this.jsontext["start"]
+        // let selectedText = char1text[this.index]
 
-        if (selectedText != undefined) {
-            this.scene.startDialogue(char1text[this.index])
-        }
-        else {
-            this.dialogueOptions()
-        }
+        // if (selectedText != undefined) {
+        //     this.scene.startDialogue(char1text[this.index])
+        // }
+        // else {
+        //     this.dialogueOptions()
+        // }
+
+        let dialogue = catboy.dialogue;
+        this.selectedText = dialogue;
+        console.log(this.selectedText)
     }
 
-    dialogueOptions() {
-        let char1text = this.jsontext["options"]
-        let selectedText = char1text[this.options]
-        console.log(selectedText)
 
-        if (selectedText != undefined) {
-            this.scene.dialogueOptions(char1text[this.options])
-        }
 
-    }
+    // dialogueOptions() {
+    //     let char1text = this.jsontext["options"]
+    //     let selectedText = char1text[this.options]
+    //     console.log(selectedText)
+
+    //     if (selectedText != undefined) {
+    //         this.scene.dialogueOptions(char1text[this.options])
+    //     }
+
+    // }
 
 
 
@@ -72,7 +71,7 @@ export class Catboy extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
             this.startDialogue()
             this.index++
-            this.dialogeId = this.index
+            this.dialogueId = catboy.id
 
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.W)) {
@@ -113,30 +112,30 @@ export class Catboy extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        switch (this.dialogeId >= 0) {
+        switch (this.dialogueId >= 0) {
 
             //Mad
-            case this.dialogeId === 3:
-                case this.dialogeId === 4:
-                case this.dialogeId === 5:
-                case this.dialogeId === 9:
-                case this.dialogeId === 13:
-                case this.dialogeId === 14:
+            case this.dialogueId == 3:
+                case this.dialogueId == 4:
+                case this.dialogueId == 5:
+                case this.dialogueId == 9:
+                case this.dialogueId == 13:
+                case this.dialogueId == 14:
                     this.catboyAngry();
                 break;
 
             //Sad
-            case this.dialogeId === 20:
+            case this.dialogueId == 20:
                 this.catboySad();
             break;
 
             //Blush
-            case this.dialogeId === 19:
+            case this.dialogueId == 19:
                 this.catboyBlush();
             break;
 
             //Happy
-            case this.dialogeId === 18:
+            case this.dialogueId == 18:
                 this.catboyHappy();
             break;
 
