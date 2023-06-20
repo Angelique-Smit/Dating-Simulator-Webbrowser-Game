@@ -5,9 +5,8 @@ import catboy from "../json/catboy.json"
 export class Catboy extends Actor {
     index = 0
     options = 0
-    angry = 0
-    happy = 0
     dialogueId = 0
+    choiceAvailable = false
     selectedText;
     name;
     game;
@@ -30,30 +29,36 @@ export class Catboy extends Actor {
     }
     
     startDialogue() {
-        let selectedText = catboy.intro[this.index].dialogue;
-        let name = catboy.intro[this.index].teller;
+        let selectedText = catboy.intro[this.index];
+
         
-        if (selectedText != undefined) {
-            this.scene.startDialogue(selectedText, name)  
+        if (selectedText) {
+            let actualText = selectedText.dialogue
+            let name = catboy.intro[this.index].teller;
+            this.dialogueId = catboy.intro[this.index].id;
+            this.scene.startDialogue(actualText, name)  
+            this.index++
         } 
+        else{
+            this.choiceAvailable = true
+        }
     }
 
 
 
 
     onPreUpdate(engine) {
-        if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
+        if (engine.input.keyboard.wasPressed(Input.Keys.Space)  && !this.choiceAvailable) {
             this.startDialogue()
-            this.index++
-            this.dialogueId = catboy.intro[this.index].id;
         }
-        if (engine.input.keyboard.wasPressed(Input.Keys.W)) {
-
+       
+        if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
+            console.log("tata")
         }
-        if (engine.input.keyboard.wasPressed(Input.Keys.S)) {
-
+        if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
+            
         }
-
+ 
         this.dialogueIdChecker();
     }
 
