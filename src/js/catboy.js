@@ -4,6 +4,8 @@ import catboy from "../json/catboy.json"
 
 export class Catboy extends Actor {
     index = 0
+    happy = 0
+    angry = 0
     options = 0
     dialogueId = 0
     choiceAvailable = false
@@ -25,42 +27,80 @@ export class Catboy extends Actor {
     onInitialize(engine) {
         this.game = engine;
     }
-    
+
     startDialogue() {
         let selectedText = catboy.intro[this.index];
 
-        
+
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = catboy.intro[this.index].teller;
             this.dialogueId = catboy.intro[this.index].id;
-            this.scene.startDialogue(actualText, name)  
+            this.scene.startDialogue(actualText, name)
             this.index++
-        } 
-        else{
-            this.choiceAvailable = true
+        }
+        else {
+            this.dialogOptions()
         }
     }
 
-
+    dialogOptions() {
+        console.log("press w or s")
+        this.choiceAvailable = true
+    }
 
 
     onPreUpdate(engine) {
-        if (engine.input.keyboard.wasPressed(Input.Keys.Space)  && !this.choiceAvailable) {
+        if (engine.input.keyboard.wasPressed(Input.Keys.Space) && !this.choiceAvailable) {
             this.startDialogue()
         }
-       
+
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
-            console.log("tata")
+            this.choiceAvailable = false
+            this.showAngryDialog()
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
-            
+            this.choiceAvailable = false
+            this.showHappyDialog()
         }
- 
+
         this.dialogueIdChecker();
     }
 
- 
+    showAngryDialog() {
+        console.log("so angry!")
+        let selectedText = catboy.angry[this.angry];
+
+        if (selectedText) {
+            let actualText = selectedText.dialogue
+            let name = catboy.angry[this.angry].teller;
+            this.dialogueId = catboy.angry[this.angry].id;
+
+            this.scene.showAngryDialog(actualText, name)
+            this.angry++
+        }
+        else{
+            console.log("go back! fiend!")
+        }
+        // this.dialogueImageChecker() // todo different image?
+    }
+
+    showHappyDialog() {
+        console.log("so happy!")
+        let selectedText = catboy.happy[this.happy];
+
+
+        if (selectedText) {
+            let actualText = selectedText.dialogue
+            let name = catboy.happy[this.happy].teller;
+            this.dialogueId = catboy.happy[this.happy].id;
+            console.log("does this work atleast?")
+            this.scene.showHappyDialog(actualText, name)
+            this.happy++
+        }
+        // this.dialogueImageChecker() // todo different image?
+    }
+
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
@@ -73,31 +113,31 @@ export class Catboy extends Actor {
             case this.dialogueId == 17:
             case this.dialogueId == 18:
             case this.dialogueId == 19:
-            case this.dialogueId == 25:       
+            case this.dialogueId == 25:
             case this.dialogueId == 25.5:
-            case this.dialogueId == 26:  
-            case this.dialogueId == 35: 
-            case this.dialogueId == 36:   
+            case this.dialogueId == 26:
+            case this.dialogueId == 35:
+            case this.dialogueId == 36:
                 this.catboyAngry();
-            break;
+                break;
 
             //Blush
             case this.dialogueId == 23:
-            case this.dialogueId == 29:  
+            case this.dialogueId == 29:
                 this.catboyBlush();
-            break;
+                break;
 
             //Sad
             case this.dialogueId == -1:
                 this.catboySad();
-            break;
+                break;
 
             //Happy
             case this.dialogueId == 41:
                 this.catboyHappy();
-            break;
+                break;
 
-            
+
             default:
                 this.catboyNeutral();
         }

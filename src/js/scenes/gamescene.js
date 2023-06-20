@@ -36,6 +36,25 @@ export class GameScene extends Scene {
         playername.innerHTML = name;
     }
 
+    showHappyDialog(text, name) {
+        console.log(text)
+        let createText = document.getElementById("textspan")
+        createText.innerHTML = text;
+
+        let playername = document.getElementById("playername")
+        playername.innerHTML = name;
+    }
+
+    showAngryDialog(text, name) {
+        console.log(text)
+        let createText = document.getElementById("textspan")
+        createText.innerHTML = text;
+
+        let playername = document.getElementById("playername")
+        playername.innerHTML = name;
+    }
+
+
     dialogueOptions(text) {
         let createText = document.getElementById("optionspan")
         createText.innerHTML = text
