@@ -5,8 +5,6 @@ import  bird  from "../json/bird.json";
 export class Birdman extends Actor {
     index = 0
     options = 0
-    angry = 0
-    happy = 0
     dialogueId = 0
     selectedText;
     name;
@@ -14,9 +12,6 @@ export class Birdman extends Actor {
 
     constructor() {
         super();
-
-        let bird = Resources.birdmannormal.toSprite();
-        this.graphics.use(bird);
 
         this.scale = new Vector(0.125, 0.125);
 
@@ -29,12 +24,18 @@ export class Birdman extends Actor {
     }
     
     startDialogue() {
-        let selectedText = bird.intro[this.index].dialogue;
-        let name = bird.intro[this.index].teller;
-        
-        if (selectedText != undefined) {
-            this.scene.startDialogue(selectedText, name)  
-        } 
+        this.selectedText = bird.intro[this.index];
+
+        if (this.selectedText) {
+            let actualText = this.selectedText.dialogue
+            let name = bird.intro[this.index].teller;
+            this.dialogueId = bird.intro[this.index].id;
+            this.scene.startDialogue(actualText, name)
+            this.index++
+        }
+        else {
+            this.dialogOptions()
+        }
     }
 
 
@@ -42,32 +43,48 @@ export class Birdman extends Actor {
 
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
+            this.choiceAvailable = false
+            this.selectedText = "";
             this.startDialogue()
-            this.index++
-            this.dialogueId = bird.intro[this.index].id;
         }
-        if (engine.input.keyboard.wasPressed(Input.Keys.W)) {
+
+        if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
+            this.selectedText = "";
+            this.choiceAvailable = false
+            engine.goToScene('gamescene');
 
         }
-        if (engine.input.keyboard.wasPressed(Input.Keys.S)) {
 
+        if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
+            this.choiceAvailable = false
+            engine.goToScene('startscreen');
         }
 
         this.dialogueIdChecker();
+    }
+
+    dialogOptions(engine) {
+        this.choiceAvailable = true
     }
 
  
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        switch (this.dialogueId >= 0) {
+        if (this.dialogueId < 8) {
+            this.graphics.use(null);
+        } else {
+            this.birdNormal();
+        }
+          
+        switch (this.dialogueId) {
+            //Mock
 
-            //Mad
-            case this.dialogueId == 2:
+            case 14:
+            case 18:
+            case 22:    
                 this.birdMock();
-            
-            default:
-                this.birdNeutral();
+            break; 
         }
     }
 
@@ -76,7 +93,7 @@ export class Birdman extends Actor {
         this.graphics.use(birdmock);
     }
 
-    birdNeutral() {
+    birdNormal() {
         let birdneutral = Resources.birdmannormal.toSprite();
         this.graphics.use(birdneutral);
     }

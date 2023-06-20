@@ -15,8 +15,6 @@ export class Catboy extends Actor {
 
     constructor() {
         super();
-        let cat = Resources.catboynormal.toSprite();
-        this.graphics.use(cat);
 
         this.scale = new Vector(0.125, 0.125);
 
@@ -104,42 +102,44 @@ export class Catboy extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        switch (this.dialogueId >= 0) {
+        if (this.dialogueId < 8) {
+            this.graphics.use(null);
+        } else {
+            this.catboyNeutral();
+        }
+
+        switch (this.dialogueId) {
 
             //Mad
-            case this.dialogueId == 14:
-            case this.dialogueId == 15:
-            case this.dialogueId == 16:
-            case this.dialogueId == 17:
-            case this.dialogueId == 18:
-            case this.dialogueId == 19:
-            case this.dialogueId == 25:
-            case this.dialogueId == 25.5:
-            case this.dialogueId == 26:
-            case this.dialogueId == 35:
-            case this.dialogueId == 36:
+            case 14:
+            case 15:
+            case 16:
+            case 17:
+            case 18:
+            case 19:
+            case 25:
+            case 25.5:
+            case 26:
+            case 35:
+            case 36:
                 this.catboyAngry();
                 break;
 
             //Blush
-            case this.dialogueId == 23:
-            case this.dialogueId == 29:
+            case 23:
+            case 29:
                 this.catboyBlush();
                 break;
 
             //Sad
-            case this.dialogueId == -1:
+            case -1:
                 this.catboySad();
                 break;
 
             //Happy
-            case this.dialogueId == 41:
+            case 41:
                 this.catboyHappy();
                 break;
-
-
-            default:
-                this.catboyNeutral();
         }
     }
 

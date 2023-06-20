@@ -1,0 +1,49 @@
+{
+  "intro": [ 
+      {
+        "id": 1,
+        "dialogue": "I can see some buildings up ahead. They don't seem to be the ones that are around here in the normal world though. Regardless, I might find a way back.",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 2,
+        "dialogue": "Hell, if that weird bird is right, I might even get to bang some chicks!",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 3,
+        "dialogue": "(authors note: No chicks are going to be banged)",
+        "teller": "Game Dev Team"
+      },
+
+      {
+        "id": 4,
+        "dialogue": "The closer I get to the city, the sketchier it looks.",
+        "teller": "My mind"
+      }
+    ],
+    "angry" : [{
+      "id": 1,
+      "dialogue": "what the fuck! you fucking dick!",
+      "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "such an asshole",
+      "teller": "Elliot"
+    }
+    ],
+    "happy" : [{
+      "id": 1,
+      "dialogue": "kiss me",
+      "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "like rn bro",
+      "teller": "Elliot"
+    }
+    ]
+  }

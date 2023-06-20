@@ -37,43 +37,43 @@
         },
 
         {
-            "id": 7.2,
+            "id": 6.3,
             "dialogue": "Alright, just gotta check the time and- OH NO I AM RUNNING LATE!",
             "teller": "My mind"
         },
 
         {
-            "id": 8.2,
+            "id": 6.4,
             "dialogue": "Oh man I'm running late! I guess internally monologing does take up a lot of time. I better get going and fast!",
             "teller": "My mind"
         },
 
         {
-            "id": 9.2,
+            "id": 6.5,
             "dialogue": "I just have to walk up these stairs",
             "teller": "My mind"
         },
 
         {
-            "id": 10.2,
+            "id": 6.6,
             "dialogue": "It will be a breeze, just a few more steps and-",
             "teller": "My mind"
         },
 
         {
-            "id": 11.2,
+            "id": 6.7,
             "dialogue": "Oh no, I misstepped and I can't reach the railing! Man this is going to hurt!",
             "teller": "My mind"
         },
 
         {
-          "id": "normal",
+          "id": 1,
           "dialogue": "Ah man my head feels like it's about to burst. I can barely stand up.",
           "teller": "My mind"
         },
   
         {
-          "id": "smiling",
+          "id": 2,
           "dialogue": "...",
           "teller": "My mind"
         },
@@ -110,7 +110,7 @@
   
         {
           "id": 8,
-          "dialogue": "Hello there, little fellow",
+          "dialogue": "Hello there, little fellow.",
           "teller": "???"
         },
   
