@@ -7,6 +7,8 @@ export class Catboy extends Actor {
     happy = 0
     angry = 0
     options = 0
+    dialogue;
+    angry = false;
     dialogueId = 0
     choiceAvailable = false
     selectedText;
@@ -24,10 +26,11 @@ export class Catboy extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
+        this.dialogue = catboy.intro
     }
 
     startDialogue() {
-        let selectedText = catboy.intro[this.index];
+        let selectedText = this.dialogue[this.index];
 
 
         if (selectedText) {
@@ -54,8 +57,8 @@ export class Catboy extends Actor {
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
-            this.choiceAvailable = false
-            this.showAngryDialog()
+            this.swapEmotions()
+            this.startDialogue()
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
             this.choiceAvailable = false
@@ -65,23 +68,37 @@ export class Catboy extends Actor {
         this.dialogueIdChecker();
     }
 
-    showAngryDialog() {
-        console.log("so angry!")
-        let selectedText = catboy.angry[this.angry];
-
-        if (selectedText) {
-            let actualText = selectedText.dialogue
-            let name = catboy.angry[this.angry].teller;
-            this.dialogueId = catboy.angry[this.angry].id;
-
-            this.scene.showAngryDialog(actualText, name)
-            this.angry++
+    swapEmotions(){ //swapped de emoties van de catboy
+        this.angry = !this.angry // swap emotions
+        console.log(`i am feeling very ${this.angry}`)
+        if(this.angry){
+            this.dialogue = catboy.angry
         }
         else{
-            console.log("go back! fiend!")
+            this.dialogue = catboy.intro
         }
-        // this.dialogueImageChecker() // todo different image?
+        //zet de choiceavailable weer terug op false en de index terug op 0
+        this.choiceAvailable = false 
+        this.index = 0
     }
+
+    // showAngryDialog() {
+    //     console.log("so angry!")
+    //     let selectedText = catboy.angry[this.angry];
+
+    //     if (selectedText) {
+    //         let actualText = selectedText.dialogue
+    //         let name = catboy.angry[this.angry].teller;
+    //         this.dialogueId = catboy.angry[this.angry].id;
+
+    //         this.scene.showAngryDialog(actualText, name)
+    //         this.angry++
+    //     }
+    //     else{
+    //         console.log("go back! fiend!")
+    //     }
+    //     // this.dialogueImageChecker() // todo different image?
+    // }
 
     showHappyDialog() {
         console.log("so happy!")
