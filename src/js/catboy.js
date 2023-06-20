@@ -27,43 +27,18 @@ export class Catboy extends Actor {
     onInitialize(engine) {
         this.game = engine;
 
-        this.jsontext = {
-            // "character 1": ["THATS RIGHT,ACE ATTORNEY IN 7 LANGUAGES", "test2", "test3"],
-            "start": catboy.intro[0].dialogue
-            // "options": catData.options,
-            // "angry": catData.angryDialogue,
-            // "happy": catData.happyDialogue,
-        }
-
     }
     
     startDialogue() {
-        let char1text = catboy.intro[this.index].dialogue;
         let selectedText = catboy.intro[this.index].dialogue;
-        // this.name = catboy.intro[this.index].dialogue;
-        this.name = catboy.intro[this.index].teller;
+        let name = catboy.intro[this.index].teller;
         if (selectedText != undefined) {
-            this.scene.startDialogue(char1text)
+            this.scene.startDialogue(selectedText, name)
+            //this.scene.startDialogue(name)
             
         } 
-
-        // let dialogue = catboy.dialogue;
-        // this.selectedText = dialogue;
-        // console.log(catboy.catboy[0].dialogue)
     }
 
-
-
-    // dialogueOptions() {
-    //     let char1text = this.jsontext["options"]
-    //     let selectedText = char1text[this.options]
-    //     console.log(selectedText)
-
-    //     if (selectedText != undefined) {
-    //         this.scene.dialogueOptions(char1text[this.options])
-    //     }
-
-    // }
 
 
 
@@ -87,28 +62,7 @@ export class Catboy extends Actor {
         this.dialogueIdChecker();
     }
 
-    // angryDia() {
-    //     console.log("angry option")
-    //     let char1text = this.jsontext["angry"]
-    //     let selectedText = char1text[this.angryDialogue]
-
-    //     console.log(selectedText)
-    //     if (selectedText != undefined) {
-    //         this.scene.angryDia(char1text[this.angryDialogue])
-    //     }
-
-    // }
-
-    // happyDia() {
-    //     console.log("happy option")
-    //     let char1text = this.jsontext["happy"]
-    //     let selectedText = char1text[this.happyDialogue]
-
-    //     if (selectedText != undefined) {
-    //         this.scene.happyDia(char1text[this.happyDialogue])
-    //     }
-
-    // }
+ 
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
