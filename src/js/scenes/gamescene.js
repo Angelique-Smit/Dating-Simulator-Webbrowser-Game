@@ -32,7 +32,7 @@ export class GameScene extends Scene {
         let createText = document.getElementById("textspan")
         createText.innerHTML = text;
 
-        let playername = document.getElementById('playername')
+        let playername = document.getElementById("playername")
         playername.innerHTML = name;
     }
 

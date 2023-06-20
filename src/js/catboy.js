@@ -26,16 +26,21 @@ export class Catboy extends Actor {
     }
     onInitialize(engine) {
         this.game = engine;
+
     }
     
     startDialogue() {
         let selectedText = catboy.intro[this.index].dialogue;
-        this.name = catboy.intro[this.index].teller;
-
+        let name = catboy.intro[this.index].teller;
         if (selectedText != undefined) {
-            this.scene.startDialogue(selectedText)
+            this.scene.startDialogue(selectedText, name)
+            //this.scene.startDialogue(name)
+            
         } 
     }
+
+
+
 
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
@@ -52,6 +57,8 @@ export class Catboy extends Actor {
 
         this.dialogueIdChecker();
     }
+
+ 
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
