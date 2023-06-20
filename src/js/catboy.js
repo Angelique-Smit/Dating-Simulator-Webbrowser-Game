@@ -32,10 +32,9 @@ export class Catboy extends Actor {
     startDialogue() {
         let selectedText = catboy.intro[this.index].dialogue;
         let name = catboy.intro[this.index].teller;
+        
         if (selectedText != undefined) {
-            this.scene.startDialogue(selectedText, name)
-            //this.scene.startDialogue(name)
-            
+            this.scene.startDialogue(selectedText, name)  
         } 
     }
 
