@@ -1,25 +1,27 @@
-import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
+import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } from "excalibur";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
+import { Birdman } from "../bird.js";
 
-export class Intro extends Actor {
+export class Intro extends Scene {
     game;
-    dialogueText
+    dialogueText;
     // optionsText
     name;
     constructor() {
         super();
     }
 
-    onInitialize(engine){
+    onInitialize(){
         //Actors
         const bg = new GenericBg();
         this.add(bg);
 
+        const bird = new Birdman();
+        this.add(bird);
+
         const box = new TextBox();
         this.add(box);
-
-        this.game = engine;      
     }
 
     startDialogue(text, name) {
