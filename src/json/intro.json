@@ -1,0 +1,70 @@
+{
+  "intro": [ 
+      {
+        "id": 1,
+        "dialogue": "Flowers? Check. Those cheesy heart shaped boxes filled with chocolates you see in every romance movie? Check. Looks like I've got everything for my date with Vanessa.",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 2,
+        "dialogue": "I still have no idea how I banked the hottest chick in class, but I'm definitally not complaining. Her long hair, her beautiful eyes and her very big, firm  and well rounded...",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 3,
+        "dialogue": "Personality.",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 4,
+        "dialogue": "To think she is waiting in the park for me just up ahead. Man am I nervous. I've been crushing on her ever since the start of the year.",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 5,
+        "dialogue": "I absolutely, without a doubt, can't afford to screw this up. I need her to think I'm cool and laid back. Not some stinky basement dweller playing games all day.",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 6,
+        "dialogue": "I mean, I am, but she doesn't know that yet so I might actually have a chance.",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 7,
+        "dialogue": "Alright, just gotta check the time and- OH NO I AM RUNNING LATE!",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 8,
+        "dialogue": "Oh man I'm running late! I guess internally monologing does take up a lot of time. I better get going and fast!",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 9,
+        "dialogue": "I just have to walk up these stairs",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 10,
+        "dialogue": "It will be a breeze, just a few more steps and-",
+        "teller": "My mind"
+      },
+
+      {
+        "id": 11,
+        "dialogue": "Oh no, I misstepped and I can't reach the railing! Man this is going to hurt!",
+        "teller": "My mind"
+      }
+    ]
+}
+      

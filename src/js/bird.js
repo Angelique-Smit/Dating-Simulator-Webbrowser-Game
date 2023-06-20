@@ -1,8 +1,7 @@
 import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "./resources.js";
-import catboy from "../json/catboy.json"
 
-export class Catboy extends Actor {
+export class Birdman extends Actor {
     index = 0
     options = 0
     angry = 0
@@ -14,8 +13,9 @@ export class Catboy extends Actor {
 
     constructor() {
         super();
-        let cat = Resources.catboynormal.toSprite();
-        this.graphics.use(cat);
+
+        let bird = Resources.birdmannormal.toSprite();
+        this.graphics.use(bird);
 
         this.scale = new Vector(0.125, 0.125);
 
@@ -30,7 +30,7 @@ export class Catboy extends Actor {
     startDialogue() {
         let selectedText = catboy.intro[this.index].dialogue;
         let name = catboy.intro[this.index].teller;
-
+        
         if (selectedText != undefined) {
             this.scene.startDialogue(selectedText, name)  
         } 
