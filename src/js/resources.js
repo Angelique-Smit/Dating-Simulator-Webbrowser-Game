@@ -12,6 +12,8 @@ import octohappy from '../images/octoladyhappy.png'
 import octosad from '../images/octoladysad.png'
 import octoangry from '../images/octoladyangry.png'
 import octoblush from '../images/octoladyblush.png'
+import birdnormal from '../images/birdnormal.png'
+import birdmock from '../images/birdmock.png'
 
 const Resources = {
     start: new ImageSource(startscreenImage),
@@ -27,10 +29,12 @@ const Resources = {
     octoladysad: new ImageSource(octosad),
     octoladyangry: new ImageSource(octoangry),
     octoladyblush: new ImageSource(octoblush),
+    birdmannormal: new ImageSource(birdnormal),
+    birdmanmock: new ImageSource(birdmock)
 
 }
 const ResourceLoader = new Loader([Resources.start, Resources.gamegenericbg, Resources.textbox, Resources.catboynormal, Resources.catboyhappy, 
       Resources.catboyangry, Resources.catboysad, Resources.catboyblush, Resources.octoladynormal, Resources.octoladyhappy, Resources.octoladysad, 
-      Resources.octoladyangry, Resources.octoladyblush])
+      Resources.octoladyangry, Resources.octoladyblush, Resources.birdmannormal, Resources.birdmanmock])
 
 export { Resources, ResourceLoader }

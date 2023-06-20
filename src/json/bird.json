@@ -1,0 +1,142 @@
+{
+    "intro": [ 
+        {
+          "id": 1,
+          "dialogue": "Ah man my head feels like it's about to burst. I can barely stand up.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 2,
+          "dialogue": "...",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 3,
+          "dialogue": "Hold up a second. Where am I? This doesn't look anything like the park. What happened? I was walking up the stairs a minute ago!",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 4,
+          "dialogue": "Okay lets recap. I fell down the stairs, blacked out, woke up and now I'm here. There is only 1 logical explanation.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 5,
+          "dialogue": "Alien. Abduction.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 6,
+          "dialogue": "They made me trip, picked me up in their spaceship, harvested my organs and dropped me back here.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 7,
+          "dialogue": "Wait, no. I still have my organs. But how did I get here? It doesn't feel like I was out for long.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 8,
+          "dialogue": "Hello there, little fellow",
+          "teller": "???"
+        },
+  
+        {
+          "id": 9,
+          "dialogue": "A bird? A speaking bird? Since when can birds speak?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 10,
+          "dialogue": "My my, such an odd creature! I've never seen anyone like you before?",
+          "teller": "???"
+        },
+
+        {
+          "id": 11,
+          "dialogue": "What are you?",
+          "teller": "Me"
+        },
+
+        {
+            "id": 12,
+            "dialogue": "I think it's better if you ask me WHO I am. The name's Corvo. I brought you here to fulfill your destiny!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 13,
+            "dialogue": "What destiny? My destiny was to have a date with my smoking hot friend! ",
+            "teller": "Me"
+        },
+
+        {
+            "id": 14,
+            "dialogue": "Do you really think Vanessa would have wanted to go out with such a sad little loser like you? You've got no dating experience!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 15,
+            "dialogue": "Fwie fwie fwie fwie! Don't make me laugh! But not to fear because I am here! I will guide you and make sure you ace your dates in no time!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 16,
+            "dialogue": "What? What dates? I just want to go on my date with Vanessa!",
+            "teller": "Me"
+        },
+
+        {
+            "id": 17,
+            "dialogue": "You see, this area is filled with cute bachelors and bachelorettes looking for love. You should practice romancing them.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 18,
+            "dialogue": "If you do that succesfully, you might have a shot with Vanessa. fwie fwie fwie.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 19,
+            "dialogue": "How do I do that?",
+            "teller": "Me"
+        },
+
+        {
+            "id": 20,
+            "dialogue": "Talk to them, my little fellow, make yourself out to be interesting, give them compliments to increase their love meter",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 21,
+            "dialogue": "Be warned though, answering questions wrong will make the lovemeter go down.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 22,
+            "dialogue": "I think it's time to send you out to the wild now, you can do it little fellow. Or not. fwie fwie fwie.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 23,
+            "dialogue": "Regardless, I'll help you if you mess up.",
+            "teller": "My mind"
+        }
+      ]
+  }
+        
