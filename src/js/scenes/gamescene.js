@@ -1,7 +1,7 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } from "excalibur";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
-import { Catboy } from "../catboy.js";
+import { Catboy } from "../catboyfiles/catboy.js";
 import { Resources, ResourceLoader } from '../resources.js';
 
     export class IntroCatScene extends Scene {
@@ -32,7 +32,6 @@ import { Resources, ResourceLoader } from '../resources.js';
         }
 
         startDialogue(text, name, id) {
-            console.log(id)
             let createText = document.getElementById("textspan")
             createText.innerHTML = text;
 
@@ -40,7 +39,6 @@ import { Resources, ResourceLoader } from '../resources.js';
             playername.innerHTML = name;
 
             if (id > 3) {
-                console.log("city bg")
                 let bg1 = Resources.alleybg.toSprite();
                 this.bg.scale = new Vector(0.480 , 0.500);
                 this.bg.pos = new Vector(575, 300)

@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
-import { Resources, ResourceLoader } from "./resources.js";
-import catboy from "../json/catboy.json"
+import { Resources, ResourceLoader } from "../resources.js";
+import catboy from "..//json/catboy.json";
 
 export class Catboy extends Actor {
     index = 0
@@ -112,8 +112,7 @@ export class Catboy extends Actor {
             this.happy++
         }
 
-        console.log(engine);
-        engine.goToScene('catdate');
+        engine.goToScene('catdate1');
         this.dialogueIdChecker();
         // this.engine.addScene('catdate', new Catdate())
         // this.engine.goToScene('catdate')

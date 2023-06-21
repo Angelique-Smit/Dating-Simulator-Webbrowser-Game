@@ -1,7 +1,7 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } from "excalibur";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
-import { Catboy } from "../catboy.js";
+import { Catboy } from "../catboyfiles/catboyd1.js";
 import { Resources, ResourceLoader } from '../resources.js';
 
     export class CatDate extends Scene {
@@ -12,6 +12,7 @@ import { Resources, ResourceLoader } from '../resources.js';
         name;
         constructor() {
             super();
+            console.log("I AM IN THE DATE1 SCENE")
         }
 
         onInitialize(){
@@ -20,6 +21,9 @@ import { Resources, ResourceLoader } from '../resources.js';
                 this.bg.scale = new Vector(0.305 , 0.305);
                 this.bg.graphics.use(bg1);
             this.add(this.bg)
+
+            const cat = new Catboy();
+            this.add(cat);
 
             const box = new TextBox();
             this.add(box);
@@ -35,14 +39,6 @@ import { Resources, ResourceLoader } from '../resources.js';
 
             let playername = document.getElementById("playername")
             playername.innerHTML = name;
-
-            if (id > 10) {
-                console.log("city bg")
-                let bg1 = Resources.alleybg.toSprite();
-                this.bg.scale = new Vector(0.480 , 0.500);
-                this.bg.pos = new Vector(575, 300)
-                this.bg.graphics.use(bg1);
-            }
         }
 
     showHappyDialog(text, name) {
