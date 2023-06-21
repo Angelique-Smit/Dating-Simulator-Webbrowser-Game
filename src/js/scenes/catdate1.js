@@ -4,7 +4,7 @@ import { TextBox } from "../textbox.js";
 import { Catboy } from "../catboy.js";
 import { Resources, ResourceLoader } from '../resources.js';
 
-    export class IntroCatScene extends Scene {
+    export class CatDate extends Scene {
         game;
         dialogueText;
         bg
@@ -21,9 +21,6 @@ import { Resources, ResourceLoader } from '../resources.js';
                 this.bg.graphics.use(bg1);
             this.add(this.bg)
 
-            const cat = new Catboy();
-            this.add(cat);
-
             const box = new TextBox();
             this.add(box);
 
@@ -39,7 +36,7 @@ import { Resources, ResourceLoader } from '../resources.js';
             let playername = document.getElementById("playername")
             playername.innerHTML = name;
 
-            if (id > 3) {
+            if (id > 10) {
                 console.log("city bg")
                 let bg1 = Resources.alleybg.toSprite();
                 this.bg.scale = new Vector(0.480 , 0.500);

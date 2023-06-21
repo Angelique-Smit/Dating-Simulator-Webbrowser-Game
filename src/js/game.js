@@ -3,7 +3,7 @@ import { Actor, Engine, Vector } from "excalibur"
 import { Resources, ResourceLoader } from './resources.js'
 import { Startscreen } from './scenes/startscreen.js'
 import { IntroCatScene } from './scenes/gamescene.js'
-import { Catdate } from './scenes/catdate1'
+import { CatDate } from './scenes/catdate1'
 
 export class Game extends Engine {
     constructor() {
@@ -14,7 +14,7 @@ export class Game extends Engine {
     startGame() {
         this.addScene('gamescene', new IntroCatScene());
         this.addScene('startscreen', new Startscreen())
-        this.addScene('catdate', new Catdate())
+        this.addScene('catdate', new CatDate())
         this.goToScene('startscreen')
     }
 }
