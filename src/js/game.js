@@ -5,7 +5,7 @@ import { Startscreen } from './scenes/startscreen.js'
 import { GameScene } from './scenes/gamescene.js'
 
 export class Game extends Engine {
-
+    indexNumberBird = 0;
     constructor() {
         super({width: 1147, height: 525})
         this.start(ResourceLoader).then(() => this.startGame())

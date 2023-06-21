@@ -2,6 +2,7 @@ import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "exca
 import { Catboy } from "../catboy.js";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
+import { Mock } from "../mockfantasypark.js";
 
 export class GameScene extends Scene {
     game;
@@ -14,6 +15,9 @@ export class GameScene extends Scene {
 
     onInitialize(engine){
         //add any actors under here
+        let mock = new Mock();
+        this.add(mock);
+
         const bg = new GenericBg();
         this.add(bg);
 

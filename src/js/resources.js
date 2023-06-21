@@ -15,6 +15,8 @@ import octoblush from '../images/octoladyblush.png'
 import birdnormal from '../images/birdnormal.png'
 import birdmock from '../images/birdmock.png'
 import transrights from '../images/transparent.png'
+import reallife from '../images/staircase.png'
+import black from '../images/blackout.png'
 
 const Resources = {
     start: new ImageSource(startscreenImage),
@@ -32,11 +34,14 @@ const Resources = {
     octoladyblush: new ImageSource(octoblush),
     birdmannormal: new ImageSource(birdnormal),
     birdmanmock: new ImageSource(birdmock),
-    png: new ImageSource(transrights)
+    png: new ImageSource(transrights),
+    reallifebg: new ImageSource(reallife),
+    blackoutbg: new ImageSource(black),
 
 }
 const ResourceLoader = new Loader([Resources.start, Resources.gamegenericbg, Resources.textbox, Resources.catboynormal, Resources.catboyhappy, 
       Resources.catboyangry, Resources.catboysad, Resources.catboyblush, Resources.octoladynormal, Resources.octoladyhappy, Resources.octoladysad, 
-      Resources.octoladyangry, Resources.octoladyblush, Resources.birdmannormal, Resources.birdmanmock, Resources.png])
+      Resources.octoladyangry, Resources.octoladyblush, Resources.birdmannormal, Resources.birdmanmock, Resources.png, Resources.reallifebg, 
+      Resources.blackoutbg])
 
 export { Resources, ResourceLoader }

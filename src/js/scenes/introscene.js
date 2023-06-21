@@ -2,6 +2,8 @@ import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } fro
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
 import { Birdman } from "../bird.js";
+import { Mock } from "../mockfantasypark.js";
+import { Resources, ResourceLoader } from '../resources.js';
 
 export class Intro extends Scene {
     game;
@@ -14,6 +16,11 @@ export class Intro extends Scene {
 
     onInitialize(){
         //Actors
+        let mockery = new Mock();
+        let bg3 = Resources.reallifebg.toSprite();
+        mockery.graphics.use(bg3);
+        this.add(mockery);
+
         const bg = new GenericBg();
         this.add(bg);
 

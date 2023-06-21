@@ -23,14 +23,15 @@ export class Birdman extends Actor {
         this.game = engine;
     }
     
-    startDialogue() {
-        this.selectedText = bird.intro[this.index];
+    startDialogue(engine) {
+        let selectedText =  bird.intro[this.index];
 
-        if (this.selectedText) {
-            let actualText = this.selectedText.dialogue
+        if (selectedText) {
+            let actualText = selectedText.dialogue
             let name = bird.intro[this.index].teller;
             this.dialogueId = bird.intro[this.index].id;
             this.scene.startDialogue(actualText, name)
+            engine.indexNumberBird = bird.intro[this.index].id;
             this.index++
         }
         else {
@@ -45,7 +46,7 @@ export class Birdman extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
             this.choiceAvailable = false
             this.selectedText = "";
-            this.startDialogue()
+            this.startDialogue(engine)
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
@@ -63,7 +64,7 @@ export class Birdman extends Actor {
         this.dialogueIdChecker();
     }
 
-    dialogOptions(engine) {
+    dialogOptions() {
         this.choiceAvailable = true
     }
 
@@ -71,7 +72,7 @@ export class Birdman extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 8) {
+        if (this.dialogueId < 19) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
@@ -80,9 +81,11 @@ export class Birdman extends Actor {
           
         switch (this.dialogueId) {
             //Mock
-            case 14:
-            case 18:
-            case 22:    
+            case 26:
+            case 27:
+            case 30:  
+            case 34:      
+            case 37:  
                 this.birdMock();
             break; 
         }
