@@ -24,6 +24,7 @@ export class Catdate extends Scene {
         this.add(box);
 
         //anything else under here
-        this.game = engine;        
+        this.game = engine;    
+        console.log("hi new scene!!")    
     }
 }
