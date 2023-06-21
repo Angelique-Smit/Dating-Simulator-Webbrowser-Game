@@ -33,7 +33,7 @@ export class Catboy extends Actor {
         this.optionsdialogue = catboy.options
     }
 
-    startDialogue() {
+    startDialogue(engine) {
         let selectedText = this.dialogue[this.index];
 
 
@@ -41,7 +41,7 @@ export class Catboy extends Actor {
             let actualText = selectedText.dialogue
             let name = catboy.intro[this.index].teller;
             this.dialogueId = catboy.intro[this.index].id;
-            this.scene.startDialogue(actualText, name)
+            this.scene.startDialogue(actualText, name, catboy.intro[this.index].id)
             this.index++
         }
         else {
@@ -54,7 +54,6 @@ export class Catboy extends Actor {
         console.log("press w or s")
 
         let selectedText = this.optionsdialogue[this.options];
-
 
         if (selectedText) {
             let actualText = selectedText.dialogue
@@ -70,12 +69,12 @@ export class Catboy extends Actor {
 
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space) && !this.choiceAvailable) {
-            this.startDialogue()
+            this.startDialogue(engine)
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
             this.swapEmotions()
-            this.startDialogue()
+            this.startDialogue(engine)
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
             // this.choiceAvailable = false

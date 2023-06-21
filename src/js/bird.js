@@ -12,7 +12,7 @@ export class Birdman extends Actor {
 
     constructor() {
         super();
-
+        console.log("yo i am bird")
         this.scale = new Vector(0.125, 0.125);
 
         this.pos = new Vector(550, 210);
@@ -30,8 +30,12 @@ export class Birdman extends Actor {
             let actualText = selectedText.dialogue
             let name = bird.intro[this.index].teller;
             this.dialogueId = bird.intro[this.index].id;
-            this.scene.startDialogue(actualText, name)
-            engine.indexNumberBird = bird.intro[this.index].id;
+            console.log(name, bird.intro[this.index].id)
+            this.scene.startDialogue(actualText, name, bird.intro[this.index].id)
+            // engine.indexNumberBird = bird.intro[this.index].id;
+
+            //this.scene.changeBackground(bird.intro[this.index].id)
+
             this.index++
         }
         else {

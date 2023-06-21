@@ -17,6 +17,8 @@ import birdmock from '../images/birdmock.png'
 import transrights from '../images/transparent.png'
 import reallife from '../images/staircase.png'
 import black from '../images/blackout.png'
+import alleyway from '../images/backgroundalley.png'
+import pond from '../images/backgroundpond.png'
 
 const Resources = {
     start: new ImageSource(startscreenImage),
@@ -37,11 +39,13 @@ const Resources = {
     png: new ImageSource(transrights),
     reallifebg: new ImageSource(reallife),
     blackoutbg: new ImageSource(black),
+    alleybg: new ImageSource(alleyway),
+    pondbg: new ImageSource(pond)
 
 }
 const ResourceLoader = new Loader([Resources.start, Resources.gamegenericbg, Resources.textbox, Resources.catboynormal, Resources.catboyhappy, 
       Resources.catboyangry, Resources.catboysad, Resources.catboyblush, Resources.octoladynormal, Resources.octoladyhappy, Resources.octoladysad, 
       Resources.octoladyangry, Resources.octoladyblush, Resources.birdmannormal, Resources.birdmanmock, Resources.png, Resources.reallifebg, 
-      Resources.blackoutbg])
+      Resources.blackoutbg, Resources.alleybg, Resources.pondbg])
 
 export { Resources, ResourceLoader }

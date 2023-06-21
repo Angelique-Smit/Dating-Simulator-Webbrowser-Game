@@ -1,6 +1,8 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
 import { Bg } from '../startbg'
 import { Intro } from './introscene.js'
+import { IntroCatScene } from './gamescene'
+
 
 export class Startscreen extends Scene {
     constructor() {
@@ -41,8 +43,8 @@ export class Startscreen extends Scene {
     }
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
-            engine.addScene('introscene', new Intro());
-            engine.goToScene('introscene');
+            engine.addScene('gamescene', new IntroCatScene());
+            engine.goToScene('gamescene');
         }
     }
 
