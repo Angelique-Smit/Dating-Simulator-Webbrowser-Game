@@ -72,14 +72,14 @@ export class Birdman extends Actor {
     //Add cases to add in certain sprites
     dialogueIdChecker() {
         if (this.dialogueId < 8) {
-            this.graphics.use(null);
+            let transparent = Resources.png.toSprite();
+            this.graphics.use(transparent);
         } else {
             this.birdNormal();
         }
           
         switch (this.dialogueId) {
             //Mock
-
             case 14:
             case 18:
             case 22:    
