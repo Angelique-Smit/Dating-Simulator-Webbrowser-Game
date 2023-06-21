@@ -1,4 +1,4 @@
-import { Actor, Random, Input, Vector } from "excalibur";
+import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "./resources.js";
 import catboy from "../json/catboy.json"
 
@@ -14,19 +14,23 @@ export class Catboy extends Actor {
     selectedText;
     name;
     game;
+    engine;
 
-    constructor() {
+    constructor(engine) {
         super();
 
         this.scale = new Vector(0.125, 0.125);
 
         this.pos = new Vector(550, 210);
         this.vel = new Vector(0, 0);
+
+        this.engine = engine
     }
 
     onInitialize(engine) {
         this.game = engine;
         this.dialogue = catboy.intro
+        this.optionsdialogue = catboy.options
     }
 
     startDialogue() {
@@ -41,13 +45,26 @@ export class Catboy extends Actor {
             this.index++
         }
         else {
+            this.choiceAvailable = true
             this.dialogOptions()
         }
     }
 
     dialogOptions() {
         console.log("press w or s")
-        this.choiceAvailable = true
+
+        let selectedText = this.optionsdialogue[this.options];
+
+
+        if (selectedText) {
+            let actualText = selectedText.dialogue
+            let name = catboy.options[this.options].teller;
+            this.dialogueId = catboy.options[this.options].id;
+            this.scene.dialogOptions(actualText, name)
+            this.options++
+        }
+        console.log(selectedText)
+        this.dialogueIdChecker();
     }
 
 
@@ -61,8 +78,8 @@ export class Catboy extends Actor {
             this.startDialogue()
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
-            this.choiceAvailable = false
-            this.showHappyDialog()
+            // this.choiceAvailable = false
+            this.showHappyDialog(engine)
         }
 
         this.dialogueIdChecker();
@@ -82,25 +99,7 @@ export class Catboy extends Actor {
         this.index = 0
     }
 
-    // showAngryDialog() {
-    //     console.log("so angry!")
-    //     let selectedText = catboy.angry[this.angry];
-
-    //     if (selectedText) {
-    //         let actualText = selectedText.dialogue
-    //         let name = catboy.angry[this.angry].teller;
-    //         this.dialogueId = catboy.angry[this.angry].id;
-
-    //         this.scene.showAngryDialog(actualText, name)
-    //         this.angry++
-    //     }
-    //     else{
-    //         console.log("go back! fiend!")
-    //     }
-    //     // this.dialogueImageChecker() // todo different image?
-    // }
-
-    showHappyDialog() {
+    showHappyDialog(engine) {
         console.log("so happy!")
         let selectedText = catboy.happy[this.happy];
 
@@ -113,7 +112,12 @@ export class Catboy extends Actor {
             this.scene.showHappyDialog(actualText, name)
             this.happy++
         }
-        // this.dialogueImageChecker() // todo different image?
+
+        console.log(engine);
+        engine.goToScene('catdate');
+        this.dialogueIdChecker();
+        // this.engine.addScene('catdate', new Catdate())
+        // this.engine.goToScene('catdate')
     }
 
 

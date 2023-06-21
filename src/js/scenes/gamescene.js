@@ -59,9 +59,12 @@ export class GameScene extends Scene {
     }
 
 
-    dialogueOptions(text) {
-        let createText = document.getElementById("optionspan")
+    dialogOptions(text,name) {
+        let createText = document.getElementById("textspan")
         createText.innerHTML = text
+
+        let playername = document.getElementById("playername")
+        playername.innerHTML = name;
         
     }
     angryDia(text) {

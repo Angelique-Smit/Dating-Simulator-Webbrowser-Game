@@ -267,5 +267,34 @@
         "dialogue": "Hmmmm. Fine.",
         "teller": "Elliot"
       }
+    ],
+    "options":[
+      {
+        "id": 1,
+        "dialogue": "Test my emotions through w or s",
+        "teller": "Elliot"
+      }
+    ],
+    "angry" : [{
+      "id": 1,
+      "dialogue": "what the fuck! you fucking dick!",
+      "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "such an asshole",
+      "teller": "Elliot"
+    }
+    ],
+    "happy" : [{
+      "id": 1,
+      "dialogue": "kiss me",
+      "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "like rn bro",
+      "teller": "Elliot"
+    }
     ]
   }
