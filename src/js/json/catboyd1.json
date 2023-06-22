@@ -302,30 +302,30 @@
     "options" :[
       {
         "id": 1,
-        "dialogue": "",
+        "dialogue": "bro",
         "teller": "Elliot"
       }
     ],
     "angry" : [{
       "id": 1,
-      "dialogue": "",
+      "dialogue": "kiss me",
       "teller": "Elliot"
     },
     {
       "id": 2,
-      "dialogue": "",
+      "dialogue": "like rn bro",
       "teller": "Elliot"
     }
     ],
 
     "happy" : [{
       "id": 1,
-      "dialogue": "",
+      "dialogue": "bro",
       "teller": "Elliot"
     },
     {
       "id": 2,
-      "dialogue": "",
+      "dialogue": "br bro",
       "teller": "Elliot"
     }
     ]

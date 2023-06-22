@@ -1,7 +1,7 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } from "excalibur";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
-import { Birdman } from "../bird.js";
+import { Birdman } from "../birdman/bird.js";
 import { Mock } from "../mockfantasypark.js";
 import { Resources, ResourceLoader } from '../resources.js';
 

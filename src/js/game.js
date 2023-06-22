@@ -4,6 +4,7 @@ import { Resources, ResourceLoader } from './resources.js'
 import { Startscreen } from './scenes/startscreen.js'
 import { IntroCatScene } from './scenes/gamescene.js'
 import { CatDate } from './scenes/catdate1'
+import { Corvotalk } from './scenes/catboycorvo1'
 
 export class Game extends Engine {
     constructor() {
@@ -15,6 +16,7 @@ export class Game extends Engine {
         this.addScene('gamescene', new IntroCatScene());
         this.addScene('startscreen', new Startscreen())
         this.addScene('catdate1', new CatDate());
+        this.addScene('catboycorvo1', new Corvotalk());
         this.goToScene('catdate1');
         //this.goToScene('startscreen')
     }
