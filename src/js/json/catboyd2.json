@@ -1,0 +1,279 @@
+{
+    "Catdate": [ 
+        {
+          "id": 1,
+          "dialogue": "No matter how much screaming I heard, nothing could have prepared me for the state I found Elliot in. He was groaning in pain with new wounds on him.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 2,
+          "dialogue": "Elliot, what happened? You look awful!",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 3,
+          "dialogue": "I'm fine, it's nothing serious. It will heal on its own.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 4,
+          "dialogue": "Are you serious? You're bleeding badly!",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 5,
+          "dialogue": "I'm FINE. I just need to get up and find something to tie around my wounds.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 6,
+          "dialogue": "Are you insane? You'll make your wounds even bigger and deeper that way. Don't move. I'm going to rip my shirt apart, and I'll use the cloth to cover the wound.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 7,
+          "dialogue": "You don't need to rip your shirt apart...",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 8,
+          "dialogue": "Yeah, but I want to. You're in no position to move. Now sit still and let me patch you up.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 9,
+          "dialogue": "Okay...",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 10,
+          "dialogue": "...",
+          "teller": ""
+        },
+  
+        {
+          "id": 11,
+          "dialogue": "There, all done. I would wait with moving until the wounds have fully closed. What happened to you though?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 12,
+          "dialogue": "I don't really want to talk about it...",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 13,
+          "dialogue": "You can't say that after I find you all beaten up in some back alley! I want you to tell me what happened.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 14,
+          "dialogue": "Fine, I tried to rob someone because I was short on cash, but they pulled a knife on me.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 15,
+          "dialogue": "You got STABBED?!?",
+          "teller": "Me"
+        },
+  
+  
+        {
+          "id": 16,
+          "dialogue": "They were too slow for that, but the knife did slice my stomach. The wound isn't too deep, just quite long.",
+          "teller": "Elliot"
+        },
+  
+  
+        {
+          "id": 17,
+          "dialogue": "I told you not to rob people...",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 18,
+          "dialogue": "Well, SOME people can't easily get a job, money, or a house, okay? What am I supposed to do? Starve to death? Freeze to death?",
+          "teller": "Elliot"
+        },
+  
+  
+        {
+          "id": 19,
+          "dialogue": "I get why you do it. There are other ways for you to make money that don't involve robbing people for their cash.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 20,
+          "dialogue": "ARE YOU IMPLYING I SHOULD WHORE MYSELF OUT?",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 21,
+          "dialogue": "Not at all! We can try to get you hired in some of these corner stores. Sure, they're awful, but it's safer than trying to rob people!",
+          "teller": "Me"
+        },
+  
+  
+        {
+          "id": 22,
+          "dialogue": "No one wants to hire a homeless person. No one wants to help a homeless person.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 23,
+          "dialogue": "I'm helping you right now, aren't I?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 24,
+          "dialogue": "It's not the same. I appreciate you helping me, but no one has ever done that before.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 25,
+          "dialogue": "Well, if I'm the first, I'll personally make sure I'm not the last.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 25.5,
+          "dialogue": "Why do you care so much about helping others?",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 26,
+          "dialogue": "No one deserves to live like this, Elliot. You deserve a roof over your head, food on the table, and to not be stabbed in a back alley.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 27,
+          "dialogue": "What are you? A vile communist?",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 28,
+          "dialogue": "If you living in a humane situation makes me a vile communist, then yes, I am.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 29,
+          "dialogue": "What are you gonna do? Drag me across town until someone hires me? Trust me, I've tried.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 30,
+          "dialogue": "You know what? Yeah, I am going to do that. I'll drag you across the world just so I can make sure I don't have to see you bleeding out again.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 31,
+          "dialogue": "You'd really do all that just to help me out?",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 32,
+          "dialogue": "Yup! I don't wanna live my life knowing I could have helped someone out of homelessness.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 33,
+          "dialogue": "That's very, caring of you.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 34,
+          "dialogue": "I almost forgot! I brought you some fish. I was hoping to ask you out on a second date with them, but I don't think you're able to go anywhere in your current state.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 35,
+          "dialogue": "I doubt it. But I tell you what, if you give me those fishies now, I'll go on a date with you once I'm better. Deal?",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 36,
+          "dialogue": "You just want the fish, don't you?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 37,
+          "dialogue": "Well, the fishies are convincing, but I do also want to go out with you. You should come back to visit me in a week; I bet I'll be better!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 38,
+          "dialogue": "Alright, I'll make sure to come back next week. You better not rob anyone until then alright!SS",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 39,
+          "dialogue": "Got it boss. No more robbing!",
+          "teller": "Elliot"
+        }
+      ],
+  
+      "options" :[
+        {
+          "id": 1,
+          "dialogue": "bro",
+          "teller": "Elliot"
+        }
+      ],
+      "angry" : [{
+        "id": 1,
+        "dialogue": "kiss me",
+        "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "like rn bro",
+        "teller": "Elliot"
+      }
+      ],
+  
+      "happy" : [{
+        "id": 1,
+        "dialogue": "bro",
+        "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "br bro",
+        "teller": "Elliot"
+      }
+      ]
+    }
+  

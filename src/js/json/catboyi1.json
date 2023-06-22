@@ -1,0 +1,101 @@
+{
+    "Catdate": [ 
+        {
+          "id": 1,
+          "dialogue": "It feels like my life has flipped upside down. Yesterday, I got sent to an alternative reality and now I'm suddenly on my way to score a second date with a cute catboy.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 2,
+          "dialogue": "I'm not exactly minding it, but I still have to find a way to get home.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 3,
+          "dialogue": "Also, why is fish so expensive? I never really bought fish before, but dating this catboy is killing my wallet! I get that fishing is difficult, but man do I wish I could just give him some cat food.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 4,
+          "dialogue": "The city doesn't look any better than yesterday. It's dirty, deserted and feels like I'm being watched by both rats and gang members from the shadows.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 5,
+          "dialogue": "Couldn't Elliot just be homeless in the better part of the city? It would make me feel safer trying to search for him at least. I really can't imagine he makes much money here. ",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 6,
+          "dialogue": "At least not in a legal way.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 7,
+          "dialogue": "Sure, there are a lot of liquor and tobacco stores, but I imagine they don't like hiring homeless people. Elliot looks quite beat up, which probably doesn't help either.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 8,
+          "dialogue": "The further I walk into the city, the more screaming I hear. I feel bad for anyone who has to live here.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 9,
+          "dialogue": "Damn, it really sounds like someone is being beaten up ahead. Kind of sounds like a cat is screaming in pain.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 10,
+          "dialogue": "Cat, screaming in pain. Oh no, oh no no no please tell me it's Elliot. Please tell me he is okay.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 11,
+          "dialogue": "I better hurry and check up on that cat in case it's Elliot. The closer I get the louder and more painful the cries for help sound.",
+          "teller": "My mind"
+        }
+      ],
+  
+      "options" :[
+        {
+          "id": 1,
+          "dialogue": "bro",
+          "teller": "Elliot"
+        }
+      ],
+      "angry" : [{
+        "id": 1,
+        "dialogue": "kiss me",
+        "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "like rn bro",
+        "teller": "Elliot"
+      }
+      ],
+  
+      "happy" : [{
+        "id": 1,
+        "dialogue": "bro",
+        "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "br bro",
+        "teller": "Elliot"
+      }
+      ]
+    }
+  
