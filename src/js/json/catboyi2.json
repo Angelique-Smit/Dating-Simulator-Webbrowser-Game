@@ -121,30 +121,21 @@
       "options" :[
         {
           "id": 1,
-          "dialogue": "bro",
-          "teller": "Elliot"
+          "dialogue": "Do you want to go on a date right now?\nPress W for no.\nPress S for yes.",
+          "teller": ""
         }
       ],
+
       "angry" : [{
         "id": 1,
-        "dialogue": "kiss me",
-        "teller": "Elliot"
-      },
-      {
-        "id": 2,
-        "dialogue": "like rn bro",
+        "dialogue": "Noooooo you MEANIE! Why don't you want to anymore? You still have a date voucher yoou know...",
         "teller": "Elliot"
       }
       ],
   
       "happy" : [{
         "id": 1,
-        "dialogue": "bro",
-        "teller": "Elliot"
-      },
-      {
-        "id": 2,
-        "dialogue": "br bro",
+        "dialogue": "Yaay! I'm so excited! Lets go!",
         "teller": "Elliot"
       }
       ]
