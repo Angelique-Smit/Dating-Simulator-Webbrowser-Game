@@ -15,7 +15,7 @@ export class Catboy extends Actor {
     name;
     game;
     engine;
-    // angryid = 0;
+    angryid = 0;
     // happyid = 0;
 
     constructor(engine) {
@@ -38,15 +38,15 @@ export class Catboy extends Actor {
     startDialogue(engine) {
         let selectedText = this.dialogue[this.index];
 
-
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboyd1.Catdate[this.index].teller;
-            this.dialogueId = catboyd1.Catdate[this.index].id;
-            this.scene.startDialogue(actualText, name, catboyd1.Catdate[this.index].id)
+            let name = this.dialogue[this.index].teller;
+            this.dialogueId = this.dialogue[this.index].id;
+            this.scene.startDialogue(actualText, name, this.dialogueId)
             this.index++
         }
         else {
+            console.log("i am out of dialogue, now show the options")
             this.choiceAvailable = true
             this.dialogOptions()
         }
@@ -57,12 +57,14 @@ export class Catboy extends Actor {
 
         let selectedText = this.optionsdialogue[this.options];
 
+        console.log(selectedText)
+
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = catboyd1.options[this.options].teller;
             this.dialogueId = catboyd1.options[this.options].id;
             this.scene.dialogOptions(actualText, name)
-            this.options++
+            //this.options++
         }
         console.log(selectedText)
         this.dialogueIdChecker();
@@ -91,14 +93,17 @@ export class Catboy extends Actor {
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
             this.dialogue = catboyd1.angry
-            // this.angryid = catboyd1.angry[this.index].id
+            //  this.dialogueId = catboyd1.angry[this.angry].id
+            // this.angry++
         }
         else{
+            
+            console.log("bro, can i press space?")
             this.dialogue = catboyd1.Catdate
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
-        this.choiceAvailable = false 
         this.index = 0
+        this.choiceAvailable = false 
     }
 
     showHappyDialog(engine) {
