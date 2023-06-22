@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import catboydate1 from "../json/catboy.json"
+import catboyd1 from "../json/catboyd1.json";
 
 export class Catboy extends Actor {
     index = 0
@@ -29,8 +29,8 @@ export class Catboy extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
-        this.dialogue = catboydate1.Catdate
-        this.optionsdialogue = catboydate1.options
+        this.dialogue = catboyd1.Catdate
+        this.optionsdialogue = catboyd1.options
     }
 
     startDialogue(engine) {
@@ -39,9 +39,9 @@ export class Catboy extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboydate1.Catdate[this.index].teller;
-            this.dialogueId = catboydate1.Catdate[this.index].id;
-            this.scene.startDialogue(actualText, name, catboydate1.Catdate[this.index].id)
+            let name = catboyd1.Catdate[this.index].teller;
+            this.dialogueId = catboyd1.Catdate[this.index].id;
+            this.scene.startDialogue(actualText, name, catboyd1.Catdate[this.index].id)
             this.index++
         }
         else {
@@ -57,8 +57,8 @@ export class Catboy extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboydate1.options[this.options].teller;
-            this.dialogueId = catboydate1.options[this.options].id;
+            let name = catboyd1.options[this.options].teller;
+            this.dialogueId = catboyd1.options[this.options].id;
             this.scene.dialogOptions(actualText, name)
             this.options++
         }
@@ -88,10 +88,10 @@ export class Catboy extends Actor {
         this.angry = !this.angry // swap emotions
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
-            this.dialogue = catboydate1.angry
+            this.dialogue = catboyd1.angry
         }
         else{
-            this.dialogue = catboydate1.Catdate
+            this.dialogue = catboyd1.Catdate
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.choiceAvailable = false 
@@ -100,13 +100,13 @@ export class Catboy extends Actor {
 
     showHappyDialog(engine) {
         console.log("so happy!")
-        let selectedText = catboydate1.happy[this.happy];
+        let selectedText = catboyd1.happy[this.happy];
 
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboydate1.happy[this.happy].teller;
-            this.dialogueId = catboydate1.happy[this.happy].id;
+            let name = catboyd1.happy[this.happy].teller;
+            this.dialogueId = catboyd1.happy[this.happy].id;
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
