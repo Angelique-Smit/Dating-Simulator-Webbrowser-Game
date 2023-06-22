@@ -1,328 +1,280 @@
 {
-  "Catdate": [ 
-      {
-        "id": 1,
-        "dialogue": "You know, 30 minutes ago when I was walking through the city, I didn't expect to be going on a date with an anthropomorphic animal, yet here we are. ",
-        "teller": "My mind"
-      },
-
-      {
-        "id": 2,
-        "dialogue": "Sitting in the park, having a picnic and eating to our hearts' content.",
-        "teller": "My mind"
-      },
-
-      {
-        "id": 3,
-        "dialogue": "We got some fish from a local fish store here. It wasn't exactly cheap, but it was cheaper than just handing over my wallet, phone, and money. ",
-        "teller": "My mind"
-      },
-
-      {
-        "id": 4,
-        "dialogue": "Funny how a fantasy world takes real-world currency. How convenient is that!",
-        "teller": "My mind"
-      },
-
-      {
-        "id": 5,
-        "dialogue": "Elliot sure does seem to love the fish. It seems like he hasn't eaten in days. I'm kind of concerned for him.",
-        "teller": "My mind"
-      },
-
-      {
-        "id": 6,
-        "dialogue": "These fishies are DELICIOUS! I can't believe we have so many of these.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 7,
-        "dialogue": "Yeah, they seem really good. You take as many as you want.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 8,
-        "dialogue": "Now THAT'S what I'm talking about!",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 9,
-        "dialogue": "So why were you robbing people in that back alley?",
-        "teller": "Me"
-      },
-
-      {
-        "id": 10,
-        "dialogue": "That thought has not at all crossed your mind until a second ago?",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 11,
-        "dialogue": "In all fairness, I was wondering why such a cute kitty cat was roaming the streets but I never got to ask you until now.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 12,
-        "dialogue": "Well, it's complicated.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 13,
-        "dialogue": "I can handle it.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 14,
-        "dialogue": "You're quite persistent, aren't you?",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 15,
-        "dialogue": "Persistent is my middle name.",
-        "teller": "Me"
-      },
-
-
-      {
-        "id": 16,
-        "dialogue": "I've noticed.",
-        "teller": "Elliot"
-      },
-
-
-      {
-        "id": 17,
-        "dialogue": "...",
-        "teller": ""
-      },
-
-      {
-        "id": 18,
-        "dialogue": "......",
-        "teller": ""
-      },
-
-
-      {
-        "id": 19,
-        "dialogue": "....................................................................................... ...........................................",
-        "teller": ""
-      },
-
-      {
-        "id": 20,
-        "dialogue": "I'm homeless, okay. I got kicked out at 18, and ever since I've been trying to get something going, but it's hard.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 21,
-        "dialogue": "Oh, I'm sorry for making you say that.",
-        "teller": "Me"
-      },
-
-
-      {
-        "id": 22,
-        "dialogue": "It's okay. It's part of who I am. I've been trying to work odd jobs as much as possible, but sometimes there just aren't any, and I have to get money in alternative ways.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 23,
-        "dialogue": "Seems like I picked a good target, though. Haven't had the police called on me, and I'm munching on these delicious fishies! I am sorry for trying to rob you, though.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 24,
-        "dialogue": "I hope we can still be friends and forget about this whole robbing thing.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 25,
-        "dialogue": "Yeah, of course. Would be a shame if I let such a cutie slide right past me.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 25.5,
-        "dialogue": "Stop calling me cute! Don't you see the fierce testosterone-rilled man in front of you?",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 26,
-        "dialogue": "Is the fierce testosterone-rilled man in the room with us right now?",
-        "teller": "Me"
-      },
-
-      {
-        "id": 27,
-        "dialogue": "Very funny...",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 28,
-        "dialogue": "Thank you, I try.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 29,
-        "dialogue": "You do know that you're supposed to be nice to your date, right? You don't seem to be too bright on the dating front.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 30,
-        "dialogue": "Oh, I know, I just think you're cute when you're annoyed.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 31,
-        "dialogue": "I'm beginning to think you're a lost cause.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 32,
-        "dialogue": "Oh, come on, I'm not that terrible.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 33,
-        "dialogue": "...",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 34,
-        "dialogue": "......",
-        "teller": "Me"
-      },
-
-      {
-        "id": 35,
-        "dialogue": "... ",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 36,
-        "dialogue": "Okay, maybe I am that terrible.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 37,
-        "dialogue": "To be fair, you did get me loads of fishies, so I guess you're not all that terrible.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 38,
-        "dialogue": "You're making me feel like your personal Santa Claus.",
-        "teller": "Me"
-      },
-
-      {
-        "id": 39,
-        "dialogue": "It's because you are, and I don't mind it one bit.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 40,
-        "dialogue": "Well then, how about you sit on Santa's lap?",
-        "teller": "Me"
-      },
-
-      {
-        "id": 41,
-        "dialogue": "Do you think I'm that cheap? You're going to have to take me out more if you want to order me around. Besides, I ate all the fishies. Since they are all gone, I have no reason to stay.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 42,
-        "dialogue": "Are you sure you don't want to stay a little longer?",
-        "teller": "Me"
-      },
-
-      {
-        "id": 43,
-        "dialogue": "I have business to take care of, so I think it's best if I leave meow. But if I find you again, I'll gladly let you take me out a second time.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 44,
-        "dialogue": "Am I going to have to bribe you with fish again?",
-        "teller": "Me"
-      },
-
-      {
-        "id": 45,
-        "dialogue": "Depends on how badly you want to go on a second date.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 46,
-        "dialogue": "Is that a yes?",
-        "teller": "Me"
-      },
-
-      {
-        "id": 47,
-        "dialogue": " Well, if a certain sugar babe were to come along with some fish, I see no reason to deny a second date. But since you have none right now, your time's up.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 48,
-        "dialogue": "I usually hang out around the city, so if you're looking for me, you know where to find me.",
-        "teller": "Elliot"
-      },
-
-      {
-        "id": 48,
-        "dialogue": "You do want to go out on another date, right?",
-        "teller": "Elliot"
-      }
-    ],
-
-    "options" :[
-      {
-        "id": 1,
-        "dialogue": "Press W to decline another date. Press S to agree to another date.",
-        "teller": ""
-      }
-    ],
-    "angry" : [{
+  "Catdate": [
+    {
+      "id": 1,
+      "dialogue": "You know, 30 minutes ago when I was walking through the city, I didn't expect to be going on a date with an anthropomorphic animal, yet here we are. ",
+      "teller": "My mind"
+    },
+    {
+      "id": 2,
+      "dialogue": "Sitting in the park, having a picnic and eating to our hearts' content.",
+      "teller": "My mind"
+    },
+    {
+      "id": 3,
+      "dialogue": "We got some fish from a local fish store here. It wasn't exactly cheap, but it was cheaper than just handing over my wallet, phone, and money. ",
+      "teller": "My mind"
+    },
+    {
+      "id": 4,
+      "dialogue": "Funny how a fantasy world takes real-world currency. How convenient is that!",
+      "teller": "My mind"
+    },
+    {
+      "id": 5,
+      "dialogue": "Elliot sure does seem to love the fish. It seems like he hasn't eaten in days. I'm kind of concerned for him.",
+      "teller": "My mind"
+    },
+    {
+      "id": 6,
+      "dialogue": "These fishies are DELICIOUS! I can't believe we have so many of these.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 7,
+      "dialogue": "Yeah, they seem really good. You take as many as you want.",
+      "teller": "Me"
+    },
+    {
+      "id": 8,
+      "dialogue": "Now THAT'S what I'm talking about!",
+      "teller": "Elliot"
+    },
+    {
+      "id": 9,
+      "dialogue": "So why were you robbing people in that back alley?",
+      "teller": "Me"
+    },
+    {
+      "id": 10,
+      "dialogue": "That thought has not at all crossed your mind until a second ago?",
+      "teller": "Elliot"
+    },
+    {
+      "id": 11,
+      "dialogue": "In all fairness, I was wondering why such a cute kitty cat was roaming the streets but I never got to ask you until now.",
+      "teller": "Me"
+    },
+    {
+      "id": 12,
+      "dialogue": "Well, it's complicated.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 13,
+      "dialogue": "I can handle it.",
+      "teller": "Me"
+    },
+    {
+      "id": 14,
+      "dialogue": "You're quite persistent, aren't you?",
+      "teller": "Elliot"
+    },
+    {
+      "id": 15,
+      "dialogue": "Persistent is my middle name.",
+      "teller": "Me"
+    },
+    {
+      "id": 16,
+      "dialogue": "I've noticed.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 17,
+      "dialogue": "...",
+      "teller": ""
+    },
+    {
+      "id": 18,
+      "dialogue": "......",
+      "teller": ""
+    },
+    {
+      "id": 19,
+      "dialogue": "....................................................................................... ...........................................",
+      "teller": ""
+    },
+    {
+      "id": 20,
+      "dialogue": "I'm homeless, okay. I got kicked out at 18, and ever since I've been trying to get something going, but it's hard.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 21,
+      "dialogue": "Oh, I'm sorry for making you say that.",
+      "teller": "Me"
+    },
+    {
+      "id": 22,
+      "dialogue": "It's okay. It's part of who I am. I've been trying to work odd jobs as much as possible, but sometimes there just aren't any, and I have to get money in alternative ways.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 23,
+      "dialogue": "Seems like I picked a good target, though. Haven't had the police called on me, and I'm munching on these delicious fishies! I am sorry for trying to rob you, though.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 24,
+      "dialogue": "I hope we can still be friends and forget about this whole robbing thing.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 25,
+      "dialogue": "Yeah, of course. Would be a shame if I let such a cutie slide right past me.",
+      "teller": "Me"
+    },
+    {
+      "id": 25.5,
+      "dialogue": "Stop calling me cute! Don't you see the fierce testosterone-rilled man in front of you?",
+      "teller": "Elliot"
+    },
+    {
+      "id": 26,
+      "dialogue": "Is the fierce testosterone-rilled man in the room with us right now?",
+      "teller": "Me"
+    },
+    {
+      "id": 27,
+      "dialogue": "Very funny...",
+      "teller": "Elliot"
+    },
+    {
+      "id": 28,
+      "dialogue": "Thank you, I try.",
+      "teller": "Me"
+    },
+    {
+      "id": 29,
+      "dialogue": "You do know that you're supposed to be nice to your date, right? You don't seem to be too bright on the dating front.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 30,
+      "dialogue": "Oh, I know, I just think you're cute when you're annoyed.",
+      "teller": "Me"
+    },
+    {
+      "id": 31,
+      "dialogue": "I'm beginning to think you're a lost cause.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 32,
+      "dialogue": "Oh, come on, I'm not that terrible.",
+      "teller": "Me"
+    },
+    {
+      "id": 33,
+      "dialogue": "...",
+      "teller": "Elliot"
+    },
+    {
+      "id": 34,
+      "dialogue": "......",
+      "teller": "Me"
+    },
+    {
+      "id": 35,
+      "dialogue": "... ",
+      "teller": "Elliot"
+    },
+    {
+      "id": 36,
+      "dialogue": "Okay, maybe I am that terrible.",
+      "teller": "Me"
+    },
+    {
+      "id": 37,
+      "dialogue": "To be fair, you did get me loads of fishies, so I guess you're not all that terrible.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 38,
+      "dialogue": "You're making me feel like your personal Santa Claus.",
+      "teller": "Me"
+    },
+    {
+      "id": 39,
+      "dialogue": "It's because you are, and I don't mind it one bit.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 40,
+      "dialogue": "Well then, how about you sit on Santa's lap?",
+      "teller": "Me"
+    },
+    {
+      "id": 41,
+      "dialogue": "Do you think I'm that cheap? You're going to have to take me out more if you want to order me around. Besides, I ate all the fishies. Since they are all gone, I have no reason to stay.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 42,
+      "dialogue": "Are you sure you don't want to stay a little longer?",
+      "teller": "Me"
+    },
+    {
+      "id": 43,
+      "dialogue": "I have business to take care of, so I think it's best if I leave meow. But if I find you again, I'll gladly let you take me out a second time.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 44,
+      "dialogue": "Am I going to have to bribe you with fish again?",
+      "teller": "Me"
+    },
+    {
+      "id": 45,
+      "dialogue": "Depends on how badly you want to go on a second date.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 46,
+      "dialogue": "Is that a yes?",
+      "teller": "Me"
+    },
+    {
+      "id": 47,
+      "dialogue": " Well, if a certain sugar babe were to come along with some fish, I see no reason to deny a second date. But since you have none right now, your time's up.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 48,
+      "dialogue": "I usually hang out around the city, so if you're looking for me, you know where to find me.",
+      "teller": "Elliot"
+    },
+    {
+      "id": 48,
+      "dialogue": "You do want to go out on another date, right?",
+      "teller": "Elliot"
+    }
+  ],
+  "options": [
+    {
+      "id": 1,
+      "dialogue": "Press W to decline another date. Press S to agree to another date.",
+      "teller": ""
+    }
+  ],
+  "angry": [
+    {
       "id": 1,
       "dialogue": "Well, I don't care what you want! I'll just follow your smell and go drag you to the fishstore anyways!",
       "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "Guess that wasn't the right choice (press w to retry date)",
+      "teller": "My mind"
     }
-    ],
-
-    "happy" : [{
+  ],
+  "happy": [
+    {
       "id": 1,
       "dialogue": "Yeah, I knew you would! See you then!",
       "teller": "Elliot"
     }
-    ]
-  }
+  ]
+}
