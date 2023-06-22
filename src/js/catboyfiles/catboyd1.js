@@ -2,7 +2,7 @@ import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
 import catboyd1 from "../json/catboyd1.json";
 
-export class Catboyd1 extends Actor {
+export class Catboy extends Actor {
     index = 0
     happy = 0
     angry = 0
@@ -121,7 +121,7 @@ export class Catboyd1 extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 8) {
+        if (this.dialogueId < 6) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
@@ -135,29 +135,27 @@ export class Catboyd1 extends Actor {
             case 15:
             case 16:
             case 17:
-            case 18:
-            case 19:
-            case 25:
-            case 25.5:
-            case 26:
-            case 35:
-            case 36:
+            case 41:
+
                 this.catboyAngry();
                 break;
 
             //Blush
-            case 23:
-            case 29:
+            case 25.5:
                 this.catboyBlush();
                 break;
 
             //Sad
-            case -1:
+            case 20:
+            case 21:
+            case 22:
                 this.catboySad();
                 break;
 
             //Happy
-            case 41:
+            case 6:
+            case 7:
+            case 8:
                 this.catboyHappy();
                 break;
         }
