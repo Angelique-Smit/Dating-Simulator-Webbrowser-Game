@@ -1,0 +1,251 @@
+{
+    "Catdate": [ 
+        {
+          "id": 1,
+          "dialogue": "The two of us took the time to walk back to the park to get out of this awful city. Luckily, no stabbings or robberies occurred on the way out, which was nice. ",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 2,
+          "dialogue": "This might be the first time we get to go out together without anything bad happening. I figured we were due for a good date. I don't regret buying fish for the occasion.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 3,
+          "dialogue": "I know Elliot said he'd go on a date with me regardless, but it feels wrong to not bring anything.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 4,
+          "dialogue": "The walk is quite long, but seeing Elliot so happy is nice.",
+          "teller": "My Mind"
+        },
+  
+        {
+          "id": 5,
+          "dialogue": "So how have you been doing? Has your wound been healing nicely?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 6,
+          "dialogue": "I've been doing well! The wounds have healed up alright. They aren't fully closed yet, but we're getting there!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 7,
+          "dialogue": "That's nice! I'm glad you're doing ok. Couldn't bear seeing such a cutie in distress, you know.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 8,
+          "dialogue": "Awh! Thanks for worrying about me. You're so attentive. You've been giving me loads of fish, helped me clear up my wounds, and gave me the motivation I needed to turn my life around.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 9,
+          "dialogue": "It's nothing, I saw a cute catboy in distress and figured I might as well help him.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 10,
+          "dialogue": "You're a good person, you know.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 11,
+          "dialogue": "Yeah, too good for my own good. My wallet's been screaming at me. Fish is so expensive here.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 12,
+          "dialogue": "Awh, but it's for a good cause!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 13,
+          "dialogue": "You're a good cause now?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 14,
+          "dialogue": "I'm my own charity.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 15,
+          "dialogue": "More like a charity case.",
+          "teller": "Me"
+        },
+  
+  
+        {
+          "id": 16,
+          "dialogue": "...",
+          "teller": "Elliot"
+        },
+  
+  
+        {
+          "id": 17,
+          "dialogue": "Cutest charity case though!",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 18,
+          "dialogue": "By the way, I have big BIG news to tell you!",
+          "teller": "Elliot"
+        },
+  
+  
+        {
+          "id": 19,
+          "dialogue": "Oh, what's the big news?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 20,
+          "dialogue": "Well, your words last week inspired me. If you were willing to help me, there must be someone out there who would want to do so too!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 21,
+          "dialogue": "So, with that in mind, I walked all over town to find a place that would hire me. ",
+          "teller": "Elliot"
+        },
+  
+  
+        {
+          "id": 22,
+          "dialogue": "After a long while, I found this corner store that agreed to hire me. The best thing is, they even let me sleep in the back of the store as long as I open up the next day! ",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 23,
+          "dialogue": "My days of sleeping on the street are over!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 24,
+          "dialogue": "That's amazing, Elliot! I knew you could do it! I told you that someone would be looking out for you. No one could say no to such a pretty face.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 25,
+          "dialogue": "Well, I owe it all to you. If you hadn't inspired me to go out and better my life, who knows how long it would have taken me to do so on my own!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 25.5,
+          "dialogue": "For all I know, I could've died out on those streets. So really, thank you for being there for me.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 26,
+          "dialogue": "No problem. I would gladly do it again!",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 27,
+          "dialogue": "I'm going to have to be honest with myself. I need to tell you something.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 28,
+          "dialogue": "What's up, Elliot?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 29,
+          "dialogue": "Well, you see, ever since you said those words to me last week, I haven't been able to think of anything else... Or anyone else. ",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 30,
+          "dialogue": "You cared so much for me. You first had the guts to hit on me while I was threatening you, then you took me out. I still don't know what made you do that.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 31,
+          "dialogue": "This was cheaper than being robbed of everything I have.",
+          "teller": "me"
+        },
+  
+        {
+          "id": 32,
+          "dialogue": "I guess. But to get back to what I was saying... On the second date, when you cared for me, patched me up, and gave me motivation to better myself, it felt so sincere.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 33,
+          "dialogue": "And shirtless you was pretty hot too.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 34,
+          "dialogue": "Regardless, though, I started to fall for you. Then a week later, you came back to check up on me and take me out on another date. Man, this is getting kind of embarrassing, but I think I like you.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 35,
+          "dialogue": " I've never felt this way before. My heart races every time I see you, and I feel so safe around you. I guess I only have one last thing to ask of you. ",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 36,
+          "dialogue": "Do you like me as well? Do you want to stay by my side? Do you want to be my partner in non-crime related activities?",
+          "teller": "Elliot"
+        }
+      ],
+  
+      "options" :[
+        {
+          "id": 1,
+          "dialogue": "Do you accept Elliot's love? Press W for no, Press S for yes.",
+          "teller": ""
+        }
+      ],
+      "angry" : [{
+        "id": 1,
+        "dialogue": "Oh, that's okay. I shouldn't have gotten my hopes up. I knew there was a chance you'd say no, but I hoped you'd say yes. Can we still be friends though?",
+        "teller": "Elliot"
+      }
+      ],
+  
+      "happy" : [{
+        "id": 1,
+        "dialogue": "I KNEW YOU'D AGREE. This makes me so happy! Think of all the things we can do together once I get my life together! Man, it's going to be so much fun!",
+        "teller": "Elliot"
+      }
+      ]
+    }
+  

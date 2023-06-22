@@ -1,0 +1,152 @@
+{
+    "Catdate": [ 
+        {
+          "id": 1,
+          "dialogue": "It's been a week since I saw Elliot. I'm kind of scared in which state I'll find him this time but all I can hope for is that he is safe.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 2,
+          "dialogue": "And of course, I bought more fish. My wallet is begging for me to stop but I would feel a little bit bad if I didn't.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 3,
+          "dialogue": "I've decided to take him out to the park again. It may be cheesy and a bit repetitive, but I don't want to stay in this hellhole of a city for longer than I have to.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 4,
+          "dialogue": "No matter how many times I've been here, it feels more and more unsafe.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 5,
+          "dialogue": "To be fair, the fact that the first time I got robbed and the second time I saw someone bleeding badly probably doesn't help make me feel safer.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 6,
+          "dialogue": "Finding Elliot also isn't easy. It feels like he could be anywhere. Now, looking for a normal person already isn't easy, but this really feels like finding a twink in a haystack.",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 7,
+          "dialogue": "I just hope I find him soon. I wouldn't be surprised if I got robbed before I find hi-",
+          "teller": "My mind"
+        },
+  
+        {
+          "id": 8,
+          "dialogue": "You feel yourself get dragged into a back alley",
+          "teller": ""
+        },
+  
+        {
+          "id": 9,
+          "dialogue": "Money, phone, and wallet!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 10,
+          "dialogue": "I thought I told you to stop robbing people, Elliot.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 11,
+          "dialogue": "And I listened! I just thought I'd say hi in a unique fashion.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 12,
+          "dialogue": "You smelled the fish, didn't you?",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 13,
+          "dialogue": "Could smell it from a mile away, so I figured you were looking for me.",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 14,
+          "dialogue": "Who says these are for you? Maybe I'm trying to romance some other cute catboy.",
+          "teller": "Me"
+        },
+  
+        {
+          "id": 15,
+          "dialogue": "YOU'D NEVER! THOSE ARE MY FISHIES.",
+          "teller": "Elliot"
+        },
+  
+  
+        {
+          "id": 16,
+          "dialogue": "If you want the fish, I'm afraid you're going to have to go out on another date with me.",
+          "teller": "Me"
+        },
+  
+  
+        {
+          "id": 17,
+          "dialogue": "Oh nooooooo the horrorrrrrrrrrrr!",
+          "teller": "Elliot"
+        },
+  
+        {
+          "id": 18,
+          "dialogue": "Well, in that case, I'll just find the next best catboy.",
+          "teller": "Me"
+        },
+  
+  
+        {
+          "id": 19,
+          "dialogue": "NO NO NO NO NO NO NOPE! We're going on a date RIGHT MEOW!",
+          "teller": "Elliot"
+        }
+      ],
+  
+      "options" :[
+        {
+          "id": 1,
+          "dialogue": "bro",
+          "teller": "Elliot"
+        }
+      ],
+      "angry" : [{
+        "id": 1,
+        "dialogue": "kiss me",
+        "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "like rn bro",
+        "teller": "Elliot"
+      }
+      ],
+  
+      "happy" : [{
+        "id": 1,
+        "dialogue": "bro",
+        "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "br bro",
+        "teller": "Elliot"
+      }
+      ]
+    }
+  
