@@ -2,10 +2,10 @@ import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } fro
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
 import { Catboy } from "../catboyfiles/catboyi1.js";
-import { Mock } from "../mock.js";
+
 import { Resources, ResourceLoader } from '../resources.js';
 
-    export class CatDate extends Scene {
+    export class Catboyi1 extends Scene {
         game;
         dialogueText;
         bg
@@ -17,14 +17,11 @@ import { Resources, ResourceLoader } from '../resources.js';
         }
 
         onInitialize(){
-            console.log("I AM IN THE I1 SCENE")
-            let mock = new Mock();
-                let m1 = Resources.alleybg.toSprite();
-                this.mock.scale = new Vector(0.305 , 0.305);
-                this.mock.graphics.use(m1);
-            this.add(mock);
-
             this.bg = new GenericBg();
+            let bg1 = Resources.alleybg.toSprite();
+            this.bg.scale = new Vector(0.480 , 0.500);
+            this.bg.pos = new Vector(575, 300)
+            this.bg.graphics.use(bg1);
             this.add(this.bg)
 
             const cat = new Catboy();
@@ -44,6 +41,8 @@ import { Resources, ResourceLoader } from '../resources.js';
 
             let playername = document.getElementById("playername")
             playername.innerHTML = name;
+
+            
         }
 
     showHappyDialog(text, name) {

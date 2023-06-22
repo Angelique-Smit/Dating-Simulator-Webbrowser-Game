@@ -70,31 +70,22 @@
       "options" :[
         {
           "id": 1,
-          "dialogue": "bro",
-          "teller": "Elliot"
+          "dialogue": "How fast are you running towards Elliot? \n Press W if you want to run there. Press S if you want to moonwalk over there",
+          "teller": ""
         }
       ],
+
       "angry" : [{
         "id": 1,
-        "dialogue": "kiss me",
-        "teller": "Elliot"
-      },
-      {
-        "id": 2,
-        "dialogue": "like rn bro",
-        "teller": "Elliot"
+        "dialogue": "You moonwalked over there. You might not be fast, but atleast you're stylish! Style over (human?) lives, am I right?",
+        "teller": ""
       }
       ],
   
       "happy" : [{
         "id": 1,
-        "dialogue": "bro",
-        "teller": "Elliot"
-      },
-      {
-        "id": 2,
-        "dialogue": "br bro",
-        "teller": "Elliot"
+        "dialogue": "You ran over there. You got there quickly!",
+        "teller": ""
       }
       ]
     }

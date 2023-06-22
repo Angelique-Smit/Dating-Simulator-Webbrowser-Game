@@ -21,17 +21,17 @@ export class Birdman extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
+        this.dialogue = bird.intro[this.index]
     }
     
     startDialogue(engine) {
-        let selectedText =  bird.intro[this.index];
+        let selectedText =  this.dialogue[this.index];
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = bird.intro[this.index].teller;
-            this.dialogueId = bird.intro[this.index].id;
-            console.log(name, bird.intro[this.index].id)
-            this.scene.startDialogue(actualText, name, bird.intro[this.index].id)
+            let name = this.dialogue[this.index].teller;
+            this.dialogueId = this.dialogue[this.index].id;
+            this.scene.startDialogue(actualText, name, this.dialogueId)
             // engine.indexNumberBird = bird.intro[this.index].id;
 
             //this.scene.changeBackground(bird.intro[this.index].id)

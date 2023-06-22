@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import catboyi1 from "../json/catboyi1.json";
+import catboyd2 from "../json/catboyd2.json";
 
 export class Catboy extends Actor {
     index = 0
@@ -31,8 +31,8 @@ export class Catboy extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
-        this.dialogue = catboyi1.Catdate
-        this.optionsdialogue = catboyi1.options
+        this.dialogue = catboyd2.Catdate
+        this.optionsdialogue = catboyd2.options
     }
 
     startDialogue(engine) {
@@ -61,8 +61,8 @@ export class Catboy extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboyi1.options[this.options].teller;
-            this.dialogueId = catboyi1.options[this.options].id;
+            let name = catboyd2.options[this.options].teller;
+            this.dialogueId = catboyd2.options[this.options].id;
             this.scene.dialogOptions(actualText, name)
             //this.options++
         }
@@ -92,14 +92,14 @@ export class Catboy extends Actor {
         this.angry = !this.angry // swap emotions
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
-            this.dialogue = catboyi1.angry
-            //  this.dialogueId = catboyi1.angry[this.angry].id
+            this.dialogue = catboyd2.angry
+            //  this.dialogueId = catboyd2.angry[this.angry].id
             // this.angry++
         }
         else{
             
             console.log("bro, can i press space?")
-            this.dialogue = catboyi1.Catdate
+            this.dialogue = catboyd2.Catdate
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.index = 0
@@ -108,14 +108,14 @@ export class Catboy extends Actor {
 
     showHappyDialog(engine) {
         console.log("so happy!")
-        let selectedText = catboyi1.happy[this.happy];
+        let selectedText = catboyd2.happy[this.happy];
 
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboyi1.happy[this.happy].teller;
-            this.dialogueId = catboyi1.happy[this.happy].id;
-            // this.happyid = catboyi1.happy[this.index].id
+            let name = catboyd2.happy[this.happy].teller;
+            this.dialogueId = catboyd2.happy[this.happy].id;
+            // this.happyid = catboyd2.happy[this.index].id
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
@@ -132,7 +132,7 @@ export class Catboy extends Actor {
     //Add cases to add in certain sprites
     dialogueIdChecker() {
 
-        if (this.dialogueId < 16) {
+        if (this.dialogueId < 6) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
@@ -142,22 +142,22 @@ export class Catboy extends Actor {
         switch (this.dialogueId) {
 
             //Mad
-            case -1:
+            case 41:
                 this.catboyAngry();
             break;
 
             //Blush
-            case -1:
+            case 25.5:
                 this.catboyBlush();
             break;
 
             //Sad
-            case -1:
+            case 20:
                 this.catboySad();
             break;
 
             //Happy
-            case -1:
+            case 6:
                 this.catboyHappy();
             break;
         }

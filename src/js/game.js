@@ -4,7 +4,9 @@ import { Resources, ResourceLoader } from './resources.js'
 import { Startscreen } from './scenes/startscreen.js'
 import { IntroCatScene } from './scenes/gamescene.js'
 import { CatDate } from './scenes/catdate1'
+import { Catboyi1 } from './scenes/catboyi1'
 import { Corvotalk } from './scenes/catboycorvo1'
+import { CatDate2 } from "./scenes/catdate2";
 
 export class Game extends Engine {
     constructor() {
@@ -17,7 +19,8 @@ export class Game extends Engine {
         this.addScene('startscreen', new Startscreen())
         this.addScene('catdate1', new CatDate());
         this.addScene('catboycorvo1', new Corvotalk());
-        this.addScene('catboyi1', new Cati1());
+        this.addScene('catboyi1', new Catboyi1());
+        this.addScene('catdate2', new CatDate2());
         this.goToScene('catdate1');
         //this.goToScene('startscreen')
     }
