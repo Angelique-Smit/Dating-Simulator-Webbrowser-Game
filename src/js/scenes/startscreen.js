@@ -43,8 +43,8 @@ export class Startscreen extends Scene {
     }
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
-            engine.addScene('gamescene', new IntroCatScene());
-            engine.goToScene('gamescene');
+            engine.addScene('introscene', new Intro());
+            engine.goToScene('introscene');
         }
     }
 

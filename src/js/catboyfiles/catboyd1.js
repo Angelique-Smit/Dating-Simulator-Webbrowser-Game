@@ -114,8 +114,6 @@ export class Catboy extends Actor {
         
         engine.goToScene('catboycorvo1');
         this.dialogueIdChecker();
-        // this.engine.addScene('catdate', new Catdate())
-        // this.engine.goToScene('catdate')
     }
 
 
