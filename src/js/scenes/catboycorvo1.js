@@ -11,10 +11,10 @@ import { Resources, ResourceLoader } from '../resources.js';
         name;
         constructor() {
             super();
-            console.log("I AM IN THE corvo after date 1 with cat SCENE")
         }
 
         onInitialize(){
+            console.log("I AM IN THE corvo after date 1 with cat SCENE")
             this.bg = new GenericBg();
                 let bg1 = Resources.gamegenericbg.toSprite();
                 this.bg.scale = new Vector(0.305 , 0.305);
