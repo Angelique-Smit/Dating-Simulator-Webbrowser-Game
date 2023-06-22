@@ -296,36 +296,32 @@
         "id": 48,
         "dialogue": "I usually hang out around the city, so if you're looking for me, you know where to find me.",
         "teller": "Elliot"
+      },
+
+      {
+        "id": 48,
+        "dialogue": "You do want to go out on another date, right?",
+        "teller": "Elliot"
       }
     ],
 
     "options" :[
       {
         "id": 1,
-        "dialogue": "bro",
-        "teller": "Elliot"
+        "dialogue": "Press W to decline another date. Press S to agree to another date.",
+        "teller": ""
       }
     ],
     "angry" : [{
       "id": 1,
-      "dialogue": "kiss me",
-      "teller": "Elliot"
-    },
-    {
-      "id": 2,
-      "dialogue": "like rn bro",
+      "dialogue": "Well, I don't care what you want! I'll just follow your smell and go drag you to the fishstore anyways!",
       "teller": "Elliot"
     }
     ],
 
     "happy" : [{
       "id": 1,
-      "dialogue": "bro",
-      "teller": "Elliot"
-    },
-    {
-      "id": 2,
-      "dialogue": "br bro",
+      "dialogue": "Yeah, I knew you would! See you then!",
       "teller": "Elliot"
     }
     ]

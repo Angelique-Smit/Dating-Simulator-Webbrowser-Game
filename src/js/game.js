@@ -17,7 +17,7 @@ export class Game extends Engine {
         this.addScene('startscreen', new Startscreen())
         this.addScene('catdate1', new CatDate());
         this.addScene('catboycorvo1', new Corvotalk());
-        this.goToScene('startscreen');
+        this.goToScene('catdate1');
         //this.goToScene('startscreen')
     }
 }

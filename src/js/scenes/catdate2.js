@@ -2,9 +2,8 @@ import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } fro
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
 import { Resources, ResourceLoader } from '../resources.js';
-import { BirdT1 } from '../birdman/birdt1.js';
 
-    export class Corvotalk extends Scene {
+    export class CatDate extends Scene {
         game;
         dialogueText;
         bg
@@ -12,24 +11,21 @@ import { BirdT1 } from '../birdman/birdt1.js';
         name;
         constructor() {
             super();
+            console.log("I AM IN THE DATE1 SCENE")
         }
 
         onInitialize(){
-            console.log("I AM IN THE corvo after date 1 with cat SCENE")
             this.bg = new GenericBg();
                 let bg1 = Resources.gamegenericbg.toSprite();
                 this.bg.scale = new Vector(0.305 , 0.305);
                 this.bg.graphics.use(bg1);
             this.add(this.bg)
 
-            const bird = new BirdT1();
-            this.add(bird);
+            // const cat = new Catboy();
+            // this.add(cat);
 
             const box = new TextBox();
             this.add(box);
-
-            let playername = document.getElementById("playername")
-            playername.innerHTML = "";
 
             let createText = document.getElementById("textspan")
             createText.innerHTML = "Press SPACE to start the dialogue"

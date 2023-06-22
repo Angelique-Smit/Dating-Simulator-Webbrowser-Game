@@ -15,6 +15,8 @@ export class Catboy extends Actor {
     name;
     game;
     engine;
+    // angryid = 0;
+    // happyid = 0;
 
     constructor(engine) {
         super();
@@ -89,6 +91,7 @@ export class Catboy extends Actor {
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
             this.dialogue = catboyd1.angry
+            // this.angryid = catboyd1.angry[this.index].id
         }
         else{
             this.dialogue = catboyd1.Catdate
@@ -107,6 +110,7 @@ export class Catboy extends Actor {
             let actualText = selectedText.dialogue
             let name = catboyd1.happy[this.happy].teller;
             this.dialogueId = catboyd1.happy[this.happy].id;
+            // this.happyid = catboyd1.happy[this.index].id
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
@@ -122,6 +126,7 @@ export class Catboy extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
+
         if (this.dialogueId < 6) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
@@ -159,6 +164,18 @@ export class Catboy extends Actor {
             case 8:
                 this.catboyHappy();
                 break;
+        }
+
+        switch (this.angryid) {
+            case 1:
+                this.catboyAngry();
+            break;
+        }
+
+        switch (this.happyid) {
+            case 1:
+                this.catboyHappy();
+            break;
         }
     }
 
