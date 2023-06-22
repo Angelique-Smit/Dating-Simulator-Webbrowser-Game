@@ -2,7 +2,7 @@ import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } fro
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
 import { Birdman } from "../birdman/bird.js";
-import { Mock } from "../mockfantasypark.js";
+import { Mock } from "../mock.js";
 import { Resources, ResourceLoader } from '../resources.js';
 
 export class Intro extends Scene {

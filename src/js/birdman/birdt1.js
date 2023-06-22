@@ -52,7 +52,7 @@ export class BirdT1 extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
             this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('');
+            engine.goToScene('catboyi1');
 
         }
 

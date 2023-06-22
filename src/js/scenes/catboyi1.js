@@ -1,13 +1,15 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } from "excalibur";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
-import { Catboy } from "../catboyfiles/catboyd1.js";
+import { Catboy } from "../catboyfiles/catboyi1.js";
+import { Mock } from "../mock.js";
 import { Resources, ResourceLoader } from '../resources.js';
 
     export class CatDate extends Scene {
         game;
         dialogueText;
         bg
+        mock;
         // optionsText
         name;
         constructor() {
@@ -15,11 +17,14 @@ import { Resources, ResourceLoader } from '../resources.js';
         }
 
         onInitialize(){
-            console.log("I AM IN THE DATE1 SCENE")
+            console.log("I AM IN THE I1 SCENE")
+            let mock = new Mock();
+                let m1 = Resources.alleybg.toSprite();
+                this.mock.scale = new Vector(0.305 , 0.305);
+                this.mock.graphics.use(m1);
+            this.add(mock);
+
             this.bg = new GenericBg();
-                let bg1 = Resources.gamegenericbg.toSprite();
-                this.bg.scale = new Vector(0.305 , 0.305);
-                this.bg.graphics.use(bg1);
             this.add(this.bg)
 
             const cat = new Catboy();
