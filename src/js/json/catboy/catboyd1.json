@@ -275,6 +275,19 @@
       "teller": "My mind"
     }
   ],
+
+  "angry": [
+    {
+      "id": 1,
+      "dialogue": "bruh",
+      "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "OW OW OKAY NO NEED TO SCRATCH",
+      "teller": "My mind"
+    }
+  ],
   
   "happy": [
     {

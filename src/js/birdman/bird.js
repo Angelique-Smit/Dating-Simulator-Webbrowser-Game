@@ -4,6 +4,7 @@ import  bird  from "../json/bird/bird.json";
 
 export class Birdman extends Actor {
     index = 0
+    badoption = false
     options = 0
     dialogueId = 0
     selectedText;
@@ -66,10 +67,11 @@ export class Birdman extends Actor {
             this.choiceAvailable = false
         }
 
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown)) {
+        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown)  && this.choiceAvailable) {
             this.selectedText = "";
-            this.choiceAvailable = false
-            engine.goToScene('endgame');
+            this.badOption(engine)
+            this.startDialogue(engine)
+            
         }
 
         this.dialogueIdChecker();
@@ -77,6 +79,22 @@ export class Birdman extends Actor {
 
     dialogOptions() {
         this.choiceAvailable = true
+    }
+
+    badOption(engine){ //swapped de emoties van de catboy
+        console.log("you reached it!")
+        this.badoption = !this.badoption // swap emotions
+        console.log(`i am feeling very ${this.badoption}`)
+        if(this.badoption){
+            this.dialogue = bird.badoption
+            console.log(this.dialogue)
+        }
+        else{
+            engine.goToScene('endgame');
+        }
+        //zet de choiceavailable weer terug op false en de index terug op 0
+        this.choiceAvailable = false 
+        this.index = 0
     }
 
     //Add cases to add in certain sprites
