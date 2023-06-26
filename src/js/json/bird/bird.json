@@ -55,6 +55,12 @@
         },
 
         {
+            "id": 9.5,
+            "dialogue": "Press UP to walk up the stairs, press DOWN to go home like a loser",
+            "teller": ""
+        },
+
+        {
             "id": 10,
             "dialogue": "It will be a breeze, just a few more steps and-",
             "teller": "My mind"

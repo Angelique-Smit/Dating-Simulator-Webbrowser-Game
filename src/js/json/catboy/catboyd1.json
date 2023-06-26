@@ -31,6 +31,11 @@
       "teller": "Elliot"
     },
     {
+      "id": 6.5,
+      "dialogue": "[ Gatekeep the fish ] (press UP)\n[ Give him more fish ] (press DOWN)",
+      "teller": ""
+    },
+    {
       "id": 7,
       "dialogue": "Yeah, they seem really good. You take as many as you want.",
       "teller": "Me"
@@ -249,27 +254,28 @@
       "id": 48,
       "dialogue": "You do want to go out on another date, right?",
       "teller": "Elliot"
-    }
-  ],
-  "options": [
+    },
+
     {
-      "id": 1,
-      "dialogue": "Press W to decline another date. Press S to agree to another date.",
+      "id": 49,
+      "dialogue": "Press W to decline another date. Press S to agree to another date",
       "teller": ""
     }
   ],
-  "angry": [
+
+  "smallangry": [
     {
       "id": 1,
-      "dialogue": "Well, I don't care what you want! I'll just follow your smell and go drag you to the fishstore anyways!",
+      "dialogue": "Wow okay DICKHEAD. Way to freaking gate keep me!",
       "teller": "Elliot"
     },
     {
       "id": 2,
-      "dialogue": "Guess that wasn't the right choice (press w to retry date)",
+      "dialogue": "OW OW OKAY NO NEED TO SCRATCH",
       "teller": "My mind"
     }
   ],
+  
   "happy": [
     {
       "id": 1,
