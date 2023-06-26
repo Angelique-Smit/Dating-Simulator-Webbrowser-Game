@@ -49,7 +49,7 @@ export class Birdman extends Actor {
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
             this.choiceAvailable = false
-            this.selectedText = "";
+            this.selectedText = 
             this.startDialogue(engine)
         }
 
