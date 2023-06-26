@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import  birdtalk1  from "../json/bird/birdtalk1.json";
+import  birdtalk1  from "../json/birdtalk1.json";
 
 export class BirdT1 extends Actor {
     index = 0

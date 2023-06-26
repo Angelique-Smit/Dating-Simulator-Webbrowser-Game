@@ -127,9 +127,7 @@ dialogOptions(){
         else{
             
             console.log("bro, can i press space?")
-            
             this.dialogue = catboyd1.Catdate
-            
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.index = 0
