@@ -31,7 +31,7 @@ export class Game extends Engine {
         this.addScene('catdate2', new CatDate2());
         this.addScene('catboyi2', new Catboyi2());
         this.addScene('catdate3', new CatDate3());
-        this.goToScene('introscene');
+        this.goToScene('catdate1');
     }
 }
 

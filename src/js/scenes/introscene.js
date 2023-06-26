@@ -57,12 +57,4 @@ export class Intro extends Scene {
             this.bg.graphics.use(bg3);
         }
     }
-    badOption(text, name) {
-        console.log(text)
-        let createText = document.getElementById("textspan")
-        createText.innerHTML = text;
-
-        let playername = document.getElementById("playername")
-        playername.innerHTML = name;
-    }
 }

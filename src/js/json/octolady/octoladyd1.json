@@ -1,0 +1,125 @@
+{
+    "intro": [
+      {
+        "id": 1,
+        "dialogue": "So, what is your name? I feel like it's rude to not ask for the name of my date.",
+        "teller": "Me"
+      },
+      {
+        "id": 2,
+        "dialogue": "Oh my, where are my manners! I'm way too quick and rushing into things again. My name is Aaliyah, nice to meet you.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 3,
+        "dialogue": "So, now that you asked me a question, I want to know more about you! Where are you from? I've never seen anyone like you, and trust me, I've seen a lot of people.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 4,
+        "dialogue": "I'm from Earth.",
+        "teller": "Me"
+      },
+      {
+        "id": 5,
+        "dialogue": "Earth? Never heard of that before. It sounds like a beautiful place. Just the name makes me want to visit sometime!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 6,
+        "dialogue": "Yeah, very beautiful. Earth has lots of water.",
+        "teller": "Me"
+      },
+      {
+        "id": 7,
+        "dialogue": "Really? That sounds amazing! I love that place already. Earth must be far if I have never seen anyone like you before. Do all people from Earth look like you?",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 8,
+        "dialogue": "I mean, sort of? I'm surprised you have never seen a human before. I've seen octolings plenty.",
+        "teller": "Me"
+      },
+      {
+        "id": 9,
+        "dialogue": "REALLY? WHERE! WHAT DO THEY LOOK LIKE? WHAT DO THEY DO? HOW DO I GET TO EARTH?",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 10,
+        "dialogue": "Sorry, I got a little excited. You see, I lost my family at sea. I washed up on the shore when I was little, and someone took me with them.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 11,
+        "dialogue": "Eventually, I ended up here, and I've been looking for my parents ever since.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 12,
+        "dialogue": "Can't you just get out?",
+        "teller": "Me"
+      },
+      {
+        "id": 13,
+        "dialogue": "You see, I can walk and sit on non-water objects, but it tires me out greatly. There is no sea nearby, and no lakes in the area are connected to the sea, so I'm kind of stuck. ",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 14,
+        "dialogue": "But if you have heard of octo people like me, you must be able to tell me about them! What are the octo people like on Earth?",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 15,
+        "dialogue": "Yeah, well, funny story actually. You guys mostly appear in Japanese adult comic books.",
+        "teller": "Me"
+      },
+      {
+        "id": 16,
+        "dialogue": "That sounds so cool! I bet we're superheroes fighting crime! These tentacles are made to fight crime.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 17,
+        "dialogue": "...yeah... definitely... you guys are superheroes for sure. Your tentacles really show people who's boss...",
+        "teller": "Me"
+      },
+      {
+        "id": 18,
+        "dialogue": "Man does Earth sound exciting! Too bad I'm mostly stuck at this fountain.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 19,
+        "dialogue": "How far can you go without water?",
+        "teller": "Me"
+      },
+      {
+        "id": 20,
+        "dialogue": "I sadly can't leave much further than the park. It's really frustrating, but I guess there is nothing to be done about it. I just kind of sit here and wait for people to come along that I can talk to. ",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 21,
+        "dialogue": "But oh my, I'm oversharing. Thanks for keeping me company though. I'm here if you're looking for me.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 22,
+        "dialogue": "No problem, Aaliyah. It's been nice talking to you. I'll definitely come back if I'm in the area and looking for some company. Take care!",
+        "teller": "Me"
+      },
+      {
+        "id": 23,
+        "dialogue": "Thank you! I'll be right here, waiting. Take care too, and maybe next time you visit, you can tell me more about Earth and those octo people. Goodbye for now!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 24,
+        "dialogue": "Goodbye, Aaliyah. Until next time!",
+        "teller": "Me"
+      }
+    ]
+  }
+  
