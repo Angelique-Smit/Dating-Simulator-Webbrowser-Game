@@ -5,6 +5,9 @@ import { Title } from '../titlebg'
 export class Final extends Scene {
     constructor() {
         super()
+        let spantext = document.getElementById("textspan");
+        spantext.innerHTML = '';
+
     }
 
     onInitialize(engine) {

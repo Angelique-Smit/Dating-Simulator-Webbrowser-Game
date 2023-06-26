@@ -59,8 +59,7 @@ export class Birdman extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
             this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('gamescene');
-
+            engine.goToScene('OctoIntroScene');
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp)) {
