@@ -1,8 +1,8 @@
 import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import  bird  from "../json/bird.json";
+import  birdtalk2  from "../json/birdtalk2.json";
 
-export class Birdman extends Actor {
+export class BirdT2 extends Actor {
     index = 0
     options = 0
     dialogueId = 0
@@ -12,6 +12,7 @@ export class Birdman extends Actor {
 
     constructor() {
         super();
+        console.log("yo i am bird")
         this.scale = new Vector(0.125, 0.125);
 
         this.pos = new Vector(550, 210);
@@ -19,23 +20,18 @@ export class Birdman extends Actor {
     }
 
     onInitialize(engine) {
-        console.log("yo i am bird")
         this.game = engine;
-        this.dialogue = bird.intro
     }
     
     startDialogue(engine) {
-        let selectedText =  this.dialogue[this.index];
+        let selectedText =  birdtalk2.talk1[this.index];
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = this.dialogue[this.index].teller;
-            this.dialogueId = this.dialogue[this.index].id;
-            this.scene.startDialogue(actualText, name, this.dialogueId)
-            // engine.indexNumberBird = bird.intro[this.index].id;
-
-            //this.scene.changeBackground(bird.intro[this.index].id)
-
+            let name = birdtalk2.talk1[this.index].teller;
+            this.dialogueId = birdtalk2.talk1[this.index].id;
+            console.log(name, birdtalk2.talk1[this.index].id)
+            this.scene.startDialogue(actualText, name, birdtalk2.talk1[this.index].id)
             this.index++
         }
         else {
@@ -47,20 +43,17 @@ export class Birdman extends Actor {
 
 
     onPreUpdate(engine) {
-        if (engine.input.keyboard.wasPressed(Input.Keys.Space) && !this.choiceAvailable) {
+        if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
+            this.choiceAvailable = false
+            this.selectedText = "";
             this.startDialogue(engine)
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
             this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('gamescene');
+            engine.goToScene('catboyi2');
 
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
-            this.choiceAvailable = false
-            engine.goToScene('startscreen');
         }
 
         this.dialogueIdChecker();
@@ -74,7 +67,7 @@ export class Birdman extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 19) {
+        if (this.dialogueId < 3 || this.dialogueId > 10) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
@@ -83,11 +76,10 @@ export class Birdman extends Actor {
           
         switch (this.dialogueId) {
             //Mock
-            case 26:
-            case 27:
-            case 30:  
-            case 34:      
-            case 37:  
+            case 3:
+            case 6:
+            case 9:
+            case 10:
                 this.birdMock();
             break; 
         }

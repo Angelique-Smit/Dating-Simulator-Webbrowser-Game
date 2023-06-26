@@ -44,10 +44,15 @@
   
         {
           "id": 8,
-          "dialogue": "Awh! Thanks for worrying about me. You're so attentive. You've been giving me loads of fish, helped me clear up my wounds, and gave me the motivation I needed to turn my life around.",
+          "dialogue": "Awh! Thanks for worrying about me. You're so attentive.",
           "teller": "Elliot"
         },
-  
+        {
+          "id": 8.5,
+          "dialogue": "You've been giving me loads of fish, helped me clear up my wounds, and gave me the motivation I needed to turn my life around.",
+          "teller": "Elliot"
+        },
+        
         {
           "id": 9,
           "dialogue": "It's nothing, I saw a cute catboy in distress and figured I might as well help him.",

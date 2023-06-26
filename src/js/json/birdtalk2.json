@@ -1,0 +1,76 @@
+{
+    "talk1": [ 
+        {
+            "id": 1,
+            "dialogue": "Man, I seriously need to keep a better eye on Elliot.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 2,
+            "dialogue": "Atleast he's okay now....I hope...",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 3,
+            "dialogue": "Fwie Fwie Fwie. Why so gloomy, my young fellow?",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 4,
+            "dialogue": "*sighs* Hey Corvo",
+            "teller": "Me"
+        },
+
+        {
+            "id": 5,
+            "dialogue": "My, you look like you've seen better days! Whatever has happened back there?",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 5.5,
+            "dialogue": "Well, you see--",
+            "teller": "Me"
+        },
+
+        {
+            "id": 6,
+            "dialogue": "You don't have to answer that, I already saw everything.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 7,
+            "dialogue": "...",
+            "teller": "Me"
+        },
+
+        {
+            "id": 8,
+            "dialogue": "Now now don't give me that look. I'm just trying to lighten up the mood.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 9,
+            "dialogue": "Anyhoot, your journey doesn't end here. I'll be hooting for you~.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 10,
+            "dialogue": "Knock 'em dead darling. Chiao~!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 11,
+            "dialogue": "I swear, i'll never understand this guy.... (press w to continue)",
+            "teller": "Me"
+        }
+      ]
+  }
+        

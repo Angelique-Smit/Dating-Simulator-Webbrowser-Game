@@ -1,5 +1,6 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
 import { Bg } from '../startbg'
+import { Title } from '../titlebg'
 
 export class Final extends Scene {
     constructor() {
@@ -7,37 +8,34 @@ export class Final extends Scene {
     }
 
     onInitialize(engine) {
+
+
+        let createText = document.getElementById("titlespan")
+        createText.innerHTML = "Thanks for playing our game!"
+
+        
+        let playername = document.getElementById("credits")
+        playername.innerHTML = "Credits:"
+
+        let creditart = document.getElementById("creditart")
+        creditart.innerHTML = "Artwork:\n-Aswan Kotalh"
+
+        let credit2 = document.getElementById("credit2")
+        credit2.innerHTML = "Writing:\n-Angelique Smit"
+
+        let credit3 = document.getElementById("credit3")
+        credit3.innerHTML = "Music:\n-Jake Morris"
+
+        let credit4 = document.getElementById("creditprog")
+        credit4.innerHTML = "Programming:\n-Aswan Kotalh\n-Angelique Smit"
+
         const startscreenbg = new Bg();
         this.add(startscreenbg);
 
-        let labelwelcome = new Label({
-            text: '',
-            pos: new Vector(150, 250),
-            font: new Font({
-                family: 'impact',
-                size: 48,
-                color: Color.White,
-                unit: FontUnit.Px
-            })
-        });
-
-        this.add(labelwelcome);
-        labelwelcome.text = 'Congratz, you did it nerd!';
-
-        let labelinstructions = new Label({
-            text: '',
-            pos: new Vector(275, 320),
-            font: new Font({
-                family: 'impact',
-                size: 24,
-                color: Color.White,
-                unit: FontUnit.Px
-            })
-        });
-
-        this.add(labelinstructions);
-        labelinstructions.text = 'Hope you enjoyed it tho';
+        const titlebg = new Title();
+        this.add(titlebg);
     }
+    
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
             engine.addScene('gamescene', new GameScene());
