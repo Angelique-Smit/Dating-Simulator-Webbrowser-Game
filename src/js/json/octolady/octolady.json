@@ -105,6 +105,33 @@
         "id": 21,
         "dialogue": "So go out on a date with me. My treat!",
         "teller": "???"
+      },
+
+      {
+        "id": 21,
+        "dialogue": "Press W to decline.\nPress S to accept.",
+        "teller": "???"
+      }
+    ],
+
+    "angry": [
+      {
+        "id": 1,
+        "dialogue": "Hmpf, well, I simply won't give you a choise then",
+        "teller": "???"
+      },
+      {
+        "id": 2,
+        "dialogue": "No hotties may leave without going on a small date atleast once!",
+        "teller": "???"
+      }
+    ],
+    
+    "happy": [
+      {
+        "id": 1,
+        "dialogue": "Yaay! Alright, lets get this date started!",
+        "teller": "???"
       }
     ]
   }

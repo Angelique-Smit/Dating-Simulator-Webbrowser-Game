@@ -110,6 +110,11 @@
         "id": 22,
         "dialogue": "You did leave me alone for an entire week. That wasn't cool. But you know, if you call me the most handsome girl in the world, I will.",
         "teller": "Aaliyah"
+      },
+      {
+        "id": 23,
+        "dialogue": "Will you call her the most handsome girl in the world?\nPress W for no.\nPress S for Yes.",
+        "teller": ""
       }
     ],
 
@@ -145,7 +150,7 @@
         "id": 2,
         "dialogue": "You know, I was kidding, but that's actually really sweet. Let's go on that date.",
         "teller": "Aaliyah"
-    }
+      }
       ]
   }
   

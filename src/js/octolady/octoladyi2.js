@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import octolady from "../json/octolady/octolady.json";
+import octolady from "../json/octolady/octoladyi2.json";
 
 export class Octolady extends Actor {
     index = 0
@@ -122,26 +122,27 @@ export class Octolady extends Actor {
             this.happy++
         }
 
-        engine.goToScene('octodate1');
+        engine.goToScene('octodate3');
         this.dialogueIdChecker();
+        // this.engine.addScene('catdate', new Catdate())
+        // this.engine.goToScene('catdate')
     }
 
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 6) {
+        if (this.dialogueId <17) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
             this.octoladyNeutral();
         }
-        if (this.dialogueId == 12.5){
-            this.dialogOptions()
-          }
+        // if (this.dialogueId == 12.5){
+        //     this.dialogOptions()
+        //   }
         switch (this.dialogueId) {
-
             //Mad
-                case -1:
+                case -19:
                 this.octoladyAngry();
                 break;
 
@@ -156,9 +157,8 @@ export class Octolady extends Actor {
                 break;
 
             //Happy
-            case 11:
-            case 12:
-            case 13:
+            case 17:
+            case 20:
                 this.octoladyHappy();
                 break;
         }

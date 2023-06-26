@@ -1,10 +1,10 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Actor } from "excalibur";
 import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
-import { Octolady } from "../octolady/octolady.js";
+import { Octolady } from "../octolady/octoladyd1.js";
 import { Resources, ResourceLoader } from '../resources.js';
 
-    export class OctoIntroScene extends Scene {
+    export class OctoDate1 extends Scene {
         game;
         dialogueText;
         bg
@@ -16,8 +16,9 @@ import { Resources, ResourceLoader } from '../resources.js';
 
         onInitialize(){
             this.bg = new GenericBg();
-                let bg1 = Resources.gamegenericbg.toSprite();
-                this.bg.scale = new Vector(0.305 , 0.305);
+                let bg1 = Resources.pondbg.toSprite();
+                this.bg.scale = new Vector(0.480 , 0.500);
+                this.bg.pos = new Vector(575, 300)
                 this.bg.graphics.use(bg1);
             this.add(this.bg)
 

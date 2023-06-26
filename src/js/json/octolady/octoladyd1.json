@@ -117,8 +117,34 @@
       },
       {
         "id": 24,
+        "dialogue": "Do blow her a kiss on the way out?\nPress W for no.\nPress S for Yes.",
+        "teller": "Me"
+      }
+    ],
+
+    "angry": [
+      {
+        "id": 1,
         "dialogue": "Goodbye, Aaliyah. Until next time!",
         "teller": "Me"
+      }
+    ],
+    
+    "happy": [
+      {
+        "id": 1,
+        "dialogue": "Hey Aaliyah, look at me!",
+        "teller": "Me"
+      },
+      {
+        "id": 2,
+        "dialogue": "Mwah!",
+        "teller": "Me"
+      },
+      {
+        "id": 3,
+        "dialogue": "Awh, thank you! You're adorable",
+        "teller": "Aaliyah"
       }
     ]
   }

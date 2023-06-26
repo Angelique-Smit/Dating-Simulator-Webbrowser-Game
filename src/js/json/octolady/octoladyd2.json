@@ -118,7 +118,6 @@
       "teller": "Aaliyah"
     },
 
-
     {
       "id": 20,
       "dialogue": " You do seem like quite the extrovert.",
@@ -182,6 +181,33 @@
     {
       "id": 32,
       "dialogue": "I had an amazing time though, thank you!",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 32,
+      "dialogue": "How do you wish her well?\nPress W for just saying bye.\nPress S to propperly wish her well",
+      "teller": ""
+    }
+  ],
+    
+
+  "angry": [
+    {
+      "id": 1,
+      "dialogue": "Bye!",
+      "teller": "Me"
+    }
+  ],
+  
+  "happy": [
+    {
+      "id": 1,
+      "dialogue": "Yeah it was amazing. Take care alright! See you later!",
+      "teller": "Me"
+    },
+    {
+      "id": 2,
+      "dialogue": "Yeah, see later love!",
       "teller": "Aaliyah"
     }
   ]
