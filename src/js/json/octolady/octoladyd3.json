@@ -1,0 +1,238 @@
+{
+    "intro": [
+      {
+        "id": 1,
+        "dialogue": "So, I'm going to have to be honest here, I haven't thought of any place that we could go to this time.",
+        "teller": "Me"
+      },
+      {
+        "id": 2,
+        "dialogue": "We should just stay here, I have to recharge my water levels anyways. I was waiting in the bushes for a while.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 3,
+        "dialogue": "Alright, that's fine with me. Is there any reason you wanted to scare me?",
+        "teller": "Me"
+      },
+      {
+        "id": 4,
+        "dialogue": "I felt like you might as well feel some of my pain. And it kinda worked hu hu hu hu.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 5,
+        "dialogue": "So, what have you been up to, love? Done anything exciting without me?",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 6,
+        "dialogue": "Most of my week has been spent looking for flowers for you, to be honest. They're hard to buy around here.",
+        "teller": "Me"
+      },
+      {
+        "id": 7,
+        "dialogue": "So you got them from the park?",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 8,
+        "dialogue": "HOW DID YOU KNOW?!",
+        "teller": "Me"
+      },
+      {
+        "id": 9,
+        "dialogue": "Oh love, I've lived here for most of my life. I might be restricted to just the park, but that doesn't mean I don't leave my pond often, you know. I do appreciate the flowers though.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 10,
+        "dialogue": "Man, I feel embarrassed right now. Did you know this whole time?",
+        "teller": "Me"
+      },
+      {
+        "id": 11,
+        "dialogue": "Yup, but I thought it was cute, so I wasn't going to say anything.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 12,
+        "dialogue": "You look adorable when you're embarrassed though. Hu hu hu hu!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 13,
+        "dialogue": "Hey now, don't make fun of me!",
+        "teller": "Me"
+      },
+      {
+        "id": 14,
+        "dialogue": "Don't worry, love, I'm just teasing you. I do mean it when I say you're cute though.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 15,
+        "dialogue": "You know you're supposed to be nice to your date, right?",
+        "teller": "Me"
+      },
+      {
+        "id": 16,
+        "dialogue": "Oh, but I am! I just like seeing my date a little flustered. I guess you're a bit shy when it comes to compliments. Hu hu hu hu!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 17,
+        "dialogue": "As if you're one to talk, I saw that blushing face every time I complimented you on our previous dates.",
+        "teller": "Me"
+      },
+      {
+        "id": 18,
+        "dialogue": "That never happened. You're lying!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 19,
+        "dialogue": "So if I call you an adorable, cute-looking octogirl, you wouldn't be blushing?",
+        "teller": "Me"
+      },
+      {
+        "id": 20,
+        "dialogue": "...No...",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 21,
+        "dialogue": "See, knew you were lying!",
+        "teller": "Me"
+      },
+      {
+        "id": 22,
+        "dialogue": "So now, on a more serious note, I've been thinking of ways to get you back to the ocean!",
+        "teller": "Me"
+      },
+      {
+        "id": 23,
+        "dialogue": "Maybe we can rent a small van, put a little plastic swimming pool in there, and drive to the nearest ocean!",
+        "teller": "Me"
+      },
+      {
+        "id": 24,
+        "dialogue": "Well-",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 25,
+        "dialogue": "Or maybe I can just lift you to some river nearby and get you to the ocean that way.",
+        "teller": "Me"
+      },
+      {
+        "id": 26,
+        "dialogue": "Actually-",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 27,
+        "dialogue": "Or can you move freely in the rain? I don't think you can since you stayed here all this time, but maybe that's an option too?",
+        "teller": "Me"
+      },
+      {
+        "id": 28,
+        "dialogue": "HEY! I'm trying to tell you something!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 29,
+        "dialogue": "I'm not going to move anywhere.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 30,
+        "dialogue": "What but you said-",
+        "teller": "Me"
+      },
+      {
+        "id": 31,
+        "dialogue": "I know what I said before, but I've realized that I really don't have a clue where my family is, or if they would even still be alive.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 32,
+        "dialogue": "One thing I do know is that they would want me to be safe, and since this is about the most peaceful you can get, I've decided to stay here.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 33,
+        "dialogue": "Plus, a little cutie from Earth helps to make it more bearable too!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 34,
+        "dialogue": "Really? Are you just going to live in the pond forever?",
+        "teller": "Me"
+      },
+      {
+        "id": 35,
+        "dialogue": "You know, it isn't that bad. I've made quite some friends over the years, and I have no one in the ocean.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 36,
+        "dialogue": "Plus, I don't think you have gills. It gets kind of hard to breathe underwater without them.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 37,
+        "dialogue": "What do you mean? Do you want me to come with you?",
+        "teller": "Me"
+      },
+      {
+        "id": 38,
+        "dialogue": "Well, you see, I've been thinking about it. You've been so nice to me, and you made me realize how much I have in this park. And in doing so, you made me a lot more confident in my own skin.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 39,
+        "dialogue": "I kinda started falling for your kindness towards me on the second date when you went out of your way to lift me to a spot in the park just to have a unique date with me.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 40,
+        "dialogue": "I guess I haven't asked yet, so I'll do it right now. I know this is going fast all of a sudden, but I feel like I need to ask.",
+        "teller": "Aaliyah"
+      },
+
+      {
+        "id": 41,
+        "dialogue": "Do you want to be my partner? Do you want to spend the rest of your life with me?",
+        "teller": "Aaliyah"
+      }
+    ],
+
+    "options" :[
+        {
+          "id": 1,
+          "dialogue": "Do you accept her love?\nPress W for no.\nPress S for Yes.",
+          "teller": ""
+        }
+      ],
+
+      "angry" : [{
+        "id": 1,
+        "dialogue": "Oh, well, I guess that is to be expected. I got so caught up in my own feelings I didn't even consider that you might not feel the same way about me. It's fine, but I would like to be alone for a while.",
+        "teller": "Aaliyah"
+      }
+      ],
+  
+      "happy" : [{
+        "id": 1,
+        "dialogue": "Yaay! I knew you would say yes. We're going to be the most adorable couple. I'm so happy! You showed me how good life can be, and I'm very grateful for that.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 1,
+        "dialogue": "Let's be together forever!",
+        "teller": "Aaliyah"
+      }
+      ]
+  }
+  
