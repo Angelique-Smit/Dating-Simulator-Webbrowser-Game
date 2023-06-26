@@ -232,6 +232,18 @@
             "dialogue": "Press W to go to the city. Press S to go to the pond.",
             "teller": "Corvo"
         }
+      ],
+      "badoption":[
+        {
+            "id": 1,
+            "dialogue": "Ah forget it. I'd rather be with my waifus. Hatsune Miku i'm coming home baby~!",
+            "teller": "My mind"
+        },
+        {
+            "id": 2,
+            "dialogue": "You go home to make out with your body pillow-- seriously what is wrong with you\n[Press DOWN to take the L]",
+            "teller": ""
+        }
       ]
   }
         
