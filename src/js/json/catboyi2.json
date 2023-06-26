@@ -32,10 +32,15 @@
   
         {
           "id": 6,
-          "dialogue": "Finding Elliot also isn't easy. It feels like he could be anywhere. Now, looking for a normal person already isn't easy, but this really feels like finding a twink in a haystack.",
+          "dialogue": "Finding Elliot also isn't easy. It feels like he could be anywhere. ",
           "teller": "My mind"
         },
-  
+        
+        {
+          "id": 6.5,
+          "dialogue": "Now, looking for a normal person already isn't easy, but this really feels like finding a twink in a haystack.",
+          "teller": "My mind"
+        },
         {
           "id": 7,
           "dialogue": "I just hope I find him soon. I wouldn't be surprised if I got robbed before I find hi-",

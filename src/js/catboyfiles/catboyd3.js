@@ -122,7 +122,7 @@ export class Catboy extends Actor {
         }
         else {
             // this.choiceAvailable = false
-            engine.goToScene('catboyi2');
+            engine.goToScene('endgame');
         }
        
         this.dialogueIdChecker();
@@ -148,6 +148,7 @@ export class Catboy extends Actor {
 
             //Blush
             case 8:
+            case 8.5:
             case 10:
             case 29:
             case 30:

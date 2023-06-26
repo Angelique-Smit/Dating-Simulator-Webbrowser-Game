@@ -248,7 +248,7 @@
       "options" :[
         {
           "id": 1,
-          "dialogue": "Do you want to give Elliot some money to get through the week? \nPress W to not give any money.\nPress S to not give you any money.",
+          "dialogue": "Do you want to give Elliot some money to get through the week? \nPress W to not give any money.\nPress S to give him some money.",
           "teller": ""
         }
       ],
