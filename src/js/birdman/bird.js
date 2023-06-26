@@ -4,6 +4,7 @@ import  bird  from "../json/bird.json";
 
 export class Birdman extends Actor {
     index = 0
+    badoption = false
     options = 0
     badoption = false
     dialogueId = 0
