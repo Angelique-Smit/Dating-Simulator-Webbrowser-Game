@@ -62,10 +62,10 @@ export class Catboy extends Actor {
             this.scene.dialogOptions(actualText, name)
             this.options++
         }
+        console.log(selectedText)
+        this.dialogueIdChecker();
     }
-    dialogOptions() {
-        this.choiceAvailable = true
-    }
+
 
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space) && !this.choiceAvailable) {
@@ -76,19 +76,9 @@ export class Catboy extends Actor {
             this.swapEmotions()
             this.startDialogue(engine)
         }
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp) && this.choiceAvailable) {
-            this.swapEmotions()
-            this.startDialogue(engine)
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown) && this.choiceAvailable) {
-            this.startDialogue(engine)
-            this.choiceAvailable = false
-        }
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
             // this.choiceAvailable = false
             this.showHappyDialog(engine)
-            this.choiceAvailable = false
         }
 
         this.dialogueIdChecker();
@@ -131,15 +121,13 @@ export class Catboy extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 10) {
+        if (this.dialogueId < 8) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
             this.catboyNeutral();
         }
-        if (this.dialogueId == 12.5){
-            this.dialogOptions()
-          }
+
         switch (this.dialogueId) {
 
             //Mad

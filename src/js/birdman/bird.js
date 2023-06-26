@@ -33,6 +33,10 @@ export class Birdman extends Actor {
             let name = this.dialogue[this.index].teller;
             this.dialogueId = this.dialogue[this.index].id;
             this.scene.startDialogue(actualText, name, this.dialogueId)
+            // engine.indexNumberBird = bird.intro[this.index].id;
+
+            //this.scene.changeBackground(bird.intro[this.index].id)
+
             this.index++
         }
         else {
@@ -56,7 +60,6 @@ export class Birdman extends Actor {
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
-            this.selectedText = "";
             this.choiceAvailable = false
             engine.goToScene('gamescene');
 
@@ -67,11 +70,10 @@ export class Birdman extends Actor {
             this.choiceAvailable = false
         }
 
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown)  && this.choiceAvailable) {
+        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown)) {
             this.selectedText = "";
-            this.badOption(engine)
-            this.startDialogue(engine)
-            
+            this.choiceAvailable = false
+            engine.goToScene('endgame');
         }
 
         this.dialogueIdChecker();
@@ -79,22 +81,6 @@ export class Birdman extends Actor {
 
     dialogOptions() {
         this.choiceAvailable = true
-    }
-
-    badOption(engine){ //swapped de emoties van de catboy
-        console.log("you reached it!")
-        this.badoption = !this.badoption // swap emotions
-        console.log(`i am feeling very ${this.badoption}`)
-        if(this.badoption){
-            this.dialogue = bird.badoption
-            console.log(this.dialogue)
-        }
-        else{
-            engine.goToScene('endgame');
-        }
-        //zet de choiceavailable weer terug op false en de index terug op 0
-        this.choiceAvailable = false 
-        this.index = 0
     }
 
     //Add cases to add in certain sprites
@@ -105,10 +91,7 @@ export class Birdman extends Actor {
         } else {
             this.birdNormal();
         }
-          if (this.dialogueId == 9.5){
-            this.dialogOptions()
-          }
-
+          
         switch (this.dialogueId) {
             //Mock
             case 26:
