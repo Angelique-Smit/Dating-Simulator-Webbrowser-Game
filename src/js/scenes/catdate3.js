@@ -17,7 +17,7 @@ import { Resources, ResourceLoader } from '../resources.js';
         onInitialize(){
             console.log("I AM IN THE DATE2 SCENE")
             this.bg = new GenericBg();
-                let bg1 = Resources.GenericBg.toSprite();
+                let bg1 = Resources.gamegenericbg.toSprite();
                 this.bg.graphics.use(bg1);
             this.add(this.bg)
 
