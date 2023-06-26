@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import catboy from "../json/catboy.json";
+import catboy from "../json/catboy/catboy.json";
 
 export class Catboy extends Actor {
     index = 0

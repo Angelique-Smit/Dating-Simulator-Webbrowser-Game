@@ -1,0 +1,151 @@
+
+{
+    "intro": [
+      {
+        "id": 1,
+        "dialogue": "You know, I might have regretted giving an adult a piggy ride, but I don't regret seeing Aaliyah that happy.",
+        "teller": "My mind"
+      },
+      {
+        "id": 2,
+        "dialogue": "It felt like she could finally have a conversation without having to worry the other person wasn't up to it and would leave her all alone in that pond.",
+        "teller": "My mind"
+      },
+      {
+        "id": 3,
+        "dialogue": "It's been a week since I went to see her. I feel a little bad about it, but I was looking for a place that sells flowers so I could surprise her.",
+        "teller": "My mind"
+      },
+      {
+        "id": 4,
+        "dialogue": "But there were none, so I had to pick flowers growing in the park. Not my classiest moment. Corvo definitely has a reason to laugh at me now, but as long as Aaliyah doesn't realize, I guess it's fine.",
+        "teller": "My mind"
+      },
+      {
+        "id": 5,
+        "dialogue": "Again, not my proudest moment, but I got to give credit to my creativity.",
+        "teller": "My mind"
+      },
+      {
+        "id": 6,
+        "dialogue": "That being vandalizing a public park.",
+        "teller": "My mind"
+      },
+      {
+        "id": 7,
+        "dialogue": "Do they have fantasy police over here? Will I be thrown into fantasy jail over my fantasy vandalism?",
+        "teller": "My mind"
+      },
+      {
+        "id": 8,
+        "dialogue": "Probably not to be honest. I don't think that the people who made this fantasy world wanted to go through that kind of trouble. Seems like too much work.",
+        "teller": "My mind"
+      },
+      {
+        "id": 9,
+        "dialogue": "Anyways, I've been thinking of ways to get Aaliyah in contact with her family.",
+        "teller": "My mind"
+      },
+      {
+        "id": 10,
+        "dialogue": "I don't know if there are any waters nearby, but maybe we could rent a truck or something, place a little kiddy pool in there and fill it with water.",
+        "teller": "My mind"
+      },
+      {
+        "id": 11,
+        "dialogue": "Maybe she could stay in there until we reach a river or an ocean. Even then, if this place is anything like Earth, the world should be mostly made out of water.",
+        "teller": "My mind"
+      },
+      {
+        "id": 12,
+        "dialogue": "And if Aaliyah's family lives in the wild, there is a decent chance they've ended up as someone's dinner.",
+        "teller": "My mind"
+      },
+      {
+        "id": 13,
+        "dialogue": "Even then, I have no idea if Aaliyah would even want to find her family. Maybe I should just ask her once I get to the lake.",
+        "teller": "My mind"
+      },
+      {
+        "id": 14,
+        "dialogue": "The lake is just up ahead, just a few more steps and I should be there.",
+        "teller": "My mind"
+      },
+      {
+        "id": 15,
+        "dialogue": "Huh, that's weird, she isn't here.",
+        "teller": "My mind"
+      },
+      {
+        "id": 16,
+        "dialogue": "Where did she go? Man, I hope the fisherman didn't get to her. I spent all this time getting flowers for he-",
+        "teller": ""
+      },
+      {
+        "id": 17,
+        "dialogue": "BOO! Hu hu hu hu! Did I scare you love? I sure hope I did!",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 18,
+        "dialogue": "Were you planning on giving me a heart attack? I brought flowers to take you out on a date you know!",
+        "teller": "Me"
+      },
+      {
+        "id": 19,
+        "dialogue": "Well, I might just have. You left me to sit there and wait for you for an entire week you know. I thought you'd never come back.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 20,
+        "dialogue": "But I do appreciate the flowers love. Such a little gentleman.",
+        "teller": "Aaliyah"
+      },
+      {
+        "id": 21,
+        "dialogue": "Well, would you still want to go out on a third date with me?",
+        "teller": "Me"
+      },
+      {
+        "id": 22,
+        "dialogue": "You did leave me alone for an entire week. That wasn't cool. But you know, if you call me the most handsome girl in the world, I will.",
+        "teller": "Aaliyah"
+      }
+    ],
+
+    "options" :[
+        {
+          "id": 1,
+          "dialogue": "Will you call her the most handsome girl in the world?\nPress W for no.\nPress S for Yes.",
+          "teller": ""
+        }
+      ],
+
+      "angry" : [
+        {
+            "id": 1,
+            "dialogue": "Nope, not going to happen.",
+            "teller": "Me"
+        },
+        {
+            "id": 2,
+            "dialogue": "You know what, I was willing to let it slide if you just said that, but now I won't. You should go reflect on how you've treated me the past week.",
+            "teller": "Aaliyah"
+        }
+
+      
+      ],
+  
+      "happy" : [{
+        "id": 1,
+        "dialogue": "You know what, sure. Aaliyah, you're the most handsome girl in the world.",
+        "teller": "Me"
+      },
+      {
+        "id": 2,
+        "dialogue": "You know, I was kidding, but that's actually really sweet. Let's go on that date.",
+        "teller": "Aaliyah"
+    }
+      ]
+  }
+  
