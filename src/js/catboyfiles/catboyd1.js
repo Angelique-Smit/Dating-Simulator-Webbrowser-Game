@@ -1,11 +1,12 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import catboyd1 from "../json/catboy/catboyd1.json";
+import catboyd1 from "../json/catboyd1.json";
 
 export class Catboy extends Actor {
     index = 0
     happy = 0
     angry = 0
+    smallangry = false
     options = 0
     dialogue;
     angry = false;
@@ -66,10 +67,13 @@ export class Catboy extends Actor {
             this.scene.dialogOptions(actualText, name)
             //this.options++
         }
-        console.log(selectedText)
-        this.dialogueIdChecker();
+        else {
+            this.dialogOptions()
+        }
     }
-
+dialogOptions(){
+    this.choiceAvailable = true
+}
 
     onPreUpdate(engine) {
         if (engine.input.keyboard.wasPressed(Input.Keys.Space) && !this.choiceAvailable) {
@@ -84,7 +88,15 @@ export class Catboy extends Actor {
             // this.choiceAvailable = false
             this.showHappyDialog(engine)
         }
+        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp) && this.choiceAvailable) {
+            this.getMad()
+            this.startDialogue(engine)
+        }
 
+        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown) && this.choiceAvailable) {
+            this.startDialogue(engine)
+            this.choiceAvailable = false
+        }
         this.dialogueIdChecker();
     }
 
@@ -95,6 +107,22 @@ export class Catboy extends Actor {
             this.dialogue = catboyd1.angry
             //  this.dialogueId = catboyd1.angry[this.angry].id
             // this.angry++
+        }
+        else{
+            
+            console.log("bro, can i press space?")
+            this.dialogue = catboyd1.Catdate
+        }
+        //zet de choiceavailable weer terug op false en de index terug op 0
+        this.index = 0
+        this.choiceAvailable = false 
+    }
+
+    getMad(){ //swapped de emoties van de catboy
+        this.smallangry = !this.smallangry // swap emotions
+        console.log(`i am feeling very ${this.smallangry}`)
+        if(this.smallangry){
+            this.dialogue = catboyd1.smallangry
         }
         else{
             
@@ -138,7 +166,9 @@ export class Catboy extends Actor {
         } else {
             this.catboyNeutral();
         }
-
+        if (this.dialogueId == 6.5){
+            this.dialogOptions()
+          }
         switch (this.dialogueId) {
 
             //Mad
