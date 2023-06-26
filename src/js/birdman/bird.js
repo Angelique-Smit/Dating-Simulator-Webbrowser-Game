@@ -60,19 +60,7 @@ export class Birdman extends Actor {
 
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
             this.choiceAvailable = false
-            engine.goToScene('gamescene');
-
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp)) {
-            this.startDialogue(engine)
-            this.choiceAvailable = false
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown)) {
-            this.selectedText = "";
-            this.choiceAvailable = false
-            engine.goToScene('endgame');
+            engine.goToScene('startscreen');
         }
 
         this.dialogueIdChecker();
@@ -81,6 +69,8 @@ export class Birdman extends Actor {
     dialogOptions() {
         this.choiceAvailable = true
     }
+
+ 
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
