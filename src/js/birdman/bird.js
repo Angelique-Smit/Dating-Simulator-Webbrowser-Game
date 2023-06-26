@@ -32,6 +32,10 @@ export class Birdman extends Actor {
             let name = this.dialogue[this.index].teller;
             this.dialogueId = this.dialogue[this.index].id;
             this.scene.startDialogue(actualText, name, this.dialogueId)
+            // engine.indexNumberBird = bird.intro[this.index].id;
+
+            //this.scene.changeBackground(bird.intro[this.index].id)
+
             this.index++
         }
         else {
@@ -55,21 +59,8 @@ export class Birdman extends Actor {
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
-            this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('gamescene');
-
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp)) {
-            this.startDialogue(engine)
-            this.choiceAvailable = false
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown)) {
-            this.selectedText = "";
-            this.choiceAvailable = false
-            engine.goToScene('endgame');
+            engine.goToScene('startscreen');
         }
 
         this.dialogueIdChecker();
@@ -79,6 +70,8 @@ export class Birdman extends Actor {
         this.choiceAvailable = true
     }
 
+ 
+
     //Add cases to add in certain sprites
     dialogueIdChecker() {
         if (this.dialogueId < 19) {
@@ -87,10 +80,7 @@ export class Birdman extends Actor {
         } else {
             this.birdNormal();
         }
-          if (this.dialogueId == 9.5){
-            this.dialogOptions()
-          }
-
+          
         switch (this.dialogueId) {
             //Mock
             case 26:

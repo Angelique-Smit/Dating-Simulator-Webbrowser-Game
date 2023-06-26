@@ -73,15 +73,11 @@
       },
 
       {
-        "id": 12.5,
-        "dialogue": "Okay fine fine, take my money!(press UP) \n[ Flirt with him ](press DOWN)",
-        "teller": ""
-      },
-      {
         "id": 13,
         "dialogue": "Robbed? By you? I'm not being robbed. You're way too adorable to rob anyone, young lady.",
         "teller": "Me"
       },
+
       {
         "id": 14,
         "dialogue": "Young lady? YOUNG LADY! YOU THINK I'M A YOUNG LADY!",
@@ -270,22 +266,24 @@
         "id": 43,
         "dialogue": "Hmmmm. Fine.",
         "teller": "Elliot"
-      },
+      }
+    ],
+    "options":[
       {
-        "id": 44,
-        "dialogue": "Press S to go on that date!",
-        "teller": ""
+        "id": 1,
+        "dialogue": "Test my emotions through w or s",
+        "teller": "Elliot"
       }
     ],
     "angry" : [{
       "id": 1,
-      "dialogue": "Yeah thats right, now beat it!",
+      "dialogue": "what the fuck! you fucking dick!",
       "teller": "Elliot"
     },
     {
       "id": 2,
-      "dialogue": "Shit, there goes my money... (try again)",
-      "teller": "My mind"
+      "dialogue": "such an asshole",
+      "teller": "Elliot"
     }
     ],
     "happy" : [{
