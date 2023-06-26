@@ -43,7 +43,7 @@ export class Game extends Engine {
         this.addScene('octodate2', new OctoDate2());
         this.addScene('octoladyi2', new OctoI2());
         this.addScene('octodate3', new OctoDate3());
-        this.goToScene('octoladyi2');
+        this.goToScene('startscreen');
     }
 }
 
