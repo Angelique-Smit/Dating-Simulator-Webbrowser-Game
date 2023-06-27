@@ -2,7 +2,7 @@ import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "exca
 import { Bg } from '../startbg'
 import { Intro } from './introscene.js'
 import { IntroCatScene } from './gamescene'
-import ethernal from '../images/Ethereal_Harmony.mp3'
+// import ethernal from '../images/Ethereal_Harmony.mp3'
 
 
 export class Startscreen extends Scene {
@@ -11,14 +11,14 @@ export class Startscreen extends Scene {
         super()
     }
 
-    onActivate(){
-        this.bgMusic = new MediaSource(ethernal)
-        this.bgMusic.loop = true
-        this.bgMusic.play()
-   }
-   onDeactivate(){
-        this.bgMusic.pause()
-   }
+//     onActivate(){
+//         this.bgMusic = new MediaSource(ethernal)
+//         this.bgMusic.loop = true
+//         this.bgMusic.play()
+//    }
+//    onDeactivate(){
+//         this.bgMusic.pause()
+//    }
 
     onInitialize(engine) {
         const startscreenbg = new Bg();
