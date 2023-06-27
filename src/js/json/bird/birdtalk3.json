@@ -1,0 +1,57 @@
+{
+    "talk1": [ 
+        {
+        "id": 1,
+        "dialogue": "Hmm? Was he not your style? But you two seemed so cute together.",
+        "teller": "Corvo"
+        },
+        {
+        "id": 2,
+        "dialogue": "Oh well, these things happen sometimes. I can't force you to date Elliot.",
+        "teller": "Corvo"
+        },
+        {
+        "id": 3,
+        "dialogue": "Too bad though, he was the best trap in the city.",
+        "teller": "Corvo"
+        },
+        {
+        "id": 4,
+        "dialogue": "Well, since you denied to be Elliot's partner, do you wish to meet other bachelors? You haven't been to the pond after all.",
+        "teller": "Corvo"
+        },
+        {
+        "id": 5,
+        "dialogue": "You're also free to give up if you decide you're too bad at dating! Fwie fwie fwie fwie!",
+        "teller": "Corvo"
+        },
+        {
+        "id": 6,
+        "dialogue": "I'm kidding, but the choise is yours. What will it be, young fellow?",
+        "teller": "Corvo"
+        },
+        {
+            "id": 6,
+            "dialogue": "Press W to give up on love.\n Press S to Keep trying and go to the pond.",
+            "teller": "Corvo"
+            }
+      ],
+      "angry" : [{
+        "id": 1,
+        "dialogue": "Well,  that's your loss!",
+        "teller": "Corvo"
+      }
+      ],
+      "happy" : [{
+        "id": 1,
+        "dialogue": "See! That's the spirit!",
+        "teller": "Corvo"
+      },
+      {
+        "id": 2,
+        "dialogue": "Let's go to the pond. You haven't been there yet.",
+        "teller": "Corvo"
+      }
+      ]
+  }
+        

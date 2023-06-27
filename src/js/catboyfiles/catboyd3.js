@@ -99,7 +99,7 @@ export class Catboy extends Actor {
         else{
             
             console.log("bro, can i press space?")
-            this.dialogue = catboyd3.Catdate
+            engine.goToScene('catboycorvo3');
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.index = 0

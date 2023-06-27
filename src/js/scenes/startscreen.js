@@ -1,7 +1,7 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
 import { Bg } from '../startbg'
 import { Intro } from './introscene.js'
-import { IntroCatScene } from './gamescene'
+import { Resources, ResourceLoader } from "../resources.js";
 // import ethernal from '../images/Ethereal_Harmony.mp3'
 
 
