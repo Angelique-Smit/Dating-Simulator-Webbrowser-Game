@@ -4,7 +4,7 @@ import { TextBox } from "../textbox.js";
 import { Resources, ResourceLoader } from '../resources.js';
 import { BirdT6 } from '../birdman/birdt6.js';
 
-    export class Corvotalk6 extends Scene {
+    export class OctoCorvoT3 extends Scene {
         game;
         dialogueText;
         bg
@@ -33,6 +33,7 @@ import { BirdT6 } from '../birdman/birdt6.js';
             let createText = document.getElementById("textspan")
             createText.innerHTML = "Press SPACE to start the dialogue"
         }
+
 
         startDialogue(text, name, id) {
             console.log(id)

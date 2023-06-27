@@ -20,7 +20,6 @@ import black from '../images/blackout.png'
 import alleyway from '../images/backgroundalley.png'
 import pond from '../images/backgroundpond.png'
 import titlescreen from '../images/titlescreen.png'
-import ethernal from '../images/Ethereal_Harmony.mp3'
 
 const Resources = {
     start: new ImageSource(startscreenImage),
@@ -43,13 +42,12 @@ const Resources = {
     blackoutbg: new ImageSource(black),
     alleybg: new ImageSource(alleyway),
     pondbg: new ImageSource(pond),
-    titlebg: new ImageSource(titlescreen),
-    song: new Audio(ethernal)
-
+    titlebg: new ImageSource(titlescreen)
 }
+
 const ResourceLoader = new Loader([Resources.start, Resources.gamegenericbg, Resources.textbox, Resources.catboynormal, Resources.catboyhappy, 
       Resources.catboyangry, Resources.catboysad, Resources.catboyblush, Resources.octoladynormal, Resources.octoladyhappy, Resources.octoladysad, 
       Resources.octoladyangry, Resources.octoladyblush, Resources.birdmannormal, Resources.birdmanmock, Resources.png, Resources.reallifebg, 
-      Resources.blackoutbg, Resources.alleybg, Resources.pondbg, Resources.titlebg, Resources.song])
+      Resources.blackoutbg, Resources.alleybg, Resources.pondbg, Resources.titlebg])
 
 export { Resources, ResourceLoader }

@@ -88,12 +88,13 @@ export class Catboy extends Actor {
         this.dialogueIdChecker();
     }
 
-    swapEmotions(){ //swapped de emoties van de catboy
+    swapEmotions(engine){ //swapped de emoties van de catboy
         this.angry = !this.angry // swap emotions
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
+            console.log('sex')
             this.dialogue = catboyd3.angry
-            //  this.dialogueId = catboyd3.angry[this.angry].id
+            // this.dialogueId = catboyd3.angry[this.angry].id
             // this.angry++
         }
         else{

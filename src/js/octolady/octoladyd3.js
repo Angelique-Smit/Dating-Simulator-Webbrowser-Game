@@ -73,11 +73,11 @@ export class Octolady extends Actor {
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
-            this.swapEmotions()
+            this.swapEmotions(engine)
             this.startDialogue(engine)
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp) && this.choiceAvailable) {
-            this.swapEmotions()
+            this.swapEmotions(engine)
             this.startDialogue(engine)
         }
 
@@ -94,18 +94,22 @@ export class Octolady extends Actor {
         this.dialogueIdChecker();
     }
 
-    swapEmotions(){ //swapped de emoties van de octolady
+    swapEmotions(engine){ //swapped de emoties van de octolady
         this.angry = !this.angry // swap emotions
         console.log(`i am feeling very ${this.angry}`)
+        this.index = 0
         if(this.angry){
             this.dialogue = octolady.angry
         }
         else{
-            this.dialogue = octolady.intro
+            let createText = document.getElementById("textspan")
+            createText.innerHTML = "Press SPACE to start the dialogue"
+            console.log('empty')
+            engine.goToScene('octocorvotalk3');
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.choiceAvailable = false 
-        this.index = 0
+        //this.index = 0
     }
 
     showHappyDialog(engine) {
@@ -123,7 +127,7 @@ export class Octolady extends Actor {
             console.log(selectedText)
         }
         else{
-            engine.goToScene('octodate1');
+            engine.goToScene('endgame');
         }
         
         this.dialogueIdChecker();

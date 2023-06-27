@@ -1,8 +1,8 @@
-import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
+import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Sound } from "excalibur";
 import { Bg } from '../startbg'
 import { Intro } from './introscene.js'
 import { Resources, ResourceLoader } from "../resources.js";
-// import ethernal from '../images/Ethereal_Harmony.mp3'
+import ethernal from '../../images/Ethereal_Harmony.mp3'
 
 
 export class Startscreen extends Scene {
@@ -11,16 +11,11 @@ export class Startscreen extends Scene {
         super()
     }
 
-    onActivate(){
-        this.bgMusic = new Audio(song)
+    onInitialize(engine) {
+        this.bgMusic = new Audio(ethernal)
         this.bgMusic.loop = true
         this.bgMusic.play()
-   }
-   onDeactivate(){
-        this.bgMusic.pause()
-   }
-
-    onInitialize(engine) {
+        
         const startscreenbg = new Bg();
         this.add(startscreenbg);
 
@@ -58,6 +53,9 @@ export class Startscreen extends Scene {
             engine.goToScene('introscene');
         }
     }
+
+
+
 
 }
 
