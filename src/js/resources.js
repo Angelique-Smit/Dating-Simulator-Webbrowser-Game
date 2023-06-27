@@ -44,7 +44,7 @@ const Resources = {
     alleybg: new ImageSource(alleyway),
     pondbg: new ImageSource(pond),
     titlebg: new ImageSource(titlescreen),
-    song: new MediaSource(ethernal)
+    song: new Audio(ethernal)
 
 }
 const ResourceLoader = new Loader([Resources.start, Resources.gamegenericbg, Resources.textbox, Resources.catboynormal, Resources.catboyhappy, 

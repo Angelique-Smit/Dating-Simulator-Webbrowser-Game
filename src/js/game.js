@@ -18,6 +18,8 @@ import { OctoI1 } from "./scenes/octoladyi1";
 import { OctoDate2 } from "./scenes/octodate2";
 import { OctoI2 } from "./scenes/octoladyi2";
 import { OctoDate3 } from "./scenes/octodate3";
+import { Corvotalk3 } from "./scenes/catboycorvo3";
+import { Corvotalk6 } from "./scenes/octocorvotalk3";
 
 export class Game extends Engine {
     constructor() {
@@ -43,6 +45,8 @@ export class Game extends Engine {
         this.addScene('octodate2', new OctoDate2());
         this.addScene('octoladyi2', new OctoI2());
         this.addScene('octodate3', new OctoDate3());
+        this.addScene('catboycorvo3', new Corvotalk3());
+        this.addScene('catboycorvo6', new Corvotalk6());
         this.goToScene('startscreen');
     }
 }

@@ -1,8 +1,8 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input } from "excalibur";
 import { Bg } from '../startbg'
 import { Intro } from './introscene.js'
-import { IntroCatScene } from './gamescene'
-import ethernal from '../images/Ethereal_Harmony.mp3'
+import { Resources, ResourceLoader } from "../resources.js";
+// import ethernal from '../images/Ethereal_Harmony.mp3'
 
 
 export class Startscreen extends Scene {
@@ -12,7 +12,7 @@ export class Startscreen extends Scene {
     }
 
     onActivate(){
-        this.bgMusic = new MediaSource(ethernal)
+        this.bgMusic = new Audio(song)
         this.bgMusic.loop = true
         this.bgMusic.play()
    }
