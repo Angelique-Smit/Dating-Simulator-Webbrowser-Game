@@ -49,5 +49,6 @@ const ResourceLoader = new Loader([Resources.start, Resources.gamegenericbg, Res
       Resources.catboyangry, Resources.catboysad, Resources.catboyblush, Resources.octoladynormal, Resources.octoladyhappy, Resources.octoladysad, 
       Resources.octoladyangry, Resources.octoladyblush, Resources.birdmannormal, Resources.birdmanmock, Resources.png, Resources.reallifebg, 
       Resources.blackoutbg, Resources.alleybg, Resources.pondbg, Resources.titlebg])
+      Resources.blackoutbg, Resources.alleybg, Resources.pondbg, Resources.titlebg])
 
 export { Resources, ResourceLoader }
