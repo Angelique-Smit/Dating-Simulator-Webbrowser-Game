@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import  bird  from "../json/bird.json";
+import  bird  from "../json/bird/bird.json";
 
 export class Birdman extends Actor {
     index = 0
@@ -59,8 +59,7 @@ export class Birdman extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
             this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('gamescene');
-
+            engine.goToScene('octoladyintro');
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp)) {

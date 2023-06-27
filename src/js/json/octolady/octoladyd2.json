@@ -1,0 +1,214 @@
+
+{
+  "intro": [
+    {
+      "id": 1,
+      "dialogue": "You know, I kind of regret offering to carry Aaliyah. These tentacles weigh like feathers, but giving a piggyback ride to an adult instead of a kid really does make a difference. ",
+      "teller": "My mind"
+    },
+    {
+      "id": 2,
+      "dialogue": "It was worth it though, she seems really happy to be in this part of the park.",
+      "teller": "My mind"
+    },
+    {
+      "id": 3,
+      "dialogue": "I don't think she's been able to truly experience how nice this park actually is.",
+      "teller": "My mind"
+    },
+    {
+      "id": 4,
+      "dialogue": "This place is so beautiful! I never got to spend much time here before! You chose a good spot!",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 5,
+      "dialogue": "Thank you! I came across it when I first came here.",
+      "teller": "Me"
+    },
+    {
+      "id": 6,
+      "dialogue": "Does Earth have any of these kinds of places?",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 7,
+      "dialogue": "Loads! Not all are as colorful and peaceful though.",
+      "teller": "Me"
+    },
+    {
+      "id": 8,
+      "dialogue": "Well, from what I've heard, this place isn't too peaceful either. The park is fine, but the city in the far distance has a bad reputation.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 9,
+      "dialogue": "Why?",
+      "teller": "Me"
+    },
+    {
+      "id": 10,
+      "dialogue": "Lots of criminal activity from what I've heard. If you plan on going there, watch your back.",
+      "teller": "Aaliyah"
+    },
+
+    {
+      "id": 10,
+      "dialogue": "Really? I'll make sure I watch my back.",
+      "teller": "Me"
+    },
+
+    {
+      "id": 11,
+      "dialogue": "Good, I wouldn't want to see the hottie in front of me get hurt. I'd have to patch you right up.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 12,
+      "dialogue": "You could patch me up anytime.",
+      "teller": "Me"
+    },
+    {
+      "id": 13,
+      "dialogue": "Oh, how adorable! Young people are so cocky!",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 14,
+      "dialogue": "Young? If you think I'm young, how old are you?",
+      "teller": "Me"
+    },
+    {
+      "id": 15,
+      "dialogue": "My my, have you never been taught to not ask a lady for her age! Just kidding, I'm 32 love.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 16,
+      "dialogue": "Really? You sure don't look the part. You look 10 years younger at least!",
+      "teller": "Me"
+    },
+    {
+      "id": 17,
+      "dialogue": "Oh, don't make me blush!",
+      "teller": "Aaliyah"
+    },
+
+    {
+      "id": 18,
+      "dialogue": "To be honest, 10 might be a bit of an overstatement, but I never thought she would be older than 26. She's hot though, I dig it.",
+      "teller": "My mind"
+    },
+
+
+    {
+      "id": 18,
+      "dialogue": "So what do you do in your free time?",
+      "teller": "Me"
+    },
+    {
+      "id": 19,
+      "dialogue": "That's such a stupid question. She physically can't leave the pond. What is she gonna say? SWIM?",
+      "teller": "My mind"
+    },
+
+    {
+      "id": 20,
+      "dialogue": "Well, I obviously can't go far by myself, so I usually hang out in the pond and strike up conversations with hotties crossing my way.",
+      "teller": "Aaliyah"
+    },
+
+    {
+      "id": 20,
+      "dialogue": " You do seem like quite the extrovert.",
+      "teller": "Me"
+    },
+    {
+      "id": 21,
+      "dialogue": "Awh, thank you! You learn to love it if it's the only way to get any way of social interaction.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 22,
+      "dialogue": "Is that why you were so eager to go out on a date with me?",
+      "teller": "Me"
+    },
+    {
+      "id": 23,
+      "dialogue": "Well, I'd be lying if I didn't admit it's the reason I first talked to you. Though I must say, you looked rather nice. Can't expect me not to pass up asking you out on a date when you look like that.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 24,
+      "dialogue": "Man this girl is flirting with me hard, I'm not sure if I dislike it though!",
+      "teller": "My mind"
+    },
+    {
+      "id": 25,
+      "dialogue": "My my, you sure do love calling me hot, don't you?",
+      "teller": "Me"
+    },
+    {
+      "id": 26,
+      "dialogue": "...",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 27,
+      "dialogue": "Well, that's totally fine. But a cutie like you needs to hear they're hot too every once in a while.",
+      "teller": "Me"
+    },
+    {
+      "id": 28,
+      "dialogue": "Oh stop, you're making me blush. The damn nerve of young people these days.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 29,
+      "dialogue": "Oh come on Aaliyah, you're still young! Stop calling yourself old!",
+      "teller": "Me"
+    },
+    {
+      "id": 30,
+      "dialogue": "Quite the gentleman's response! Hu hu hu hu! You got your manners taught right back home for sure!",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 31,
+      "dialogue": "I'm starting to feel light-headed and warm inside. I think we might need to go back. I'm afraid I'll dry out otherwise.",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 32,
+      "dialogue": "I had an amazing time though, thank you!",
+      "teller": "Aaliyah"
+    },
+    {
+      "id": 32,
+      "dialogue": "How do you wish her well?\nPress W for just saying bye.\nPress S to propperly wish her well",
+      "teller": ""
+    }
+  ],
+    
+
+  "angry": [
+    {
+      "id": 1,
+      "dialogue": "Bye!",
+      "teller": "Me"
+    }
+  ],
+  
+  "happy": [
+    {
+      "id": 1,
+      "dialogue": "Yeah it was amazing. Take care alright! See you later!",
+      "teller": "Me"
+    },
+    {
+      "id": 2,
+      "dialogue": "Yeah, see later love!",
+      "teller": "Aaliyah"
+    }
+  ]
+}

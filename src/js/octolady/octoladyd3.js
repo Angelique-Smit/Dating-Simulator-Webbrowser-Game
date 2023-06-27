@@ -1,8 +1,8 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import catboy from "../json/catboy/catboy.json";
+import octolady from "../json/octolady/octoladyd3.json";
 
-export class Catboy extends Actor {
+export class Octolady extends Actor {
     index = 0
     happy = 0
     angry = 0
@@ -19,9 +19,9 @@ export class Catboy extends Actor {
     constructor(engine) {
         super();
 
-        this.scale = new Vector(0.125, 0.125);
+        this.scale = new Vector(0.100, 0.100);
 
-        this.pos = new Vector(550, 210);
+        this.pos = new Vector(550, 215);
         this.vel = new Vector(0, 0);
 
         this.engine = engine
@@ -29,8 +29,8 @@ export class Catboy extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
-        this.dialogue = catboy.intro
-        this.optionsdialogue = catboy.options
+        this.dialogue = octolady.intro
+        this.optionsdialogue = octolady.options
     }
 
     startDialogue(engine) {
@@ -39,9 +39,9 @@ export class Catboy extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboy.intro[this.index].teller;
-            this.dialogueId = catboy.intro[this.index].id;
-            this.scene.startDialogue(actualText, name, catboy.intro[this.index].id)
+            let name = octolady.intro[this.index].teller;
+            this.dialogueId = octolady.intro[this.index].id;
+            this.scene.startDialogue(actualText, name, octolady.intro[this.index].id)
             this.index++
         }
         else {
@@ -57,8 +57,8 @@ export class Catboy extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboy.options[this.options].teller;
-            this.dialogueId = catboy.options[this.options].id;
+            let name = octolady.options[this.options].teller;
+            this.dialogueId = octolady.options[this.options].id;
             this.scene.dialogOptions(actualText, name)
             this.options++
         }
@@ -94,14 +94,14 @@ export class Catboy extends Actor {
         this.dialogueIdChecker();
     }
 
-    swapEmotions(){ //swapped de emoties van de catboy
+    swapEmotions(){ //swapped de emoties van de octolady
         this.angry = !this.angry // swap emotions
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
-            this.dialogue = catboy.angry
+            this.dialogue = octolady.angry
         }
         else{
-            this.dialogue = catboy.intro
+            this.dialogue = octolady.intro
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.choiceAvailable = false 
@@ -110,19 +110,19 @@ export class Catboy extends Actor {
 
     showHappyDialog(engine) {
         console.log("so happy!")
-        let selectedText = catboy.happy[this.happy];
+        let selectedText = octolady.happy[this.happy];
 
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = catboy.happy[this.happy].teller;
-            this.dialogueId = catboy.happy[this.happy].id;
+            let name = octolady.happy[this.happy].teller;
+            this.dialogueId = octolady.happy[this.happy].id;
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
         }
 
-        engine.goToScene('catdate1');
+        engine.goToScene('octooctoladyi2');
         this.dialogueIdChecker();
         // this.engine.addScene('catdate', new Catdate())
         // this.engine.goToScene('catdate')
@@ -131,74 +131,70 @@ export class Catboy extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 10) {
+        if (this.dialogueId < 0) {
             let transparent = Resources.png.toSprite();
             this.graphics.use(transparent);
         } else {
-            this.catboyNeutral();
+            this.octoladyNeutral();
         }
-        if (this.dialogueId == 12.5){
-            this.dialogOptions()
-          }
+        // if (this.dialogueId == 12.5){
+        //     this.dialogOptions()
+        //   }
         switch (this.dialogueId) {
-
             //Mad
-            case 14:
-            case 15:
-            case 16:
-            case 17:
-            case 18:
-            case 19:
-            case 25:
-            case 25.5:
-            case 26:
-            case 35:
-            case 36:
-                this.catboyAngry();
+                case 28:
+                this.octoladyAngry();
                 break;
 
             //Blush
-            case 23:
-            case 29:
-                this.catboyBlush();
+            case 20:
+            case 38:
+            case 39:
+            case 40:
+            case 41:
+                this.octoladyBlush();
                 break;
 
             //Sad
             case -1:
-                this.catboySad();
+                this.octoladySad();
                 break;
 
             //Happy
-            case 41:
-                this.catboyHappy();
+            case 4:
+            case 9:
+            case 12:
+            case 16:
+            case 33:
+            case 36:
+                this.octoladyHappy();
                 break;
         }
     }
 
-    catboyHappy() {
-        let cathappy = Resources.catboyhappy.toSprite();
+    octoladyHappy() {
+        let cathappy = Resources.octoladyhappy.toSprite();
         this.graphics.use(cathappy);
 
     }
 
-    catboySad() {
-        let catsad = Resources.catboysad.toSprite();
+    octoladySad() {
+        let catsad = Resources.octoladysad.toSprite();
         this.graphics.use(catsad);
     }
 
-    catboyAngry() {
-        let catangry = Resources.catboyangry.toSprite();
+    octoladyAngry() {
+        let catangry = Resources.octoladyangry.toSprite();
         this.graphics.use(catangry);
     }
 
-    catboyBlush() {
-        let catblush = Resources.catboyblush.toSprite();
+    octoladyBlush() {
+        let catblush = Resources.octoladyblush.toSprite();
         this.graphics.use(catblush);
     }
 
-    catboyNeutral() {
-        let cat = Resources.catboynormal.toSprite();
+    octoladyNeutral() {
+        let cat = Resources.octoladynormal.toSprite();
         this.graphics.use(cat);
     }
-
 }

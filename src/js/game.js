@@ -12,6 +12,12 @@ import { Corvotalk2 } from './scenes/catboycorvo2';
 import { CatDate2 } from "./scenes/catdate2";
 import { Catboyi2 } from './scenes/catboyi2';
 import { CatDate3 } from "./scenes/catdate3";
+import { OctoIntroScene } from "./scenes/octoladyintro.js";
+import { OctoDate1 } from "./scenes/octodate1";
+import { OctoI1 } from "./scenes/octoladyi1";
+import { OctoDate2 } from "./scenes/octodate2";
+import { OctoI2 } from "./scenes/octoladyi2";
+import { OctoDate3 } from "./scenes/octodate3";
 
 export class Game extends Engine {
     constructor() {
@@ -31,7 +37,13 @@ export class Game extends Engine {
         this.addScene('catdate2', new CatDate2());
         this.addScene('catboyi2', new Catboyi2());
         this.addScene('catdate3', new CatDate3());
-        this.goToScene('introscene');
+        this.addScene('octoladyintro', new OctoIntroScene());
+        this.addScene('octodate1', new OctoDate1());
+        this.addScene('octoladyi1', new OctoI1());
+        this.addScene('octodate2', new OctoDate2());
+        this.addScene('octoladyi2', new OctoI2());
+        this.addScene('octodate3', new OctoDate3());
+        this.goToScene('octoladyintro');
     }
 }
 
