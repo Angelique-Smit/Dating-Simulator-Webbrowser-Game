@@ -77,7 +77,7 @@ export class Catboy extends Actor {
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
-            this.swapEmotions()
+            this.swapEmotions(engine)
             this.startDialogue(engine)
         }
         if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
@@ -103,8 +103,8 @@ export class Catboy extends Actor {
             engine.goToScene('catboycorvo3');
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
-        this.index = 0
         this.choiceAvailable = false 
+        this.index = 0
     }
 
     showHappyDialog(engine) {

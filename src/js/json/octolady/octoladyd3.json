@@ -213,6 +213,11 @@
         "id": 1,
         "dialogue": "Oh, well, I guess that is to be expected. I got so caught up in my own feelings I didn't even consider that you might not feel the same way about me.",
         "teller": "Aaliyah"
+      },
+      {
+        "id": 2,
+        "dialogue": "Press SPACE to start dialogue",
+        "teller": ""
       }
       ],
   
@@ -222,7 +227,7 @@
         "teller": "Aaliyah"
       },
       {
-        "id": 1,
+        "id": 2,
         "dialogue": "Let's be together forever!",
         "teller": "Aaliyah"
       }

@@ -21,10 +21,11 @@ export class BirdT6 extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
+        this.dialogue = birdtalk6.talk1
     }
     
     startDialogue(engine) {
-        let selectedText =  birdtalk6.talk1[this.index];
+        let selectedText =  this.dialogue[this.index];
 
         if (selectedText) {
             let actualText = selectedText.dialogue

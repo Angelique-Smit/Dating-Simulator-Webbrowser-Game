@@ -1,6 +1,6 @@
 import { Actor, Random, Input, Vector,Engine } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import octolady from "../json/octolady/octoladyd3.json";
+import octoladyd3 from "../json/octolady/octoladyd3.json";
 
 export class Octolady extends Actor {
     index = 0
@@ -29,8 +29,8 @@ export class Octolady extends Actor {
 
     onInitialize(engine) {
         this.game = engine;
-        this.dialogue = octolady.intro
-        this.optionsdialogue = octolady.options
+        this.dialogue = octoladyd3.intro
+        this.optionsdialogue = octoladyd3.options
     }
 
     startDialogue(engine) {
@@ -39,26 +39,28 @@ export class Octolady extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = octolady.intro[this.index].teller;
-            this.dialogueId = octolady.intro[this.index].id;
-            this.scene.startDialogue(actualText, name, octolady.intro[this.index].id)
+            let name = octoladyd3.intro[this.index].teller;
+            this.dialogueId = octoladyd3.intro[this.index].id;
+            this.scene.startDialogue(actualText, name, octoladyd3.intro[this.index].id)
             this.index++
         }
         else {
-            this.choiceAvailable = true
+            
+            console.log("hi baby")
             this.dialogOptions()
         }
     }
 
     dialogOptions() {
         console.log("press w or s")
+        this.choiceAvailable = true
 
         let selectedText = this.optionsdialogue[this.options];
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = octolady.options[this.options].teller;
-            this.dialogueId = octolady.options[this.options].id;
+            let name = octoladyd3.options[this.options].teller;
+            this.dialogueId = octoladyd3.options[this.options].id;
             this.scene.dialogOptions(actualText, name)
             this.options++
         }
@@ -97,30 +99,27 @@ export class Octolady extends Actor {
     swapEmotions(engine){ //swapped de emoties van de octolady
         this.angry = !this.angry // swap emotions
         console.log(`i am feeling very ${this.angry}`)
-        this.index = 0
         if(this.angry){
-            this.dialogue = octolady.angry
+            this.dialogue = octoladyd3.angry
         }
         else{
-            let createText = document.getElementById("textspan")
-            createText.innerHTML = "Press SPACE to start the dialogue"
             console.log('empty')
             engine.goToScene('octocorvotalk3');
         }
         //zet de choiceavailable weer terug op false en de index terug op 0
         this.choiceAvailable = false 
-        //this.index = 0
+        this.index = 0
     }
 
     showHappyDialog(engine) {
         console.log("so happy!")
-        let selectedText = octolady.happy[this.happy];
+        let selectedText = octoladyd3.happy[this.happy];
 
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = octolady.happy[this.happy].teller;
-            this.dialogueId = octolady.happy[this.happy].id;
+            let name = octoladyd3.happy[this.happy].teller;
+            this.dialogueId = octoladyd3.happy[this.happy].id;
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
