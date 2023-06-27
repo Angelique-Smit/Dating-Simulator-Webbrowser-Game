@@ -19,9 +19,9 @@ export class Octolady extends Actor {
     constructor(engine) {
         super();
 
-        this.scale = new Vector(0.100, 0.100);
+        this.scale = new Vector(0.125, 0.125);
 
-        this.pos = new Vector(550, 215);
+        this.pos = new Vector(550, 210);
         this.vel = new Vector(0, 0);
 
         this.engine = engine
@@ -124,7 +124,10 @@ export class Octolady extends Actor {
 
         engine.goToScene('octodate1');
         this.dialogueIdChecker();
+        // this.engine.addScene('catdate', new Catdate())
+        // this.engine.goToScene('catdate')
     }
+
 
 
     //Add cases to add in certain sprites
