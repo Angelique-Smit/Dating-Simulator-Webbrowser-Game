@@ -120,9 +120,12 @@ export class Octolady extends Actor {
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
+            console.log(selectedText)
         }
-
-        engine.goToScene('octodate1');
+        else{
+            engine.goToScene('octodate1');
+        }
+        
         this.dialogueIdChecker();
         // this.engine.addScene('catdate', new Catdate())
         // this.engine.goToScene('catdate')

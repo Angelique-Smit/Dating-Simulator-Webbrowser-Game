@@ -121,8 +121,10 @@ export class Catboy extends Actor {
             this.scene.showHappyDialog(actualText, name)
             this.happy++
         }
-
-        engine.goToScene('catdate1');
+        else{
+            engine.goToScene('catdate1');
+        }
+      
         this.dialogueIdChecker();
         // this.engine.addScene('catdate', new Catdate())
         // this.engine.goToScene('catdate')

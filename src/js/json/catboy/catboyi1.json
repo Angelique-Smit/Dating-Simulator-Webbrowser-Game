@@ -56,7 +56,7 @@
   
         {
           "id": 10,
-          "dialogue": "Cat, screaming in pain. Oh no, oh no no no please tell me it's Elliot. Please tell me he is okay.",
+          "dialogue": "Cat, screaming in pain. Oh no, oh no no no please don't tell me it's Elliot. Please tell me he is okay.",
           "teller": "My mind"
         },
   
@@ -70,7 +70,7 @@
       "options" :[
         {
           "id": 1,
-          "dialogue": "How fast are you running towards Elliot? \n Press W if you want to run there. Press S if you want to moonwalk over there",
+          "dialogue": "How fast are you running towards Elliot? \n Press S if you want to run there. Press W if you want to moonwalk over there",
           "teller": ""
         }
       ],
