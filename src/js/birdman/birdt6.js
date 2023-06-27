@@ -52,8 +52,13 @@ export class BirdT6 extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
             this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('catboyi2');
+            engine.goToScene('endgame');
+        }
 
+        if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
+            this.selectedText = "";
+            this.choiceAvailable = false
+            engine.goToScene('gamescene');
         }
 
         this.dialogueIdChecker();
@@ -67,23 +72,17 @@ export class BirdT6 extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId < 3 || this.dialogueId > 10) {
-            let transparent = Resources.png.toSprite();
-            this.graphics.use(transparent);
-        } else {
+        if (this.dialogueId > 0) {
             this.birdNormal();
         }
           
         switch (this.dialogueId) {
             //Mock
-            case 3:
-            case 6:
-            case 9:
-            case 10:
+            case 5:
                 this.birdMock();
             break; 
+            }
         }
-    }
 
     birdMock() {
         let birdmock = Resources.birdmanmock.toSprite();

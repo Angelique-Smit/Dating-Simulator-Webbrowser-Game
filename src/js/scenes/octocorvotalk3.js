@@ -3,6 +3,7 @@ import { GenericBg } from "../genericgamebg.js";
 import { TextBox } from "../textbox.js";
 import { Resources, ResourceLoader } from '../resources.js';
 import { BirdT6 } from '../birdman/birdt6.js';
+import { Mock } from "../mock.js";
 
     export class OctoCorvoT3 extends Scene {
         game;
@@ -10,6 +11,7 @@ import { BirdT6 } from '../birdman/birdt6.js';
         bg
         // optionsText
         name;
+        bird;
         constructor() {
             super();
         }
@@ -44,41 +46,41 @@ import { BirdT6 } from '../birdman/birdt6.js';
             playername.innerHTML = name;
         }
 
-    showHappyDialog(text, name) {
-        console.log(text)
-        let createText = document.getElementById("textspan")
-        createText.innerHTML = text;
+        showHappyDialog(text, name) {
+            console.log(text)
+            let createText = document.getElementById("textspan")
+            createText.innerHTML = text;
 
-        let playername = document.getElementById("playername")
-        playername.innerHTML = name;
-    }
+            let playername = document.getElementById("playername")
+            playername.innerHTML = name;
+        }
 
-    showAngryDialog(text, name) {
-        console.log(text)
-        let createText = document.getElementById("textspan")
-        createText.innerHTML = text;
+        showAngryDialog(text, name) {
+            console.log(text)
+            let createText = document.getElementById("textspan")
+            createText.innerHTML = text;
 
-        let playername = document.getElementById("playername")
-        playername.innerHTML = name;
-    }
+            let playername = document.getElementById("playername")
+            playername.innerHTML = name;
+        }
 
 
-    dialogOptions(text,name) {
-        let createText = document.getElementById("textspan")
-        createText.innerHTML = text
+        dialogOptions(text,name) {
+            let createText = document.getElementById("textspan")
+            createText.innerHTML = text
 
-        let playername = document.getElementById("playername")
-        playername.innerHTML = name;
-        
-    }
-    angryDia(text) {
-        this.remove(this.optionsText)
-        let createText = document.getElementById("textspan")
-        createText.innerHTML = text
-    }
-    happyDia(text) {
-        this.remove(this.optionsText)
-        let createText = document.getElementById("textspan")
-        createText.innerHTML = text
-    }
+            let playername = document.getElementById("playername")
+            playername.innerHTML = name;
+            
+        }
+        angryDia(text) {
+            this.remove(this.optionsText)
+            let createText = document.getElementById("textspan")
+            createText.innerHTML = text
+        }
+        happyDia(text) {
+            this.remove(this.optionsText)
+            let createText = document.getElementById("textspan")
+            createText.innerHTML = text
+        }
 }

@@ -123,7 +123,7 @@ export class Octolady extends Actor {
             console.log(selectedText)
         }
         else{
-            engine.goToScene('octodate1');
+            engine.goToScene('octodate3');
         }
         
         this.dialogueIdChecker();

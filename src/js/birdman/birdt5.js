@@ -1,8 +1,8 @@
 import { Actor, Random, Input, Vector } from "excalibur";
 import { Resources, ResourceLoader } from "../resources.js";
-import  birdtalk3  from "../json/bird/birdtalk3.json";
+import  birdtalk1  from "../json/bird/birdtalk5.json";
 
-export class BirdT3 extends Actor {
+export class BirdT5 extends Actor {
     index = 0
     options = 0
     dialogueId = 0
@@ -24,14 +24,14 @@ export class BirdT3 extends Actor {
     }
     
     startDialogue(engine) {
-        let selectedText =  birdtalk3.talk1[this.index];
+        let selectedText =  birdtalk1.talk1[this.index];
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = birdtalk3.talk1[this.index].teller;
-            this.dialogueId = birdtalk3.talk1[this.index].id;
-            console.log(name, birdtalk3.talk1[this.index].id)
-            this.scene.startDialogue(actualText, name, birdtalk3.talk1[this.index].id)
+            let name = birdtalk1.talk1[this.index].teller;
+            this.dialogueId = birdtalk1.talk1[this.index].id;
+            console.log(name, birdtalk1.talk1[this.index].id)
+            this.scene.startDialogue(actualText, name, birdtalk1.talk1[this.index].id)
             this.index++
         }
         else {
@@ -52,13 +52,7 @@ export class BirdT3 extends Actor {
         if (engine.input.keyboard.wasPressed(Input.Keys.W) && this.choiceAvailable) {
             this.selectedText = "";
             this.choiceAvailable = false
-            engine.goToScene('endgame');
-        }
-
-        if (engine.input.keyboard.wasPressed(Input.Keys.S) && this.choiceAvailable) {
-            this.selectedText = "";
-            this.choiceAvailable = false
-            engine.goToScene('octoladyintro');
+            engine.goToScene('octoladyi2');
         }
 
         this.dialogueIdChecker();
@@ -72,18 +66,23 @@ export class BirdT3 extends Actor {
 
     //Add cases to add in certain sprites
     dialogueIdChecker() {
-        if (this.dialogueId > 0) {
+        if (this.dialogueId < 3 || this.dialogueId > 10) {
+            let transparent = Resources.png.toSprite();
+            this.graphics.use(transparent);
+        } else {
             this.birdNormal();
         }
           
         switch (this.dialogueId) {
             //Mock
-            case 5:
+            case 3:
+            case 6:
+            case 10:
                 this.birdMock();
             break; 
-            }
         }
-        
+    }
+
     birdMock() {
         let birdmock = Resources.birdmanmock.toSprite();
         this.graphics.use(birdmock);

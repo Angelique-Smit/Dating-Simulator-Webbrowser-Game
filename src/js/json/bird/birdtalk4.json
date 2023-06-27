@@ -1,0 +1,70 @@
+{
+    "talk1": [ 
+        {
+            "id": 1,
+            "dialogue": "Okay, that went well I think. She seems pretty nice.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 2,
+            "dialogue": "Didn't think she'd ask me out on a date this fast though.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 3,
+            "dialogue": "Fwie Fwie Fwie, how are you doing, young fellow.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 4,
+            "dialogue": "What are you doing here, Corvo?",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 5,
+            "dialogue": "I came here to congratulate you on succesfully having your first date.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 6,
+            "dialogue": "Oh, my little socially inept little fellow, growing up so fast.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 7,
+            "dialogue": "Hey!",
+            "teller": "Me"
+        },
+
+        {
+            "id": 8,
+            "dialogue": "I'm sorry, I'm just very proud of you. Keep going like you're doing now.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 9,
+            "dialogue": "I'll be waiting for you when you finish your second date.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 10,
+            "dialogue": "At this rate, you might have a shot at dating Vanessa!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 11,
+            "dialogue": "Anyways, it's time for you to continue your search for love, my little fellow. Once you're ready, press W to continue.",
+            "teller": "Corvo"
+        }
+      ]
+  }
+        

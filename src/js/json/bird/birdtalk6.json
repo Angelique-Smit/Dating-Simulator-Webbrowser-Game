@@ -2,7 +2,7 @@
     "talk1": [ 
         {
         "id": 1,
-        "dialogue": "Hmm? Was he not your style? But you two seemed so cute together.",
+        "dialogue": "Hmm? Was she not your style? But you two seemed so cute together.",
         "teller": "Corvo"
         },
         {
@@ -32,7 +32,7 @@
         },
         {
             "id": 6,
-            "dialogue": "Press W to give up on love.\n Press S to Keep trying and go to the city.",
+            "dialogue": "Press W to give up on love.\nPress S to Keep trying and go to the city.",
             "teller": "Corvo"
             }
       ],

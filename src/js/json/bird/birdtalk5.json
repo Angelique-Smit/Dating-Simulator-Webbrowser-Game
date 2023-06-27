@@ -1,0 +1,77 @@
+{
+    "talk1": [ 
+        {
+            "id": 1,
+            "dialogue": "Man, I never thought Aaliyah would enjoy the date that much.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 2,
+            "dialogue": "I hope I can make the next one even better.",
+            "teller": "My mind"
+        },
+
+        {
+            "id": 3,
+            "dialogue": "Fwie Fwie Fwie. Why so happy, my young fellow? Not to worry, I already know. You had a good date!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 4,
+            "dialogue": "*sighs* Hey Corvo",
+            "teller": "Me"
+        },
+
+        {
+            "id": 5,
+            "dialogue": "Not happy to see me? I thought we were student and mentor. Fwie fwie fwie.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 5.5,
+            "dialogue": "Well, you see--",
+            "teller": "Me"
+        },
+
+        {
+            "id": 6,
+            "dialogue": "You don't have to answer that, I KNOW we have that bond my little fellow. You're just a little shy.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 7,
+            "dialogue": "...",
+            "teller": "Me"
+        },
+
+        {
+            "id": 8,
+            "dialogue": "Now now don't give me that look. I'm just trying to lighten up the mood.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 9,
+            "dialogue": "Anyhoot, your journey doesn't end here. I'll be hooting for you~.",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 10,
+            "dialogue": "Knock 'em dead darling. Chiao~!",
+            "teller": "Corvo"
+        },
+
+        {
+            "id": 11,
+            "dialogue": "I swear, i'll never understand this guy.... (press w to continue)",
+            "teller": "Me"
+        }
+      ]
+}
+  
+        

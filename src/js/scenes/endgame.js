@@ -5,13 +5,14 @@ import { Title } from '../titlebg'
 export class Final extends Scene {
     constructor() {
         super()
-        let spantext = document.getElementById("textspan");
-        spantext.innerHTML = '';
-
     }
 
     onInitialize(engine) {
+        let spantext = document.getElementById("textspan");
+        spantext.innerHTML = '';
 
+        let play = document.getElementById("playername")
+        play.innerHTML = '';
 
         let createText = document.getElementById("titlespan")
         createText.innerHTML = "Thanks for playing our game!"

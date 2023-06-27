@@ -17,7 +17,7 @@ import { Resources, ResourceLoader } from '../resources.js';
         onInitialize(){
             this.bg = new GenericBg();
                 let bg1 = Resources.gamegenericbg.toSprite();
-                this.bg.scale = new Vector(0.480 , 0.500);
+                this.bg.scale = new Vector(0.305 , 0.305);
                 this.bg.pos = new Vector(575, 300)
                 this.bg.graphics.use(bg1);
             this.add(this.bg)
@@ -39,12 +39,6 @@ import { Resources, ResourceLoader } from '../resources.js';
             let playername = document.getElementById("playername")
             playername.innerHTML = name;
 
-            if (id > 3) {
-                let bg1 = Resources.pondbg.toSprite();
-                this.bg.scale = new Vector(0.480 , 0.500);
-                this.bg.pos = new Vector(575, 300)
-                this.bg.graphics.use(bg1);
-            }
         }
 
     showHappyDialog(text, name) {
