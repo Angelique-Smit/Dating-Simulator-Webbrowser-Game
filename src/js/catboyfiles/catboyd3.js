@@ -47,7 +47,7 @@ export class Catboy extends Actor {
         }
         else {
             console.log("i am out of dialogue, now show the options")
-            this.choiceAvailable = true
+            
             this.dialogOptions()
         }
     }
@@ -68,6 +68,7 @@ export class Catboy extends Actor {
         }
         console.log(selectedText)
         this.dialogueIdChecker();
+        this.choiceAvailable = true
     }
 
 
@@ -94,11 +95,8 @@ export class Catboy extends Actor {
         if(this.angry){
             console.log('sex')
             this.dialogue = catboyd3.angry
-            // this.dialogueId = catboyd3.angry[this.angry].id
-            // this.angry++
         }
         else{
-            
             console.log("bro, can i press space?")
             engine.goToScene('catboycorvo3');
         }
