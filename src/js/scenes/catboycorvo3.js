@@ -10,6 +10,7 @@ import { BirdT3 } from '../birdman/birdt3.js';
         bg
         // optionsText
         name;
+        Number = 0;
         constructor() {
             super();
         }

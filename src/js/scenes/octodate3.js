@@ -84,4 +84,12 @@ import { Resources, ResourceLoader } from '../resources.js';
         let createText = document.getElementById("textspan")
         createText.innerHTML = text
     }
+
+    onDeactivate() {
+        let spantext = document.getElementById("textspan");
+        spantext.innerHTML = "";
+
+        let play = document.getElementById("playername")
+        play.innerHTML = "";
+    }
 }

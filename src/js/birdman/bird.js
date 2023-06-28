@@ -90,6 +90,12 @@ export class Birdman extends Actor {
             console.log(this.dialogue)
         }
         else{
+            let spantext = document.getElementById("textspan");
+            spantext.innerHTML = "";
+    
+            let play = document.getElementById("playername")
+            play.innerHTML = "";
+            
             engine.goToScene('endgame');
         }
         //zet de choiceavailable weer terug op false en de index terug op 0

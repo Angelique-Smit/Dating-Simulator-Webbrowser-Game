@@ -1,8 +1,8 @@
 import { Label, FontUnit, Font, Scene, Color, Engine, Vector, Input, Sound } from "excalibur";
 import { Bg } from '../startbg'
 import { Intro } from './introscene.js'
-import { Resources, ResourceLoader } from "../resources.js";
 import ethernal from '../../images/Ethereal_Harmony.mp3'
+import { Title } from '../titlebg'
 
 
 export class Startscreen extends Scene {
@@ -19,23 +19,12 @@ export class Startscreen extends Scene {
         const startscreenbg = new Bg();
         this.add(startscreenbg);
 
-        let labelwelcome = new Label({
-            text: 'Insert cool pog title later',
-            pos: new Vector(150, 250),
-            font: new Font({
-                family: 'impact',
-                size: 48,
-                color: Color.White,
-                unit: FontUnit.Px
-            })
-        });
-
-        this.add(labelwelcome);
-        labelwelcome.text = 'Insert cool pog title later';
+        const titlebg = new Title();
+        this.add(titlebg);
 
         let labelinstructions = new Label({
             text: 'Press SPACE to start game',
-            pos: new Vector(275, 320),
+            pos: new Vector(470, 320),
             font: new Font({
                 family: 'impact',
                 size: 24,

@@ -12,6 +12,7 @@ import { Mock } from "../mock.js";
         // optionsText
         name;
         bird;
+        Number = 0;
         constructor() {
             super();
         }
@@ -29,11 +30,17 @@ import { Mock } from "../mock.js";
             const box = new TextBox();
             this.add(box);
 
-            let playername = document.getElementById("playername")
-            playername.innerHTML = "";
+        }
 
-            let createText = document.getElementById("textspan")
-            createText.innerHTML = "Press SPACE to start the dialogue"
+        onPreUpdate(){
+            if (this.Number == 0) {
+                let spantext = document.getElementById("textspan");
+                spantext.innerHTML = "Press SPACE to start dialogue";
+        
+                let play = document.getElementById("playername")
+                play.innerHTML = "";
+                this.Number++
+            }
         }
 
 

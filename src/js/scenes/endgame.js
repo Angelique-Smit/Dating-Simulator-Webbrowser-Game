@@ -8,15 +8,8 @@ export class Final extends Scene {
     }
 
     onInitialize(engine) {
-        let spantext = document.getElementById("textspan");
-        spantext.innerHTML = '';
-
-        let play = document.getElementById("playername")
-        play.innerHTML = '';
-
         let createText = document.getElementById("titlespan")
         createText.innerHTML = "Thanks for playing our game!"
-
         
         let playername = document.getElementById("credits")
         playername.innerHTML = "Credits:"
@@ -41,10 +34,11 @@ export class Final extends Scene {
     }
     
     onPreUpdate(engine) {
-        if (engine.input.keyboard.wasPressed(Input.Keys.Space)) {
-            engine.addScene('gamescene', new GameScene());
-            engine.goToScene('gamescene');
-        }
+        let spantext = document.getElementById("textspan");
+        spantext.innerHTML = "";
+
+        let play = document.getElementById("playername")
+        play.innerHTML = "";
     }
 
 }
