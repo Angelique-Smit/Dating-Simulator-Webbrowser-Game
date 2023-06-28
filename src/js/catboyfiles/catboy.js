@@ -40,8 +40,8 @@ export class Catboy extends Actor {
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = catboy.intro[this.index].teller;
-            this.dialogueId = catboy.intro[this.index].id;
-            this.scene.startDialogue(actualText, name, catboy.intro[this.index].id)
+            this.dialogueId = this.dialogue[this.index].id
+            this.scene.startDialogue(actualText, name, this.dialogueId)
             this.index++
         }
         else {
