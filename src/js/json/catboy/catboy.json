@@ -290,12 +290,7 @@
     ],
     "happy" : [{
       "id": 1,
-      "dialogue": "kiss me",
-      "teller": "Elliot"
-    },
-    {
-      "id": 2,
-      "dialogue": "like rn bro",
+      "dialogue": "Well what are you waiting for? Better make it count\n(Press S to start the date)",
       "teller": "Elliot"
     }
     ]
