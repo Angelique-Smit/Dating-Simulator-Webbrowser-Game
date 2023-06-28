@@ -112,7 +112,7 @@ export class Catboy extends Actor {
         console.log("so happy!")
         let selectedText = catboy.happy[this.happy];
 
-
+        this.choiceAvailable = false 
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = catboy.happy[this.happy].teller;

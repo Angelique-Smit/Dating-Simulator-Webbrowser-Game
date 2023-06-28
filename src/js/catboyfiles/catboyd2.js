@@ -47,27 +47,14 @@ export class Catboy extends Actor {
         }
         else {
             console.log("i am out of dialogue, now show the options")
-            this.choiceAvailable = true
+            
             this.dialogOptions()
         }
     }
 
     dialogOptions() {
         console.log("press w or s")
-
-        let selectedText = this.optionsdialogue[this.options];
-
-        console.log(selectedText)
-
-        if (selectedText) {
-            let actualText = selectedText.dialogue
-            let name = catboyd2.options[this.options].teller;
-            this.dialogueId = catboyd2.options[this.options].id;
-            this.scene.dialogOptions(actualText, name)
-            //this.options++
-        }
-        console.log(selectedText)
-        this.dialogueIdChecker();
+        this.choiceAvailable = true
     }
 
 
