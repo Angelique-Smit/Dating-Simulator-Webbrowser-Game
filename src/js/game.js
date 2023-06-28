@@ -51,7 +51,7 @@ export class Game extends Engine {
         this.addScene('octocorvotalk3', new OctoCorvoT3());
         this.addScene('octocorvo1', new OctoCorvoT1());
         this.addScene('octocorvo2', new OctoCorvoT2());
-        this.goToScene('catdate3');
+        this.goToScene('octodate3');
     }
 }
 
