@@ -229,16 +229,14 @@
           "id": 36,
           "dialogue": "Do you like me as well? Do you want to stay by my side? Do you want to be my partner in non-crime related activities?",
           "teller": "Elliot"
-        }
-      ],
-  
-      "options" :[
+        },
         {
-          "id": 1,
+          "id": 37,
           "dialogue": "Do you accept Elliot's love? Press W for no, Press S for yes.",
           "teller": ""
         }
       ],
+  
       "angry" : [{
         "id": 1,
         "dialogue": "Oh, that's okay. I shouldn't have gotten my hopes up. I knew there was a chance you'd say no, but I hoped you'd say yes. Can we still be friends though?",

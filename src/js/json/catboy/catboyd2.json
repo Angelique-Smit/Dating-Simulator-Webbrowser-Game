@@ -242,16 +242,14 @@
           "id": 39,
           "dialogue": "Got it boss. No more robbing!",
           "teller": "Elliot"
-        }
-      ],
-  
-      "options" :[
+        },
         {
-          "id": 1,
+          "id": 40,
           "dialogue": "Do you want to give Elliot some money to get through the week? \nPress W to not give any money.\nPress S to give him some money.",
           "teller": ""
         }
       ],
+  
       "angry" : [{
         "id": 1,
         "dialogue": "I didn't give Elliot any money. I'm sure he'll be alright. Atleast, that's what I tell myself",
