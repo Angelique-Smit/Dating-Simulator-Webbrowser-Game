@@ -204,7 +204,7 @@
 
       {
         "id": 41,
-        "dialogue": "Do you want to be my partner? Do you want to spend the rest of your life with me?",
+        "dialogue": "Do you want to be my partner? Do you want to spend the rest of your life with me?\nPress W to deny her love. Press S to accept her love",
         "teller": "Aaliyah"
       }
     ],
