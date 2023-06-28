@@ -16,6 +16,7 @@ export class Catboy extends Actor {
     game;
     engine;
     angryid = 0;
+    Number = 0;
     // happyid = 0;
 
     constructor(engine) {
@@ -48,26 +49,15 @@ export class Catboy extends Actor {
         else {
             console.log("i am out of dialogue, now show the options")
             this.choiceAvailable = true
-            this.dialogOptions()
+            this.dialogOptions(engine)
         }
     }
 
-    dialogOptions() {
-        console.log("press w or s")
-
-        let selectedText = this.optionsdialogue[this.options];
-
-        console.log(selectedText)
-
-        if (selectedText) {
-            let actualText = selectedText.dialogue
-            let name = catboyd3.options[this.options].teller;
-            this.dialogueId = catboyd3.options[this.options].id;
-            this.scene.dialogOptions(actualText, name)
-            //this.options++
+    dialogOptions(engine) {
+        if (this.Number > 0) {
+            this.sceneSwap(engine);
         }
-        console.log(selectedText)
-        this.dialogueIdChecker();
+        this.choiceAvailable = true
     }
 
 
@@ -94,6 +84,7 @@ export class Catboy extends Actor {
         if(this.angry){
             console.log('sex')
             this.dialogue = catboyd3.angry
+            this.Number++
             // this.dialogueId = catboyd3.angry[this.angry].id
             // this.angry++
         }
@@ -106,6 +97,11 @@ export class Catboy extends Actor {
         this.choiceAvailable = false 
         this.index = 0
     }
+
+    sceneSwap (engine) {
+        engine.goToScene('octocorvotalk3'); 
+    }
+
 
     showHappyDialog(engine) {
         console.log("so happy!")

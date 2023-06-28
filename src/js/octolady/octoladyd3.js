@@ -15,6 +15,7 @@ export class Octolady extends Actor {
     name;
     game;
     engine;
+    Number = 0;
 
     constructor(engine) {
         super();
@@ -52,20 +53,6 @@ export class Octolady extends Actor {
     }
 
     dialogOptions() {
-        console.log("press w or s")
-        this.choiceAvailable = true
-
-        let selectedText = this.optionsdialogue[this.options];
-
-        if (selectedText) {
-            let actualText = selectedText.dialogue
-            let name = octoladyd3.options[this.options].teller;
-            this.dialogueId = octoladyd3.options[this.options].id;
-            this.scene.dialogOptions(actualText, name)
-            this.options++
-        }
-    }
-    dialogOptions() {
         this.choiceAvailable = true
     }
 
@@ -101,6 +88,7 @@ export class Octolady extends Actor {
         console.log(`i am feeling very ${this.angry}`)
         if(this.angry){
             this.dialogue = octoladyd3.angry
+            this.Number++
         }
         else{
             console.log('empty')
