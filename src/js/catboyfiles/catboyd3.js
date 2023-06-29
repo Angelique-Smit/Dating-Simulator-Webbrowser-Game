@@ -98,7 +98,7 @@ export class Catboy extends Actor {
     }
 
     sceneSwap (engine) {
-        engine.goToScene('octocorvotalk3'); 
+        engine.goToScene('catboycorvo3'); 
     }
 
 
