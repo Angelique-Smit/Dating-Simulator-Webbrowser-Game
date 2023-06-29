@@ -10,6 +10,7 @@ export class Catboy extends Actor {
     dialogue;
     angry = false;
     dialogueId = 0
+    happyid = 0
     choiceAvailable = false
     selectedText;
     name;
@@ -101,7 +102,7 @@ export class Catboy extends Actor {
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = catboyd2.happy[this.happy].teller;
-            this.dialogueId = catboyd2.happy[this.happy].id;
+            this.happyid = catboyd2.happy[this.happy].id;
             // this.happyid = catboyd2.happy[this.index].id
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)

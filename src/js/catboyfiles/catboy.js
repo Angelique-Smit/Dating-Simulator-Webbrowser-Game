@@ -10,6 +10,7 @@ export class Catboy extends Actor {
     dialogue;
     angry = false;
     dialogueId = 0
+    happyId = 0
     choiceAvailable = false
     selectedText;
     name;
@@ -116,7 +117,7 @@ export class Catboy extends Actor {
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = catboy.happy[this.happy].teller;
-            this.dialogueId = catboy.happy[this.happy].id;
+            this.happyId = catboy.happy[this.happy].id;
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
@@ -172,6 +173,11 @@ export class Catboy extends Actor {
 
             //Happy
             case 41:
+                this.catboyHappy();
+                break;
+        }
+        switch(this.happyId){
+            case 2:  
                 this.catboyHappy();
                 break;
         }

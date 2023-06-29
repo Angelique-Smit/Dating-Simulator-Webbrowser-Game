@@ -10,6 +10,8 @@ export class Octolady extends Actor {
     dialogue;
     angry = false;
     dialogueId = 0
+    happyId = 0
+    angryId= 0
     choiceAvailable = false
     selectedText;
     name;
@@ -107,7 +109,7 @@ export class Octolady extends Actor {
         if (selectedText) {
             let actualText = selectedText.dialogue
             let name = octoladyd3.happy[this.happy].teller;
-            this.dialogueId = octoladyd3.happy[this.happy].id;
+            this.happyId = octoladyd3.happy[this.happy].id;
             console.log("does this work atleast?")
             this.scene.showHappyDialog(actualText, name)
             this.happy++
@@ -164,7 +166,21 @@ export class Octolady extends Actor {
                 this.octoladyHappy();
                 break;
         }
+        switch(this.happyId){
+            case 1:
+            case 2:  
+                this.octoladyHappy();
+                break;
+        }
+        // switch(this.angryId){
+        //     case 1:
+        //     case 2:  
+        //         this.octoladySad();
+        //         break;
+        // }
     }
+
+    
 
     octoladyHappy() {
         let cathappy = Resources.octoladyhappy.toSprite();

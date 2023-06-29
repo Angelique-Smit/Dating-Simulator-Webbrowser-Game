@@ -10,6 +10,7 @@ export class Catboy extends Actor {
     dialogue;
     angry = false;
     dialogueId = 0
+    happyid = 0
     choiceAvailable = false
     selectedText;
     name;
