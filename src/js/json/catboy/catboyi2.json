@@ -135,6 +135,11 @@
         "id": 1,
         "dialogue": "Noooooo you MEANIE! Why don't you want to anymore? You still have a date voucher yoou know...",
         "teller": "Elliot"
+      },
+      {
+        "id": 2,
+        "dialogue": "My, you've made him upset. No need to fret, try again with SPACEBAR",
+        "teller": "Corvo (in spirit)"
       }
       ],
   

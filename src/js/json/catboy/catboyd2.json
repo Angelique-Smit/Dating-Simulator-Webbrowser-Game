@@ -254,6 +254,11 @@
         "id": 1,
         "dialogue": "I didn't give Elliot any money. I'm sure he'll be alright. Atleast, that's what I tell myself",
         "teller": "My mind"
+      },
+      {
+        "id": 2,
+        "dialogue": "What, you can't spare change to the homeless? How heartless. Try that again with W",
+        "teller": "Corvo (in spirit)"
       }
       ],
   

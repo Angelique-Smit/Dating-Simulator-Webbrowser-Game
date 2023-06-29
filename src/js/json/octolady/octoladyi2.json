@@ -136,7 +136,12 @@
             "id": 2,
             "dialogue": "You know what, I was willing to let it slide if you just said that, but now I won't. You should go reflect on how you've treated me the past week.",
             "teller": "Aaliyah"
-        }
+        },
+        {
+          "id": 3,
+          "dialogue": "You really just said that huh? Here, try again with W",
+          "teller": "Corvo (in spirit)"
+      }
 
       
       ],

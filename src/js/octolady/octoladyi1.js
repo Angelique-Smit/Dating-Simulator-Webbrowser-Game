@@ -40,8 +40,8 @@ export class Octolady extends Actor {
 
         if (selectedText) {
             let actualText = selectedText.dialogue
-            let name = octolady.intro[this.index].teller;
-            this.dialogueId = octolady.intro[this.index].id;
+            let name = this.dialogue[this.index].teller;
+            this.dialogueId = this.dialogue[this.index].id;
             this.scene.startDialogue(actualText, name, octolady.intro[this.index].id)
             this.index++
         }

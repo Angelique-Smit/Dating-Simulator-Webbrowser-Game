@@ -32,7 +32,7 @@
     },
     {
       "id": 6.5,
-      "dialogue": "[ Gatekeep the fish ] (press UP)\n[ Give him more fish ] (press DOWN)",
+      "dialogue": "[ Don't share the fish ] (press UP)\n[ Give him more fish ] (press DOWN)",
       "teller": ""
     },
     {
@@ -263,29 +263,34 @@
     }
   ],
 
+  "angry": [
+    {
+      "id": 1,
+      "dialogue": "Ugh, so you're the type of person to just tease anyone huh? Gross..",
+      "teller": "Elliot"
+    },
+    {
+      "id": 2,
+      "dialogue": "Way to screw that one up casanova. Here, try again with W",
+      "teller": "Corvo (in spirit)"
+    }
+  ],
+
   "smallangry": [
     {
       "id": 1,
-      "dialogue": "Wow okay DICKHEAD. Way to freaking gate keep me!",
+      "dialogue": "HEY, DON'T HOG THEM ALL FOR YOURSELF!",
       "teller": "Elliot"
     },
     {
       "id": 2,
       "dialogue": "OW OW OKAY NO NEED TO SCRATCH",
-      "teller": "My mind"
-    }
-  ],
-
-  "angry": [
-    {
-      "id": 1,
-      "dialogue": "WOW, WAY TO FREAKING GATEKEEP ME YOU JERK!",
-      "teller": "Elliot"
+      "teller": "Me"
     },
     {
-      "id": 2,
-      "dialogue": "OW OW OKAY NO NEED TO SCRATCH\nBad ending 1, press up to retry the date",
-      "teller": "My mind"
+      "id": 3,
+      "dialogue": "Smooth, very smooth. Let's roll that one back (press UP to try again)",
+      "teller": "Corvo (in spirit)"
     }
   ],
   

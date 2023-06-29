@@ -132,6 +132,16 @@
         "id": 1,
         "dialogue": "Goodbye, Aaliyah. Until next time!",
         "teller": "Me"
+      },
+      {
+        "id": 2,
+        "dialogue": "Psst, casanova. Why didn't you give her a kiss on the cheek?",
+        "teller": "Corvo (in spirit)"
+      },
+      {
+        "id": 3,
+        "dialogue": "Here, press W to try that again.",
+        "teller": "Corvo (in spirit)"
       }
     ],
     

@@ -196,6 +196,11 @@
       "id": 1,
       "dialogue": "Bye!",
       "teller": "Me"
+    },
+    {
+      "id": 2,
+      "dialogue": "Psst, casanova. You can be a bit more kinder than that. Here, try again with W",
+      "teller": "Corvo (in spirit)"
     }
   ],
   

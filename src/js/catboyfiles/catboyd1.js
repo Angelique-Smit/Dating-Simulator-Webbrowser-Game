@@ -92,6 +92,7 @@ dialogOptions(){
         if (engine.input.keyboard.wasPressed(Input.Keys.ArrowUp) && this.choiceAvailable) {
             this.getMad()
             this.startDialogue(engine)
+            this.choiceAvailable = false
         }
 
         if (engine.input.keyboard.wasPressed(Input.Keys.ArrowDown) && this.choiceAvailable) {

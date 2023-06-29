@@ -79,6 +79,11 @@
         "id": 1,
         "dialogue": "You moonwalked over there. You might not be fast, but atleast you're stylish! Style over (human?) lives, am I right?",
         "teller": ""
+      },
+      {
+        "id": 2,
+        "dialogue": "Speed it up casanova. Time is ticking! Try picking the running option with W",
+        "teller": "Corvo (in spirit)"
       }
       ],
   
