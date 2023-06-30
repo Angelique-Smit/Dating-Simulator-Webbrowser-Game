@@ -229,7 +229,7 @@
 
         {
             "id": 38,
-            "dialogue": "Press W to go to the city. Press S to go to the pond.",
+            "dialogue": "Press W to go to the city. Press S to go to the pond. Before you choose, make sure to press SPACE before you choose, otherwise it won't work.",
             "teller": "Corvo"
         }
       ],
